@@ -27754,7 +27754,7 @@ SparkFun BigTime Watch Kit&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
 <part name="D1" library="SparkFun-LED" deviceset="LED-RED" device="_0603-KB"/>
 <part name="D2" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="BLUE"/>
 <part name="R1" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0402T-1/16W-1%" value="4.7k"/>
-<part name="R2" library="SparkFun-Resistors" deviceset="4.7KOHM" device="-0402T-1/16W-1%" value="4.7k"/>
+<part name="R2" library="SparkFun-Resistors" deviceset="2.2KOHM" device="-0402T-1/16W-1%" value="2.2k"/>
 <part name="PWR" library="SparkFun-Jumpers" deviceset="JUMPER-SMT_2_NC_TRACE" device="_SILK" package3d_urn="urn:adsk.eagle:package:39281/1"/>
 <part name="GND7" library="SparkFun-PowerSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" deviceset="3.3V" device=""/>
@@ -27862,6 +27862,11 @@ remove charge LED</text>
 RPROG = 4.7k: I_CHG = 213mA</text>
 <text x="226.06" y="124.46" size="2.54" layer="94" font="vector" align="center">Test Points</text>
 <wire x1="200.66" y1="129.54" x2="200.66" y2="91.44" width="0.2032" layer="97" style="longdash"/>
+<text x="116.84" y="167.64" size="1.778" layer="97" font="vector" align="center">Voltage Input Max: 5.5V
+Current Max: 600mA</text>
+<text x="124.46" y="106.68" size="1.778" layer="97" font="vector" align="center">To enter bootloader, hold
+BOOT button when ESP32
+resets or powers on</text>
 </plain>
 <instances>
 <instance part="H1" gate="G$1" x="243.84" y="27.94" smashed="yes"/>
