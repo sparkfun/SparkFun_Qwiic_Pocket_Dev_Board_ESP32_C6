@@ -7987,10 +7987,10 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="U$6" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.2" value="" x="18.796" y="22.606" smashed="yes"/>
 <element name="U$10" library="SparkFun-Aesthetics" package="SFE_LOGO_FLAME_.1" value="" x="6.35" y="2.54" smashed="yes" rot="MR0"/>
 <element name="U$11" library="output" package="ESP32#C633" value="" x="4.064" y="4.826" smashed="yes" rot="MR0"/>
-<element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="0.635" y="24.765" smashed="yes" rot="MR0"/>
-<element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="0.635" y="24.765" smashed="yes"/>
-<element name="FD3" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="24.765" y="0.635" smashed="yes" rot="MR0"/>
-<element name="FD4" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="24.765" y="0.635" smashed="yes"/>
+<element name="FD1" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="20.955" y="24.765" smashed="yes" rot="MR0"/>
+<element name="FD2" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="20.955" y="24.765" smashed="yes"/>
+<element name="FD3" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="4.445" y="0.635" smashed="yes" rot="MR0"/>
+<element name="FD4" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="4.445" y="0.635" smashed="yes"/>
 <element name="U$12" library="output" package="ESP32#C633" value="" x="21.717" y="20.574" smashed="yes"/>
 <element name="U$23" library="output" package="#I�C#0" value="" x="12.7" y="11.811" smashed="yes"/>
 <element name="TP1" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="19.05" y="3.81" smashed="yes" rot="MR0"/>
@@ -8154,7 +8154,7 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <wire x1="16.129" y1="5.588" x2="16.1817" y2="5.6407" width="0.1778" layer="16"/>
 <wire x1="16.1817" y1="5.6407" x2="16.1817" y2="6.54709375" width="0.1778" layer="16"/>
 <via x="20.955" y="0.635" extent="1-16" drill="0.3048"/>
-<via x="4.445" y="0.635" extent="1-16" drill="0.3048"/>
+<via x="7.366" y="2.286" extent="1-16" drill="0.3048"/>
 <wire x1="11.176" y1="8.12" x2="10.176" y2="7.12" width="0.1778" layer="1"/>
 <wire x1="10.176" y1="7.12" x2="10.16" y2="7.12" width="0.1778" layer="1"/>
 <wire x1="14.224" y1="8.12" x2="15.224" y2="7.12" width="0.1778" layer="1"/>
