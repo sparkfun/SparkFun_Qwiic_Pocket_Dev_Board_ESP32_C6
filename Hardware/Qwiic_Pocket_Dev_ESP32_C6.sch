@@ -27867,6 +27867,9 @@ Current Max: 600mA</text>
 <text x="124.46" y="106.68" size="1.778" layer="97" font="vector" align="center">To enter bootloader, hold
 BOOT button when ESP32
 resets or powers on</text>
+<text x="15.24" y="142.24" size="1.778" layer="97" font="vector" align="center">Cut SHLD jumper
+to disconnect
+shield from GND</text>
 </plain>
 <instances>
 <instance part="H1" gate="G$1" x="243.84" y="27.94" smashed="yes"/>
