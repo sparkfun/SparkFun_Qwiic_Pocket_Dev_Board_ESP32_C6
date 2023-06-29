@@ -187,9 +187,6 @@
 <wire x1="25.4" y1="0" x2="25.4" y2="25.4" width="0.2032" layer="20"/>
 <wire x1="25.4" y1="25.4" x2="0" y2="25.4" width="0.2032" layer="20"/>
 <wire x1="0" y1="25.4" x2="0" y2="0" width="0.2032" layer="20"/>
-<rectangle x1="14.097" y1="8.636" x2="14.351" y2="8.89" layer="41"/>
-<rectangle x1="11.049" y1="8.636" x2="11.303" y2="8.89" layer="41"/>
-<rectangle x1="10.922" y1="14.351" x2="11.176" y2="14.605" layer="41"/>
 <rectangle x1="9.398" y1="8.128" x2="9.652" y2="8.382" layer="42"/>
 <text x="19.05" y="0.889" size="1.27" layer="16" font="vector" ratio="15" rot="MR0" align="center">v01</text>
 <wire x1="10.668" y1="6.858" x2="10.668" y2="8.382" width="0.1524" layer="21"/>
@@ -197,13 +194,13 @@
 <wire x1="12.7" y1="6.858" x2="12.7" y2="8.382" width="0.1524" layer="21"/>
 <wire x1="13.716" y1="6.858" x2="13.716" y2="8.382" width="0.1524" layer="21"/>
 <wire x1="14.732" y1="6.858" x2="14.732" y2="8.382" width="0.1524" layer="21"/>
-<wire x1="7.874" y1="13.208" x2="7.874" y2="14.732" width="0.1524" layer="21"/>
-<wire x1="8.89" y1="13.208" x2="8.89" y2="14.732" width="0.1524" layer="21"/>
-<wire x1="9.906" y1="13.208" x2="9.906" y2="14.732" width="0.1524" layer="21"/>
+<wire x1="7.62" y1="13.208" x2="7.62" y2="14.732" width="0.1524" layer="21"/>
+<wire x1="8.636" y1="13.208" x2="8.636" y2="14.732" width="0.1524" layer="21"/>
+<wire x1="9.652" y1="13.208" x2="9.652" y2="14.732" width="0.1524" layer="21"/>
 <wire x1="12.7" y1="13.208" x2="12.7" y2="14.732" width="0.1524" layer="21"/>
-<wire x1="15.494" y1="13.208" x2="15.494" y2="14.732" width="0.1524" layer="21"/>
-<wire x1="16.51" y1="13.208" x2="16.51" y2="14.732" width="0.1524" layer="21"/>
-<wire x1="17.526" y1="13.208" x2="17.526" y2="14.732" width="0.1524" layer="21"/>
+<wire x1="15.748" y1="13.208" x2="15.748" y2="14.732" width="0.1524" layer="21"/>
+<wire x1="16.764" y1="13.208" x2="16.764" y2="14.732" width="0.1524" layer="21"/>
+<wire x1="17.78" y1="13.208" x2="17.78" y2="14.732" width="0.1524" layer="21"/>
 <text x="16.51" y="-25.4" size="1.778" layer="51" font="vector">Dryw Wade</text>
 <wire x1="15.24" y1="16.51" x2="15.24" y2="15.24" width="0.254" layer="21"/>
 <wire x1="14.605" y1="15.875" x2="15.875" y2="15.875" width="0.254" layer="21"/>
@@ -234,7 +231,10 @@ Board thickness: 1.6mm
 Soldermask: Red
 Silkscreen: White
 Surface Finish: Lead-Free HASL</text>
-<rectangle x1="13.716" y1="13.843" x2="14.478" y2="14.097" layer="41"/>
+<wire x1="11.684" y1="13.208" x2="11.684" y2="14.732" width="0.1524" layer="21"/>
+<wire x1="13.716" y1="13.208" x2="13.716" y2="14.732" width="0.1524" layer="21"/>
+<wire x1="14.732" y1="13.208" x2="14.732" y2="14.732" width="0.1524" layer="21"/>
+<wire x1="10.668" y1="13.208" x2="10.668" y2="14.732" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="SparkFun-Hardware">
@@ -7843,9 +7843,9 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <attribute name="PROD_ID" value="RES-14341" x="13.208" y="7.62" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="VALUE" x="12.446" y="7.62" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="I2C" library="SparkFun-Jumpers" package="SMT-JUMPER_3_2-NC_TRACE_SILK" package3d_urn="urn:adsk.eagle:package:39289/1" value="JUMPER-SMT_3_2-NC_TRACE_SILK" x="12.7" y="10.16" smashed="yes" rot="R180">
-<attribute name="NAME" x="12.7" y="9.017" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
-<attribute name="VALUE" x="12.7" y="11.303" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
+<element name="I2C" library="SparkFun-Jumpers" package="SMT-JUMPER_3_2-NC_TRACE_SILK" package3d_urn="urn:adsk.eagle:package:39289/1" value="JUMPER-SMT_3_2-NC_TRACE_SILK" x="12.7" y="9.525" smashed="yes" rot="R180">
+<attribute name="NAME" x="12.7" y="8.382" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
+<attribute name="VALUE" x="12.7" y="10.668" size="0.6096" layer="27" font="vector" ratio="20" rot="R180" align="top-center"/>
 </element>
 <element name="SHLD" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_TRACE_SILK" package3d_urn="urn:adsk.eagle:package:39281/1" value="JUMPER-SMT_2_NC_TRACE_SILK" x="7.874" y="4.572" smashed="yes" rot="R180">
 <attribute name="NAME" x="7.874" y="3.429" size="0.6096" layer="25" font="vector" ratio="20" rot="R180" align="bottom-center"/>
@@ -7863,64 +7863,64 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 </element>
 <element name="U$26" library="output" package="#PWR#0" value="" x="18.415" y="4.572" smashed="yes"/>
 <element name="U$27" library="output" package="#SHLD#0" value="" x="6.985" y="4.572" smashed="yes"/>
-<element name="C1" library="SparkFun-Capacitors" package="0402-TIGHT" value="2.2uF" x="14.986" y="13.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="14.097" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-14232" x="14.986" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="VALUE" value="2.2uF" x="15.875" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="C1" library="SparkFun-Capacitors" package="0402-TIGHT" value="2.2uF" x="15.24" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="14.351" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-14232" x="15.24" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="VALUE" value="2.2uF" x="16.129" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="C2" library="SparkFun-Capacitors" package="0402-TIGHT" value="2.2uF" x="13.208" y="13.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="12.319" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-14232" x="13.208" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="VALUE" value="2.2uF" x="14.097" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="C2" library="SparkFun-Capacitors" package="0402-TIGHT" value="2.2uF" x="14.224" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.335" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-14232" x="14.224" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="VALUE" value="2.2uF" x="15.113" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="C3" library="SparkFun-Capacitors" package="0402-TIGHT" value="2.2uF" x="10.414" y="13.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="9.525" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-14232" x="10.414" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="VALUE" value="2.2uF" x="11.303" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="C3" library="SparkFun-Capacitors" package="0402-TIGHT" value="2.2uF" x="9.144" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="8.255" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-14232" x="9.144" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="VALUE" value="2.2uF" x="10.033" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="C4" library="SparkFun-Capacitors" package="0402-TIGHT" value="2.2uF" x="8.382" y="13.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="7.493" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-14232" x="8.382" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="VALUE" value="2.2uF" x="9.271" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="C4" library="SparkFun-Capacitors" package="0402-TIGHT" value="2.2uF" x="10.16" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="9.271" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="CAP-14232" x="10.16" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="VALUE" value="2.2uF" x="11.049" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R7" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="18.034" y="13.97" smashed="yes" rot="R270">
-<attribute name="NAME" x="18.796" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="18.034" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="VALUE" value="100k" x="17.272" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<element name="R7" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="18.288" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.05" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-13495" x="18.288" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="VALUE" value="100k" x="17.526" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="R8" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="16.002" y="13.97" smashed="yes" rot="R270">
-<attribute name="NAME" x="16.764" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="16.002" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="VALUE" value="100k" x="15.24" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<element name="R8" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="16.256" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="17.018" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-13495" x="16.256" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="VALUE" value="100k" x="15.494" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="Q1" library="SparkFun-DiscreteSemi" package="SOT23-3" value="20V/4.2A/52mΩ/1.4W" x="19.05" y="17.78" smashed="yes">
 <attribute name="NAME" x="17.399" y="17.78" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
 <attribute name="PROD_ID" value="TRANS-14388" x="19.05" y="20.32" size="1.778" layer="27" font="vector" ratio="15" display="off"/>
 <attribute name="VALUE" x="20.701" y="17.78" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="D3" library="SparkFun-DiscreteSemi" package="SOD-323" value="1A/23V/620mV" x="19.685" y="13.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="18.923" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="DIO-11623" x="19.685" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="VALUE" x="20.447" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="D3" library="SparkFun-DiscreteSemi" package="SOD-323" value="1A/23V/620mV" x="19.939" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="19.177" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="DIO-11623" x="19.939" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="VALUE" x="20.701" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R9" library="SparkFun-Resistors" package="0402-TIGHT" value="4.7k" x="9.398" y="13.97" smashed="yes" rot="R270">
-<attribute name="NAME" x="10.16" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-15343" x="9.398" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="VALUE" x="8.636" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<element name="R9" library="SparkFun-Resistors" package="0402-TIGHT" value="4.7k" x="8.128" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.89" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-15343" x="8.128" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="VALUE" x="7.366" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="CHG" library="SparkFun-Jumpers" package="SMT-JUMPER_2_NC_TRACE_SILK" package3d_urn="urn:adsk.eagle:package:39281/1" value="JUMPER-SMT_2_NC_TRACE_SILK" x="6.731" y="16.51" smashed="yes">
 <attribute name="NAME" x="6.731" y="17.653" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
 <attribute name="VALUE" x="6.731" y="15.367" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
-<element name="D4" library="SparkFun-LED" package="LED-0603" value="Yellow" x="5.715" y="13.97" smashed="yes" rot="R270">
-<attribute name="NAME" x="6.35" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="DIO-09003" x="5.715" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="VALUE" x="5.08" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<element name="D4" library="SparkFun-LED" package="LED-0603" value="Yellow" x="5.461" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.096" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+<attribute name="PROD_ID" value="DIO-09003" x="5.461" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="VALUE" x="4.826" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="R10" library="SparkFun-Resistors" package="0402-TIGHT" value="4.7k" x="7.366" y="13.97" smashed="yes" rot="R270">
-<attribute name="NAME" x="8.128" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-15343" x="7.366" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
-<attribute name="VALUE" x="6.604" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<element name="R10" library="SparkFun-Resistors" package="0402-TIGHT" value="4.7k" x="7.112" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.874" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-15343" x="7.112" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="VALUE" x="6.35" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="RESET" library="SparkFun-Switches" package="TACTILE_SWITCH_SMD_4.6X2.8MM" value="MOMENTARY-SWITCH-SPST-SMD-4.6X2.8MM" x="19.177" y="8.382" smashed="yes" rot="R90">
 <attribute name="NAME" x="17.653" y="8.382" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
@@ -7932,10 +7932,10 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <attribute name="PROD_ID" value="SWCH-15606" x="6.223" y="8.382" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="VALUE" x="4.699" y="8.382" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="R11" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="17.018" y="13.97" smashed="yes" rot="R90">
-<attribute name="NAME" x="16.456" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="17.018" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
-<attribute name="VALUE" x="17.58" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<element name="R11" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="17.272" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="16.71" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-13495" x="17.272" y="13.97" size="1.778" layer="27" font="vector" ratio="15" rot="R90" display="off"/>
+<attribute name="VALUE" x="17.834" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
 <element name="C5" library="SparkFun-Capacitors" package="0402-TIGHT" value="0.1uF" x="15.24" y="7.62" smashed="yes" rot="R270">
 <attribute name="NAME" x="15.802" y="7.62" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
@@ -7951,11 +7951,11 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="U$31" library="output" package="#CHG#0" value="" x="6.731" y="18.034" smashed="yes"/>
 <element name="U$33" library="output" package="BOOT0" value="" x="6.477" y="11.43" smashed="yes"/>
 <element name="U$34" library="output" package="RST0" value="" x="19.304" y="11.43" smashed="yes"/>
-<element name="U$32" library="output" package="CHG0" value="" x="6.604" y="14.097" smashed="yes" rot="R90"/>
-<element name="R12" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="12.192" y="13.97" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.754" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="12.192" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="11.63" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<element name="U$32" library="output" package="CHG0" value="" x="6.35" y="14.097" smashed="yes" rot="R90"/>
+<element name="R12" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="11.176" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="11.738" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-13495" x="11.176" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="10.614" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$35" library="output" package="IO90" value="" x="3.81" y="10.16" smashed="yes"/>
 <element name="U$36" library="output" package="#VB_#0" value="" x="1.397" y="19.05" smashed="yes" rot="MR0"/>
@@ -7992,7 +7992,7 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="FD3" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="4.445" y="0.635" smashed="yes" rot="MR0"/>
 <element name="FD4" library="SparkFun-Aesthetics" package="FIDUCIAL-MICRO" value="FIDUCIALUFIDUCIAL" x="4.445" y="0.635" smashed="yes"/>
 <element name="U$12" library="output" package="ESP32#C633" value="" x="21.717" y="20.574" smashed="yes"/>
-<element name="U$23" library="output" package="#I�C#0" value="" x="12.7" y="11.811" smashed="yes"/>
+<element name="U$23" library="output" package="#I�C#0" value="" x="12.7" y="11.176" smashed="yes"/>
 <element name="TP1" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="19.05" y="3.81" smashed="yes" rot="MR0"/>
 <element name="TP2" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="19.05" y="6.35" smashed="yes" rot="MR0"/>
 <element name="TP3" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="6.35" y="6.35" smashed="yes" rot="MR0"/>
@@ -8000,6 +8000,16 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="U$24" library="SparkFun-Aesthetics" package="ORDERING_INSTRUCTIONS" value="" x="36.83" y="50.8" smashed="yes"/>
 <element name="U$25" library="output" package="QWIIC_DEV0" value="" x="4.445" y="20.574" smashed="yes"/>
 <element name="U$9" library="output" package="QWIIC_DEV0" value="" x="21.336" y="4.826" smashed="yes" rot="MR0"/>
+<element name="R13" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="13.208" y="13.97" smashed="yes" rot="R90">
+<attribute name="NAME" x="12.646" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-13495" x="13.208" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="13.77" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+</element>
+<element name="R14" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="12.192" y="13.97" smashed="yes" rot="R270">
+<attribute name="NAME" x="12.754" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
+<attribute name="PROD_ID" value="RES-13495" x="12.192" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="11.63" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+</element>
 </elements>
 <signals>
 <signal name="IO12/USB_N">
@@ -8038,16 +8048,10 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <contactref element="R11" pad="2"/>
 <wire x1="17.0053" y1="4.572" x2="17.0053" y2="4.3053" width="0.254" layer="1"/>
 <wire x1="17.0053" y1="4.3053" x2="15.621" y2="2.921" width="0.508" layer="1"/>
-<wire x1="15.052" y1="12.0951" x2="13.4399" y2="12.0951" width="0.508" layer="1"/>
-<wire x1="13.4399" y1="12.0951" x2="13.208" y2="12.327" width="0.508" layer="1"/>
-<wire x1="13.208" y1="12.327" x2="13.208" y2="13.47" width="0.508" layer="1"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="10.414" width="0.254" layer="1"/>
-<wire x1="12.7" y1="10.414" x2="12.7" y2="11.3552" width="0.508" layer="1"/>
-<wire x1="12.7" y1="11.3552" x2="13.4399" y2="12.0951" width="0.508" layer="1"/>
+<wire x1="12.7" y1="9.525" x2="12.7" y2="10.541" width="0.254" layer="1"/>
 <via x="16.764" y="15.494" extent="1-16" drill="0.3048"/>
-<wire x1="16.764" y1="15.494" x2="16.764" y2="15.367" width="0.254" layer="1"/>
-<wire x1="17.018" y1="15.113" x2="16.764" y2="15.367" width="0.254" layer="1"/>
-<wire x1="17.018" y1="15.113" x2="17.018" y2="14.47" width="0.254" layer="1"/>
+<wire x1="16.764" y1="15.494" x2="16.764" y2="14.978" width="0.254" layer="1"/>
+<wire x1="16.764" y1="14.978" x2="17.272" y2="14.47" width="0.254" layer="1"/>
 <wire x1="18.021" y1="16.751" x2="16.764" y2="15.494" width="0.381" layer="16"/>
 <wire x1="18.021" y1="16.751" x2="18.6" y2="16.751" width="0.381" layer="16"/>
 <wire x1="12.2" y1="5.08" x2="12.2" y2="3.818" width="0.508" layer="1"/>
@@ -8056,19 +8060,25 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <via x="12.192" y="3.81" extent="1-16" drill="0.3048"/>
 <wire x1="12.843" y1="2.921" x2="12.2" y2="3.564" width="0.508" layer="1"/>
 <wire x1="15.621" y1="2.921" x2="12.843" y2="2.921" width="0.508" layer="1"/>
-<via x="12.7" y="10.414" extent="1-16" drill="0.3048"/>
+<via x="12.7" y="10.541" extent="1-16" drill="0.3048"/>
 <contactref element="R12" pad="2"/>
-<wire x1="12.192" y1="13.47" x2="13.208" y2="13.47" width="0.508" layer="1"/>
 <wire x1="12.192" y1="3.81" x2="12.192" y2="4.572" width="0.508" layer="2"/>
 <wire x1="12.192" y1="4.572" x2="12.7" y2="5.08" width="0.508" layer="2"/>
-<wire x1="12.7" y1="5.08" x2="12.7" y2="10.414" width="0.508" layer="2"/>
-<wire x1="12.7" y1="10.414" x2="12.7" y2="11.43" width="0.508" layer="2"/>
+<wire x1="12.7" y1="5.08" x2="12.7" y2="10.541" width="0.508" layer="2"/>
+<wire x1="12.7" y1="10.541" x2="12.7" y2="11.43" width="0.508" layer="2"/>
 <wire x1="12.7" y1="11.43" x2="16.764" y2="15.494" width="0.508" layer="2"/>
-<wire x1="17.21036875" y1="16.129" x2="16.764" y2="15.68263125" width="0.508" layer="2"/>
-<wire x1="16.764" y1="15.494" x2="16.764" y2="15.68263125" width="0.508" layer="2"/>
+<wire x1="17.33736875" y1="16.129" x2="16.764" y2="15.55563125" width="0.508" layer="2"/>
+<wire x1="16.764" y1="15.494" x2="16.764" y2="15.55563125" width="0.508" layer="2"/>
 <wire x1="17.58763125" y1="16.129" x2="17.96863125" y2="16.51" width="0.508" layer="2"/>
-<wire x1="17.21036875" y1="16.129" x2="17.58763125" y2="16.129" width="0.508" layer="2"/>
+<wire x1="17.33736875" y1="16.129" x2="17.58763125" y2="16.129" width="0.508" layer="2"/>
 <wire x1="17.96863125" y1="16.51" x2="24.13" y2="16.51" width="0.508" layer="2"/>
+<wire x1="12.7" y1="11.946" x2="11.176" y2="13.47" width="0.254" layer="1"/>
+<wire x1="12.7" y1="11.946" x2="12.7" y2="9.525" width="0.254" layer="1"/>
+<wire x1="14.224" y1="13.47" x2="14.224" y2="12.9231" width="0.508" layer="1"/>
+<wire x1="15.052" y1="12.0951" x2="14.224" y2="12.9231" width="0.508" layer="1"/>
+<wire x1="13.90283125" y1="10.541" x2="15.052" y2="11.69016875" width="0.254" layer="1"/>
+<wire x1="15.052" y1="11.69016875" x2="15.052" y2="12.0951" width="0.254" layer="1"/>
+<wire x1="12.7" y1="10.541" x2="13.90283125" y2="10.541" width="0.254" layer="1"/>
 </signal>
 <signal name="GND">
 <contactref element="U1" pad="49.4"/>
@@ -8160,7 +8170,7 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <wire x1="14.224" y1="8.12" x2="15.224" y2="7.12" width="0.1778" layer="1"/>
 <wire x1="15.224" y1="7.12" x2="15.24" y2="7.12" width="0.1778" layer="1"/>
 <via x="9.398" y="10.668" extent="1-16" drill="0.3048"/>
-<via x="16.002" y="10.668" extent="1-16" drill="0.3048"/>
+<via x="16.002" y="10.541" extent="1-16" drill="0.3048"/>
 <via x="17.653" y="15.367" extent="1-16" drill="0.3048"/>
 <via x="7.747" y="15.367" extent="1-16" drill="0.3048"/>
 <via x="9.4488" y="15.621" extent="1-16" drill="0.3048"/>
@@ -8168,7 +8178,7 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <wire x1="6.75" y1="9.401" x2="7.004" y2="9.655" width="0.1778" layer="16"/>
 <wire x1="7.115" y1="9.655" x2="7.004" y2="9.655" width="0.1778" layer="16"/>
 <wire x1="7.115" y1="9.655" x2="7.62" y2="10.16" width="0.1778" layer="16"/>
-<via x="7.6581" y="12.3444" extent="1-16" drill="0.3048"/>
+<via x="7.66571875" y="12.28851875" extent="1-16" drill="0.3048"/>
 <via x="0.635" y="4.191" extent="1-16" drill="0.3048"/>
 <via x="24.765" y="4.191" extent="1-16" drill="0.3048"/>
 <via x="10.16" y="17.78" extent="1-16" drill="0.3048"/>
@@ -8194,49 +8204,49 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <vertex x="25.4" y="19.939"/>
 </polygon>
 <via x="22.86" y="15.24" extent="1-16" drill="0.3048"/>
+<contactref element="R14" pad="1"/>
 </signal>
 <signal name="V_BATT">
 <contactref element="J5" pad="2"/>
 <contactref element="U3" pad="3"/>
 <contactref element="Q1" pad="3"/>
 <contactref element="C4" pad="1"/>
-<wire x1="10.348" y1="9.4949" x2="10.348" y2="10.5744" width="0.381" layer="1"/>
-<wire x1="10.348" y1="10.5744" x2="10.221" y2="10.7014" width="0.381" layer="1"/>
-<wire x1="10.221" y1="10.8538" x2="10.221" y2="10.7014" width="0.381" layer="1"/>
-<wire x1="9.398" y1="12.454" x2="8.382" y2="13.47" width="0.254" layer="1"/>
-<wire x1="9.398" y1="11.6768" x2="9.398" y2="12.446" width="0.508" layer="1"/>
-<wire x1="9.398" y1="12.446" x2="9.398" y2="12.454" width="0.254" layer="1"/>
-<wire x1="10.221" y1="10.8538" x2="9.398" y2="11.6768" width="0.381" layer="1"/>
-<via x="9.398" y="12.446" extent="1-16" drill="0.3048"/>
 <wire x1="14.732" y1="17.78" x2="13.81" y2="17.78" width="0.508" layer="1"/>
 <wire x1="13.7" y1="17.89" x2="13.81" y2="17.78" width="0.508" layer="1"/>
 <via x="14.732" y="17.78" extent="1-16" drill="0.3048"/>
 <wire x1="14.732" y1="17.78" x2="14.732" y2="16.383" width="0.508" layer="2"/>
-<wire x1="14.732" y1="16.383" x2="10.795" y2="12.446" width="0.508" layer="2"/>
-<wire x1="10.795" y1="12.446" x2="9.398" y2="12.446" width="0.508" layer="2"/>
+<wire x1="14.732" y1="16.383" x2="11.049" y2="12.7" width="0.508" layer="2"/>
 <wire x1="14.732" y1="17.78" x2="15.832" y2="18.88" width="0.508" layer="1"/>
 <wire x1="15.832" y1="18.88" x2="19.05" y2="18.88" width="0.508" layer="1"/>
-<wire x1="7.874" y1="13.97" x2="2.794" y2="19.05" width="0.508" layer="2"/>
+<wire x1="2.794" y1="19.05" x2="7.874" y2="13.97" width="0.508" layer="2"/>
 <contactref element="J3" pad="1"/>
-<wire x1="9.271" y1="12.954" x2="9.271" y2="12.573" width="0.508" layer="2"/>
-<wire x1="9.271" y1="12.573" x2="9.398" y2="12.446" width="0.508" layer="2"/>
-<wire x1="9.271" y1="12.954" x2="8.255" y2="13.97" width="0.508" layer="2"/>
 <wire x1="1.27" y1="19.05" x2="2.794" y2="19.05" width="0.508" layer="2"/>
-<wire x1="8.255" y1="13.97" x2="7.874" y2="13.97" width="0.508" layer="2"/>
+<contactref element="R13" pad="2"/>
+<wire x1="13.208" y1="14.47" x2="13.208" y2="14.986" width="0.254" layer="1"/>
+<wire x1="13.7" y1="15.478" x2="13.7" y2="17.89" width="0.254" layer="1"/>
+<wire x1="13.208" y1="14.986" x2="13.7" y2="15.478" width="0.254" layer="1"/>
+<wire x1="11.049" y1="12.6318" x2="10.2108" y2="13.47" width="0.1778" layer="1"/>
+<wire x1="10.16" y1="13.47" x2="10.2108" y2="13.47" width="0.1778" layer="1"/>
+<wire x1="10.348" y1="9.84" x2="10.348" y2="9.4949" width="0.254" layer="1"/>
+<wire x1="11.049" y1="12.6318" x2="11.049" y2="11.049" width="0.254" layer="1"/>
+<wire x1="11.049" y1="11.049" x2="11.049" y2="10.541" width="0.254" layer="1"/>
+<wire x1="11.049" y1="10.541" x2="10.348" y2="9.84" width="0.254" layer="1"/>
+<via x="11.049" y="11.049" extent="1-16" drill="0.3048"/>
+<wire x1="11.049" y1="11.049" x2="11.049" y2="12.7" width="0.508" layer="2"/>
+<wire x1="9.779" y1="13.97" x2="11.049" y2="12.7" width="0.508" layer="2"/>
+<wire x1="7.874" y1="13.97" x2="9.779" y2="13.97" width="0.508" layer="2"/>
 </signal>
 <signal name="N$4">
 <contactref element="R3" pad="2"/>
 <contactref element="I2C" pad="3"/>
-<wire x1="12.192" y1="8.12" x2="12.192" y2="8.763" width="0.254" layer="1"/>
-<wire x1="12.192" y1="8.763" x2="11.6586" y2="9.2964" width="0.254" layer="1"/>
-<wire x1="11.6586" y1="10.16" x2="11.6586" y2="9.2964" width="0.254" layer="1"/>
+<wire x1="11.6586" y1="9.525" x2="11.6586" y2="8.6534" width="0.254" layer="1"/>
+<wire x1="12.192" y1="8.12" x2="11.6586" y2="8.6534" width="0.254" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="I2C" pad="1"/>
 <contactref element="R4" pad="1"/>
-<wire x1="13.208" y1="8.12" x2="13.208" y2="8.636" width="0.254" layer="1"/>
-<wire x1="13.7414" y1="10.16" x2="13.7414" y2="9.1694" width="0.254" layer="1"/>
-<wire x1="13.7414" y1="9.1694" x2="13.208" y2="8.636" width="0.254" layer="1"/>
+<wire x1="13.208" y1="8.12" x2="13.7414" y2="8.6534" width="0.254" layer="1"/>
+<wire x1="13.7414" y1="9.525" x2="13.7414" y2="8.6534" width="0.254" layer="1"/>
 </signal>
 <signal name="IO7/SCL">
 <contactref element="J4" pad="4"/>
@@ -8337,45 +8347,46 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <contactref element="R9" pad="2"/>
 <contactref element="U3" pad="4"/>
 <contactref element="C3" pad="1"/>
-<wire x1="9.398" y1="13.47" x2="10.414" y2="13.47" width="0.254" layer="1"/>
+<wire x1="8.128" y1="13.47" x2="9.144" y2="13.47" width="0.254" layer="1"/>
 <wire x1="18.1" y1="16.78" x2="17.256" y2="16.78" width="0.508" layer="1"/>
 <wire x1="17.256" y1="16.78" x2="17.145" y2="16.891" width="0.508" layer="1"/>
 <via x="17.145" y="16.891" extent="1-16" drill="0.3048"/>
-<via x="10.922" y="11.0744" extent="1-16" drill="0.3048"/>
-<wire x1="18.034" y1="13.47" x2="18.931" y2="13.47" width="0.508" layer="1"/>
-<wire x1="19.685" y1="14.224" x2="19.685" y2="15.12" width="0.508" layer="1"/>
-<wire x1="18.931" y1="13.47" x2="19.685" y2="14.224" width="0.508" layer="1"/>
-<wire x1="18.1" y1="16.78" x2="18.1" y2="16.705" width="0.508" layer="1"/>
-<wire x1="18.1" y1="16.705" x2="19.685" y2="15.12" width="0.508" layer="1"/>
+<wire x1="18.288" y1="13.47" x2="18.931" y2="13.47" width="0.508" layer="1"/>
+<wire x1="19.939" y1="14.478" x2="19.939" y2="15.12" width="0.508" layer="1"/>
+<wire x1="18.931" y1="13.47" x2="19.939" y2="14.478" width="0.508" layer="1"/>
+<wire x1="18.1" y1="16.78" x2="18.279" y2="16.78" width="0.508" layer="1"/>
+<wire x1="19.939" y1="15.12" x2="18.279" y2="16.78" width="0.508" layer="1"/>
 <via x="10.3886" y="5.6896" extent="1-16" drill="0.3048"/>
-<wire x1="10.922" y1="11.0744" x2="10.348" y2="11.6484" width="0.254" layer="1"/>
-<wire x1="10.348" y1="11.6484" x2="10.348" y2="12.0951" width="0.254" layer="1"/>
-<wire x1="10.348" y1="12.0951" x2="10.414" y2="12.1611" width="0.254" layer="1"/>
-<wire x1="10.414" y1="12.1611" x2="10.414" y2="13.47" width="0.254" layer="1"/>
-<wire x1="17.145" y1="16.891" x2="16.7386" y2="16.891" width="0.508" layer="2"/>
-<wire x1="16.7386" y1="16.891" x2="10.922" y2="11.0744" width="0.508" layer="2"/>
-<wire x1="11.938" y1="5.9436" x2="11.557" y2="5.5626" width="0.508" layer="2"/>
+<wire x1="16.7386" y1="16.891" x2="17.145" y2="16.891" width="0.508" layer="2"/>
+<wire x1="11.557" y1="5.5626" x2="11.938" y2="5.9436" width="0.508" layer="2"/>
 <wire x1="10.3886" y1="5.6896" x2="10.5156" y2="5.5626" width="0.508" layer="2"/>
 <wire x1="11.557" y1="5.5626" x2="10.5156" y2="5.5626" width="0.508" layer="2"/>
-<wire x1="11.938" y1="10.0584" x2="11.938" y2="5.9436" width="0.508" layer="2"/>
-<wire x1="11.938" y1="10.0584" x2="10.922" y2="11.0744" width="0.508" layer="2"/>
-<wire x1="10.922" y1="11.0744" x2="10.4394" y2="11.557" width="0.508" layer="2"/>
-<wire x1="10.4394" y1="11.557" x2="9.1186" y2="11.557" width="0.508" layer="2"/>
-<wire x1="8.5598" y1="12.6238" x2="8.5598" y2="12.1158" width="0.508" layer="2"/>
-<wire x1="8.5598" y1="12.6238" x2="7.9756" y2="13.208" width="0.508" layer="2"/>
 <contactref element="J3" pad="2"/>
-<wire x1="9.1186" y1="11.557" x2="8.5598" y2="12.1158" width="0.508" layer="2"/>
-<wire x1="7.9756" y1="13.208" x2="7.493" y2="13.208" width="0.508" layer="2"/>
 <wire x1="7.493" y1="13.208" x2="4.191" y2="16.51" width="0.508" layer="2"/>
 <wire x1="1.27" y1="16.51" x2="4.191" y2="16.51" width="0.508" layer="2"/>
+<wire x1="11.938" y1="5.9436" x2="11.938" y2="10.16" width="0.508" layer="2"/>
+<wire x1="11.938" y1="10.16" x2="11.938" y2="12.0904" width="0.508" layer="2"/>
+<wire x1="11.938" y1="12.0904" x2="16.7386" y2="16.891" width="0.508" layer="2"/>
+<wire x1="7.493" y1="13.208" x2="8.382" y2="13.208" width="0.508" layer="2"/>
+<wire x1="8.382" y1="13.208" x2="9.398" y2="12.192" width="0.508" layer="2"/>
+<via x="9.398" y="12.192" extent="1-16" drill="0.3048"/>
+<wire x1="9.398" y1="12.192" x2="10.16" y2="11.43" width="0.508" layer="2"/>
+<wire x1="10.16" y1="10.795" x2="10.795" y2="10.16" width="0.508" layer="2"/>
+<wire x1="10.795" y1="10.16" x2="11.938" y2="10.16" width="0.508" layer="2"/>
+<wire x1="10.16" y1="11.43" x2="10.16" y2="10.795" width="0.508" layer="2"/>
+<wire x1="9.144" y1="13.47" x2="9.144" y2="12.954" width="0.254" layer="1"/>
+<wire x1="9.398" y1="12.7" x2="9.398" y2="12.192" width="0.254" layer="1"/>
+<wire x1="9.398" y1="12.7" x2="9.144" y2="12.954" width="0.254" layer="1"/>
+<wire x1="9.398" y1="12.192" x2="9.4949" y2="12.0951" width="0.254" layer="1"/>
+<wire x1="9.4949" y1="12.0951" x2="10.348" y2="12.0951" width="0.254" layer="1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R8" pad="2"/>
 <contactref element="U2" pad="3"/>
-<wire x1="16.3722" y1="13.0998" x2="16.002" y2="13.47" width="0.254" layer="1"/>
+<wire x1="16.3722" y1="13.3538" x2="16.256" y2="13.47" width="0.254" layer="1"/>
 <wire x1="16.952" y1="9.4949" x2="16.952" y2="10.734" width="0.254" layer="1"/>
 <wire x1="16.952" y1="10.734" x2="16.3722" y2="11.3138" width="0.254" layer="1"/>
-<wire x1="16.3722" y1="11.3138" x2="16.3722" y2="13.0998" width="0.254" layer="1"/>
+<wire x1="16.3722" y1="11.3138" x2="16.3722" y2="13.3538" width="0.254" layer="1"/>
 </signal>
 <signal name="N$9">
 <contactref element="U2" pad="1"/>
@@ -8383,53 +8394,55 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <contactref element="Q1" pad="2"/>
 <contactref element="C1" pad="1"/>
 <contactref element="R8" pad="1"/>
-<wire x1="16.002" y1="14.47" x2="15.986" y2="14.47" width="0.254" layer="1"/>
-<wire x1="15.986" y1="14.47" x2="14.986" y2="13.47" width="0.254" layer="1"/>
-<wire x1="15.6318" y1="12.8242" x2="14.986" y2="13.47" width="0.254" layer="1"/>
+<wire x1="16.256" y1="14.47" x2="16.24" y2="14.47" width="0.254" layer="1"/>
+<wire x1="16.24" y1="14.47" x2="15.24" y2="13.47" width="0.254" layer="1"/>
+<wire x1="15.6318" y1="13.0782" x2="15.24" y2="13.47" width="0.254" layer="1"/>
 <wire x1="20" y1="16.78" x2="20" y2="16.83" width="0.254" layer="1"/>
 <wire x1="20" y1="16.83" x2="19.177" y2="17.653" width="0.254" layer="1"/>
 <wire x1="19.177" y1="17.653" x2="16.891" y2="17.653" width="0.254" layer="1"/>
-<wire x1="16.891" y1="17.653" x2="16.002" y2="16.764" width="0.254" layer="1"/>
-<wire x1="16.002" y1="16.764" x2="16.002" y2="14.47" width="0.254" layer="1"/>
-<wire x1="19.685" y1="12.82" x2="20.447" y2="13.582" width="0.254" layer="1"/>
-<wire x1="20.447" y1="16.333" x2="20" y2="16.78" width="0.254" layer="1"/>
-<wire x1="20.447" y1="13.582" x2="20.447" y2="16.333" width="0.254" layer="1"/>
+<wire x1="16.891" y1="17.653" x2="16.129" y2="16.891" width="0.254" layer="1"/>
+<wire x1="16.129" y1="16.891" x2="16.129" y2="15.232" width="0.254" layer="1"/>
+<wire x1="16.256" y1="15.105" x2="16.256" y2="14.47" width="0.254" layer="1"/>
+<wire x1="16.256" y1="15.105" x2="16.129" y2="15.232" width="0.254" layer="1"/>
+<wire x1="19.939" y1="12.82" x2="20.701" y2="13.582" width="0.254" layer="1"/>
+<wire x1="20.701" y1="16.079" x2="20" y2="16.78" width="0.254" layer="1"/>
+<wire x1="20.701" y1="13.582" x2="20.701" y2="16.079" width="0.254" layer="1"/>
 <wire x1="15.052" y1="9.4949" x2="15.052" y2="10.734" width="0.254" layer="1"/>
 <wire x1="15.052" y1="10.734" x2="15.6318" y2="11.3138" width="0.254" layer="1"/>
-<wire x1="15.6318" y1="11.3138" x2="15.6318" y2="12.8242" width="0.254" layer="1"/>
+<wire x1="15.6318" y1="11.3138" x2="15.6318" y2="13.0782" width="0.254" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="D4" pad="C"/>
 <contactref element="U3" pad="1"/>
-<wire x1="7.813" y1="10.9576" x2="7.813" y2="10.3839" width="0.1778" layer="1"/>
+<wire x1="7.813" y1="11.2116" x2="7.813" y2="10.3839" width="0.1778" layer="1"/>
 <wire x1="8.448" y1="9.4949" x2="8.448" y2="9.7489" width="0.1778" layer="1"/>
 <wire x1="8.448" y1="9.7489" x2="7.813" y2="10.3839" width="0.1778" layer="1"/>
-<wire x1="7.813" y1="10.9576" x2="5.715" y2="13.0556" width="0.1778" layer="1"/>
-<wire x1="5.715" y1="13.093" x2="5.715" y2="13.0556" width="0.1778" layer="1"/>
+<wire x1="7.813" y1="11.2116" x2="7.2016" y2="11.823" width="0.1778" layer="1"/>
+<wire x1="5.461" y1="13.093" x2="6.731" y2="11.823" width="0.1778" layer="1"/>
+<wire x1="7.2016" y1="11.823" x2="6.731" y2="11.823" width="0.1778" layer="1"/>
 </signal>
 <signal name="N$11">
 <contactref element="CHG" pad="1"/>
 <contactref element="D4" pad="A"/>
-<wire x1="5.715" y1="14.847" x2="5.715" y2="15.7607" width="0.254" layer="1"/>
+<wire x1="5.461" y1="14.847" x2="5.461" y2="15.5067" width="0.254" layer="1"/>
 <wire x1="6.2103" y1="16.256" x2="6.2103" y2="16.51" width="0.254" layer="1"/>
-<wire x1="6.2103" y1="16.256" x2="5.715" y2="15.7607" width="0.254" layer="1"/>
+<wire x1="6.2103" y1="16.256" x2="5.461" y2="15.5067" width="0.254" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="CHG" pad="2"/>
 <contactref element="R9" pad="1"/>
-<wire x1="8.255" y1="16.248" x2="7.993" y2="16.51" width="0.254" layer="1"/>
+<wire x1="8.636" y1="15.867" x2="7.993" y2="16.51" width="0.254" layer="1"/>
 <wire x1="7.2517" y1="16.51" x2="7.993" y2="16.51" width="0.254" layer="1"/>
-<wire x1="8.89" y1="15.232" x2="8.89" y2="14.978" width="0.254" layer="1"/>
-<wire x1="9.398" y1="14.47" x2="8.89" y2="14.978" width="0.254" layer="1"/>
-<wire x1="8.89" y1="15.232" x2="8.255" y2="15.867" width="0.254" layer="1"/>
-<wire x1="8.255" y1="16.248" x2="8.255" y2="15.867" width="0.254" layer="1"/>
+<wire x1="8.128" y1="14.47" x2="8.636" y2="14.978" width="0.254" layer="1"/>
+<wire x1="8.636" y1="15.867" x2="8.636" y2="14.978" width="0.254" layer="1"/>
 </signal>
 <signal name="N$13">
 <contactref element="U3" pad="5"/>
 <contactref element="R10" pad="2"/>
 <wire x1="8.448" y1="12.0951" x2="8.448" y2="12.4388" width="0.254" layer="1"/>
-<wire x1="8.448" y1="12.4388" x2="7.4168" y2="13.47" width="0.1778" layer="1"/>
-<wire x1="7.4168" y1="13.47" x2="7.366" y2="13.47" width="0.1778" layer="1"/>
+<wire x1="8.448" y1="12.4388" x2="8.001" y2="12.8858" width="0.1778" layer="1"/>
+<wire x1="8.001" y1="12.8858" x2="7.6962" y2="12.8858" width="0.1778" layer="1"/>
+<wire x1="7.6962" y1="12.8858" x2="7.112" y2="13.47" width="0.1778" layer="1"/>
 </signal>
 <signal name="EN">
 <contactref element="U1" pad="8"/>
@@ -8447,8 +8460,8 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <via x="17.78" y="12.573" extent="1-16" drill="0.3048"/>
 <wire x1="17.78" y1="12.573" x2="17.958" y2="12.751" width="0.254" layer="16"/>
 <wire x1="17.958" y1="12.751" x2="18.6" y2="12.751" width="0.254" layer="16"/>
-<wire x1="17.78" y1="12.708" x2="17.78" y2="12.573" width="0.254" layer="1"/>
-<wire x1="17.018" y1="13.47" x2="17.78" y2="12.708" width="0.254" layer="1"/>
+<wire x1="17.78" y1="12.962" x2="17.78" y2="12.573" width="0.254" layer="1"/>
+<wire x1="17.272" y1="13.47" x2="17.78" y2="12.962" width="0.254" layer="1"/>
 <contactref element="TP4" pad="1"/>
 <wire x1="18.6" y1="12.751" x2="20.269" y2="12.751" width="0.254" layer="16"/>
 <wire x1="20.269" y1="12.751" x2="20.32" y2="12.7" width="0.254" layer="16"/>
@@ -8502,9 +8515,8 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <via x="9.398" y="16.51" extent="1-16" drill="0.3048"/>
 <wire x1="9.398" y1="16.51" x2="9.525" y2="16.383" width="0.254" layer="1"/>
 <wire x1="9.906" y1="16.383" x2="9.525" y2="16.383" width="0.254" layer="1"/>
-<wire x1="12.065" y1="14.597" x2="12.192" y2="14.47" width="0.254" layer="1"/>
-<wire x1="12.065" y1="14.597" x2="11.692" y2="14.597" width="0.254" layer="1"/>
-<wire x1="11.692" y1="14.597" x2="9.906" y2="16.383" width="0.254" layer="1"/>
+<wire x1="11.176" y1="14.47" x2="11.176" y2="15.113" width="0.254" layer="1"/>
+<wire x1="11.176" y1="15.113" x2="9.906" y2="16.383" width="0.254" layer="1"/>
 </signal>
 <signal name="IO4">
 <contactref element="U1" pad="9"/>
@@ -8574,6 +8586,18 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <wire x1="5.536" y1="3.85" x2="5.08" y2="3.85" width="0.254" layer="1"/>
 <wire x1="5.08" y1="10.541" x2="5.08" y2="3.85" width="0.254" layer="2"/>
 </signal>
+<signal name="IO1/V_BATT_2">
+<contactref element="U1" pad="13"/>
+<contactref element="R14" pad="2"/>
+<contactref element="R13" pad="1"/>
+<wire x1="13.208" y1="13.47" x2="12.192" y2="13.47" width="0.254" layer="1"/>
+<via x="13.6906" y="11.2268" extent="1-16" drill="0.3048"/>
+<wire x1="13.208" y1="13.47" x2="13.208" y2="11.7094" width="0.254" layer="1"/>
+<wire x1="13.208" y1="11.7094" x2="13.6906" y2="11.2268" width="0.254" layer="1"/>
+<wire x1="16.4592" y1="11.2268" x2="16.7" y2="10.986" width="0.254" layer="16"/>
+<wire x1="16.7" y1="10.986" x2="16.7" y2="9.451" width="0.254" layer="16"/>
+<wire x1="13.6906" y1="11.2268" x2="16.4592" y2="11.2268" width="0.254" layer="16"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8FF0000"/>
@@ -8588,17 +8612,19 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <approved hash="5,16,69788864083490bd"/>
 <approved hash="5,16,9cc3722404349346"/>
 <approved hash="5,16,be7063198a2f6d66"/>
-<approved hash="19,1,28be2e3c67a10e33"/>
 <approved hash="5,16,5b75a6589f4b0abb"/>
 <approved hash="19,1,86c8e691c5957701"/>
 <approved hash="6,1,630063027efe7efc"/>
 <approved hash="6,1,549861488ebc8a99"/>
 <approved hash="6,1,dc90d936cacace91"/>
 <approved hash="6,1,63006302befebefc"/>
-<approved hash="19,1,90bfe906b755c07c"/>
-<approved hash="19,1,61b80193dd96bb71"/>
-<approved hash="19,1,74674702b140ba90"/>
-<approved hash="19,1,12be426fdbe5e402"/>
+<approved hash="5,1,2a352e2027e713f7"/>
+<approved hash="19,1,44a1ba36022afa71"/>
+<approved hash="19,1,6ee9a422e7259fe9"/>
+<approved hash="19,1,77fada016c59fa37"/>
+<approved hash="19,1,4d279e2e88095590"/>
+<approved hash="5,1,0bc22e1a5edcadfe"/>
+<approved hash="5,16,9081d569a34ef9fd"/>
 </errors>
 </board>
 </drawing>
