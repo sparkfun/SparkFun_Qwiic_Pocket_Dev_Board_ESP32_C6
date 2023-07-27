@@ -1,0 +1,1 @@
+Check out the resources below for more information about the Qwiic Pocket Development Board - ESP32-C6:
