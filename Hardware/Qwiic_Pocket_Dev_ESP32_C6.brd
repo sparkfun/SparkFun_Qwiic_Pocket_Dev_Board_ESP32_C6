@@ -3,7 +3,7 @@
 <eagle version="9.6.2">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.005" altunitdist="inch" altunit="inch"/>
@@ -8575,17 +8575,18 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <wire x1="5.842" y1="9.271" x2="2.921" y2="6.35" width="0.254" layer="1"/>
 <wire x1="2.921" y1="6.35" x2="1.27" y2="6.35" width="0.254" layer="1"/>
 </signal>
-<signal name="IO20/STAT">
-<contactref element="U1" pad="26"/>
+<signal name="IO23/STAT">
 <contactref element="D2" pad="A"/>
-<wire x1="6.8" y1="11.151" x2="6.248" y2="11.151" width="0.254" layer="16"/>
-<wire x1="6.248" y1="11.151" x2="5.969" y2="11.43" width="0.254" layer="16"/>
-<via x="5.969" y="11.43" extent="1-16" drill="0.3048"/>
-<wire x1="5.969" y1="11.43" x2="5.08" y2="10.541" width="0.254" layer="2"/>
+<via x="5.842" y="11.43" extent="1-16" drill="0.3048"/>
+<wire x1="5.842" y1="11.43" x2="5.08" y2="10.668" width="0.254" layer="2"/>
 <via x="5.08" y="3.85" extent="1-16" drill="0.3048"/>
 <wire x1="5.536" y1="3.85" x2="6.35" y2="3.036" width="0.254" layer="1"/>
 <wire x1="5.536" y1="3.85" x2="5.08" y2="3.85" width="0.254" layer="1"/>
-<wire x1="5.08" y1="10.541" x2="5.08" y2="3.85" width="0.254" layer="2"/>
+<wire x1="5.08" y1="10.668" x2="5.08" y2="3.85" width="0.254" layer="2"/>
+<contactref element="U1" pad="29"/>
+<wire x1="5.842" y1="11.43" x2="5.842" y2="13.208" width="0.254" layer="16"/>
+<wire x1="6.185" y1="13.551" x2="6.8" y2="13.551" width="0.254" layer="16"/>
+<wire x1="5.842" y1="13.208" x2="6.185" y2="13.551" width="0.254" layer="16"/>
 </signal>
 <signal name="IO1/V_BATT_2">
 <contactref element="U1" pad="13"/>

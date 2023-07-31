@@ -28758,17 +28758,17 @@ shield from GND</text>
 <label x="226.06" y="71.12" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="IO20/STAT" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="SDIO_D0/IO20"/>
-<wire x1="58.42" y1="20.32" x2="60.96" y2="20.32" width="0.1524" layer="91"/>
-<label x="60.96" y="20.32" size="1.27" layer="95" font="vector" xref="yes"/>
-</segment>
+<net name="IO23/STAT" class="0">
 <segment>
 <wire x1="139.7" y1="38.1" x2="137.16" y2="38.1" width="0.1524" layer="91"/>
 <label x="137.16" y="38.1" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="139.7" y1="35.56" x2="139.7" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="58.42" y1="12.7" x2="60.96" y2="12.7" width="0.1524" layer="91"/>
+<label x="60.96" y="12.7" size="1.27" layer="95" font="vector" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="SDIO_D3/IO23"/>
 </segment>
 </net>
 <net name="IO1/V_BATT_2" class="0">
