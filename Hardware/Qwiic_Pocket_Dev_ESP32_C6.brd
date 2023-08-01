@@ -8473,9 +8473,9 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <contactref element="BOOT" pad="4"/>
 <wire x1="7.023" y1="6.332" x2="7.023" y2="8.382" width="0.254" layer="1"/>
 <wire x1="7.023" y1="8.382" x2="7.023" y2="10.432" width="0.254" layer="1"/>
-<wire x1="10.16" y1="8.12" x2="9.017" y2="8.12" width="0.254" layer="1"/>
-<wire x1="9.017" y1="8.12" x2="8.763" y2="8.374" width="0.254" layer="1"/>
-<wire x1="8.763" y1="8.382" x2="8.763" y2="8.374" width="0.254" layer="1"/>
+<wire x1="10.16" y1="8.12" x2="9.525" y2="8.12" width="0.254" layer="1"/>
+<wire x1="9.525" y1="8.12" x2="9.263" y2="8.382" width="0.254" layer="1"/>
+<wire x1="8.763" y1="8.382" x2="9.263" y2="8.382" width="0.254" layer="1"/>
 <wire x1="8.763" y1="8.382" x2="7.023" y2="8.382" width="0.254" layer="1"/>
 <wire x1="8.7" y1="9.451" x2="8.7" y2="8.445" width="0.254" layer="16"/>
 <wire x1="8.7" y1="8.445" x2="8.763" y2="8.382" width="0.254" layer="16"/>
@@ -8613,18 +8613,18 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <approved hash="5,16,69788864083490bd"/>
 <approved hash="5,16,9cc3722404349346"/>
 <approved hash="5,16,be7063198a2f6d66"/>
-<approved hash="19,1,86c8e691c5957701"/>
 <approved hash="6,1,630063027efe7efc"/>
 <approved hash="6,1,549861488ebc8a99"/>
 <approved hash="6,1,dc90d936cacace91"/>
 <approved hash="6,1,63006302befebefc"/>
-<approved hash="19,1,44a1ba36022afa71"/>
-<approved hash="19,1,77fada016c59fa37"/>
-<approved hash="19,1,4d279e2e88095590"/>
 <approved hash="5,1,0bc22e1a5edcadfe"/>
 <approved hash="5,16,9081d569a34ef9fd"/>
 <approved hash="19,1,1be512aea2768b36"/>
-<approved hash="19,1,d0b4c38c5978f847"/>
+<approved hash="19,1,73d08935ce28e600"/>
+<approved hash="19,1,6ee9a422e7259fe9"/>
+<approved hash="19,1,61b80193dd96bb71"/>
+<approved hash="19,1,90bfe906b755c07c"/>
+<approved hash="19,1,444ff8fb5fecd8cd"/>
 </errors>
 </board>
 </drawing>
