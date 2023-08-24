@@ -8848,15 +8848,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP4" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="20.32" y="12.7" smashed="yes" rot="MR0"/>
 <element name="U$25" library="output" package="QWIIC_DEV0" value="" x="4.445" y="20.574" smashed="yes"/>
 <element name="U$9" library="output" package="QWIIC_DEV0" value="" x="21.336" y="4.826" smashed="yes" rot="MR0"/>
-<element name="R13" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="13.208" y="13.97" smashed="yes" rot="R90">
+<element name="R13" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="13.208" y="13.97" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.646" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="13.208" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="13.77" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="13.208" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="13.77" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R14" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="12.192" y="13.97" smashed="yes" rot="R270">
+<element name="R14" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="12.192" y="13.97" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.754" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="12.192" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="11.63" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="12.192" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="11.63" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$28" library="output" package="IO230" value="" x="5.08" y="2.159" smashed="yes" rot="R90"/>
 <element name="H5" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="48.768" y="2.54" smashed="yes">
@@ -9108,15 +9108,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP8" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="46.228" y="12.7" smashed="yes" rot="MR0"/>
 <element name="U$78" library="output" package="QWIIC_DEV0" value="" x="30.353" y="20.574" smashed="yes"/>
 <element name="U$79" library="output" package="QWIIC_DEV0" value="" x="47.244" y="4.826" smashed="yes" rot="MR0"/>
-<element name="R27" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="39.116" y="13.97" smashed="yes" rot="R90">
+<element name="R27" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="39.116" y="13.97" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.554" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="39.116" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="39.678" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="39.116" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="39.678" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R28" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="38.1" y="13.97" smashed="yes" rot="R270">
+<element name="R28" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="38.1" y="13.97" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.662" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="38.1" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="37.538" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="38.1" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="37.538" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$80" library="output" package="IO230" value="" x="30.988" y="2.159" smashed="yes" rot="R90"/>
 <element name="H9" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="74.676" y="2.54" smashed="yes">
@@ -9368,15 +9368,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP12" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="72.136" y="12.7" smashed="yes" rot="MR0"/>
 <element name="U$118" library="output" package="QWIIC_DEV0" value="" x="56.261" y="20.574" smashed="yes"/>
 <element name="U$119" library="output" package="QWIIC_DEV0" value="" x="73.152" y="4.826" smashed="yes" rot="MR0"/>
-<element name="R41" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="65.024" y="13.97" smashed="yes" rot="R90">
+<element name="R41" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="65.024" y="13.97" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.462" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="65.024" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="65.586" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="65.024" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="65.586" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R42" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="64.008" y="13.97" smashed="yes" rot="R270">
+<element name="R42" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="64.008" y="13.97" smashed="yes" rot="R270">
 <attribute name="NAME" x="64.57" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="64.008" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="63.446" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="64.008" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="63.446" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$120" library="output" package="IO230" value="" x="56.896" y="2.159" smashed="yes" rot="R90"/>
 <element name="H13" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="100.584" y="2.54" smashed="yes">
@@ -9628,15 +9628,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP16" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="98.044" y="12.7" smashed="yes" rot="MR0"/>
 <element name="U$158" library="output" package="QWIIC_DEV0" value="" x="82.169" y="20.574" smashed="yes"/>
 <element name="U$159" library="output" package="QWIIC_DEV0" value="" x="99.06" y="4.826" smashed="yes" rot="MR0"/>
-<element name="R55" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="90.932" y="13.97" smashed="yes" rot="R90">
+<element name="R55" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="90.932" y="13.97" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.37" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="90.932" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="91.494" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="90.932" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="91.494" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R56" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="89.916" y="13.97" smashed="yes" rot="R270">
+<element name="R56" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="89.916" y="13.97" smashed="yes" rot="R270">
 <attribute name="NAME" x="90.478" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="89.916" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="89.354" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="89.916" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="89.354" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$160" library="output" package="IO230" value="" x="82.804" y="2.159" smashed="yes" rot="R90"/>
 <element name="H17" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="22.86" y="30.48" smashed="yes">
@@ -9888,15 +9888,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP20" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="20.32" y="40.64" smashed="yes" rot="MR0"/>
 <element name="U$198" library="output" package="QWIIC_DEV0" value="" x="4.445" y="48.514" smashed="yes"/>
 <element name="U$199" library="output" package="QWIIC_DEV0" value="" x="21.336" y="32.766" smashed="yes" rot="MR0"/>
-<element name="R69" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="13.208" y="41.91" smashed="yes" rot="R90">
+<element name="R69" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="13.208" y="41.91" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.646" y="41.91" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="13.208" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="13.77" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="13.208" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="13.77" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R70" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="12.192" y="41.91" smashed="yes" rot="R270">
+<element name="R70" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="12.192" y="41.91" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.754" y="41.91" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="12.192" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="11.63" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="12.192" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="11.63" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$200" library="output" package="IO230" value="" x="5.08" y="30.099" smashed="yes" rot="R90"/>
 <element name="H21" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="48.768" y="30.48" smashed="yes">
@@ -10148,15 +10148,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP24" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="46.228" y="40.64" smashed="yes" rot="MR0"/>
 <element name="U$238" library="output" package="QWIIC_DEV0" value="" x="30.353" y="48.514" smashed="yes"/>
 <element name="U$239" library="output" package="QWIIC_DEV0" value="" x="47.244" y="32.766" smashed="yes" rot="MR0"/>
-<element name="R83" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="39.116" y="41.91" smashed="yes" rot="R90">
+<element name="R83" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="39.116" y="41.91" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.554" y="41.91" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="39.116" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="39.678" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="39.116" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="39.678" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R84" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="38.1" y="41.91" smashed="yes" rot="R270">
+<element name="R84" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="38.1" y="41.91" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.662" y="41.91" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="38.1" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="37.538" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="38.1" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="37.538" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$240" library="output" package="IO230" value="" x="30.988" y="30.099" smashed="yes" rot="R90"/>
 <element name="H25" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="74.676" y="30.48" smashed="yes">
@@ -10408,15 +10408,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP28" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="72.136" y="40.64" smashed="yes" rot="MR0"/>
 <element name="U$278" library="output" package="QWIIC_DEV0" value="" x="56.261" y="48.514" smashed="yes"/>
 <element name="U$279" library="output" package="QWIIC_DEV0" value="" x="73.152" y="32.766" smashed="yes" rot="MR0"/>
-<element name="R97" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="65.024" y="41.91" smashed="yes" rot="R90">
+<element name="R97" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="65.024" y="41.91" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.462" y="41.91" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="65.024" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="65.586" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="65.024" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="65.586" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R98" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="64.008" y="41.91" smashed="yes" rot="R270">
+<element name="R98" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="64.008" y="41.91" smashed="yes" rot="R270">
 <attribute name="NAME" x="64.57" y="41.91" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="64.008" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="63.446" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="64.008" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="63.446" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$280" library="output" package="IO230" value="" x="56.896" y="30.099" smashed="yes" rot="R90"/>
 <element name="H29" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="100.584" y="30.48" smashed="yes">
@@ -10668,15 +10668,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP32" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="98.044" y="40.64" smashed="yes" rot="MR0"/>
 <element name="U$318" library="output" package="QWIIC_DEV0" value="" x="82.169" y="48.514" smashed="yes"/>
 <element name="U$319" library="output" package="QWIIC_DEV0" value="" x="99.06" y="32.766" smashed="yes" rot="MR0"/>
-<element name="R111" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="90.932" y="41.91" smashed="yes" rot="R90">
+<element name="R111" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="90.932" y="41.91" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.37" y="41.91" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="90.932" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="91.494" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="90.932" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="91.494" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R112" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="89.916" y="41.91" smashed="yes" rot="R270">
+<element name="R112" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="89.916" y="41.91" smashed="yes" rot="R270">
 <attribute name="NAME" x="90.478" y="41.91" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="89.916" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="89.354" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="89.916" y="41.91" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="89.354" y="41.91" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$320" library="output" package="IO230" value="" x="82.804" y="30.099" smashed="yes" rot="R90"/>
 <element name="H33" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="22.86" y="58.42" smashed="yes">
@@ -10928,15 +10928,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP36" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="20.32" y="68.58" smashed="yes" rot="MR0"/>
 <element name="U$358" library="output" package="QWIIC_DEV0" value="" x="4.445" y="76.454" smashed="yes"/>
 <element name="U$359" library="output" package="QWIIC_DEV0" value="" x="21.336" y="60.706" smashed="yes" rot="MR0"/>
-<element name="R125" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="13.208" y="69.85" smashed="yes" rot="R90">
+<element name="R125" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="13.208" y="69.85" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.646" y="69.85" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="13.208" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="13.77" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="13.208" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="13.77" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R126" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="12.192" y="69.85" smashed="yes" rot="R270">
+<element name="R126" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="12.192" y="69.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.754" y="69.85" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="12.192" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="11.63" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="12.192" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="11.63" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$360" library="output" package="IO230" value="" x="5.08" y="58.039" smashed="yes" rot="R90"/>
 <element name="H37" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="48.768" y="58.42" smashed="yes">
@@ -11188,15 +11188,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP40" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="46.228" y="68.58" smashed="yes" rot="MR0"/>
 <element name="U$398" library="output" package="QWIIC_DEV0" value="" x="30.353" y="76.454" smashed="yes"/>
 <element name="U$399" library="output" package="QWIIC_DEV0" value="" x="47.244" y="60.706" smashed="yes" rot="MR0"/>
-<element name="R139" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="39.116" y="69.85" smashed="yes" rot="R90">
+<element name="R139" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="39.116" y="69.85" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.554" y="69.85" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="39.116" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="39.678" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="39.116" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="39.678" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R140" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="38.1" y="69.85" smashed="yes" rot="R270">
+<element name="R140" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="38.1" y="69.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.662" y="69.85" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="38.1" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="37.538" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="38.1" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="37.538" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$400" library="output" package="IO230" value="" x="30.988" y="58.039" smashed="yes" rot="R90"/>
 <element name="H41" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="74.676" y="58.42" smashed="yes">
@@ -11448,15 +11448,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP44" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="72.136" y="68.58" smashed="yes" rot="MR0"/>
 <element name="U$438" library="output" package="QWIIC_DEV0" value="" x="56.261" y="76.454" smashed="yes"/>
 <element name="U$439" library="output" package="QWIIC_DEV0" value="" x="73.152" y="60.706" smashed="yes" rot="MR0"/>
-<element name="R153" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="65.024" y="69.85" smashed="yes" rot="R90">
+<element name="R153" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="65.024" y="69.85" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.462" y="69.85" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="65.024" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="65.586" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="65.024" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="65.586" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R154" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="64.008" y="69.85" smashed="yes" rot="R270">
+<element name="R154" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="64.008" y="69.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="64.57" y="69.85" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="64.008" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="63.446" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="64.008" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="63.446" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$440" library="output" package="IO230" value="" x="56.896" y="58.039" smashed="yes" rot="R90"/>
 <element name="H45" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="100.584" y="58.42" smashed="yes">
@@ -11708,15 +11708,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP48" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="98.044" y="68.58" smashed="yes" rot="MR0"/>
 <element name="U$478" library="output" package="QWIIC_DEV0" value="" x="82.169" y="76.454" smashed="yes"/>
 <element name="U$479" library="output" package="QWIIC_DEV0" value="" x="99.06" y="60.706" smashed="yes" rot="MR0"/>
-<element name="R167" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="90.932" y="69.85" smashed="yes" rot="R90">
+<element name="R167" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="90.932" y="69.85" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.37" y="69.85" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="90.932" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="91.494" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="90.932" y="69.85" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="91.494" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R168" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="89.916" y="69.85" smashed="yes" rot="R270">
+<element name="R168" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="89.916" y="69.85" smashed="yes" rot="R270">
 <attribute name="NAME" x="90.478" y="69.85" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="89.916" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="89.354" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="89.916" y="69.85" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="89.354" y="69.85" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$480" library="output" package="IO230" value="" x="82.804" y="58.039" smashed="yes" rot="R90"/>
 <element name="H49" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="22.86" y="86.36" smashed="yes">
@@ -11968,15 +11968,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP52" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="20.32" y="96.52" smashed="yes" rot="MR0"/>
 <element name="U$518" library="output" package="QWIIC_DEV0" value="" x="4.445" y="104.394" smashed="yes"/>
 <element name="U$519" library="output" package="QWIIC_DEV0" value="" x="21.336" y="88.646" smashed="yes" rot="MR0"/>
-<element name="R181" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="13.208" y="97.79" smashed="yes" rot="R90">
+<element name="R181" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="13.208" y="97.79" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.646" y="97.79" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="13.208" y="97.79" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="13.77" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="13.208" y="97.79" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="13.77" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R182" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="12.192" y="97.79" smashed="yes" rot="R270">
+<element name="R182" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="12.192" y="97.79" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.754" y="97.79" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="12.192" y="97.79" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="11.63" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="12.192" y="97.79" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="11.63" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$520" library="output" package="IO230" value="" x="5.08" y="85.979" smashed="yes" rot="R90"/>
 <element name="H53" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="48.768" y="86.36" smashed="yes">
@@ -12228,15 +12228,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP56" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="46.228" y="96.52" smashed="yes" rot="MR0"/>
 <element name="U$558" library="output" package="QWIIC_DEV0" value="" x="30.353" y="104.394" smashed="yes"/>
 <element name="U$559" library="output" package="QWIIC_DEV0" value="" x="47.244" y="88.646" smashed="yes" rot="MR0"/>
-<element name="R195" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="39.116" y="97.79" smashed="yes" rot="R90">
+<element name="R195" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="39.116" y="97.79" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.554" y="97.79" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="39.116" y="97.79" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="39.678" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="39.116" y="97.79" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="39.678" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R196" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="38.1" y="97.79" smashed="yes" rot="R270">
+<element name="R196" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="38.1" y="97.79" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.662" y="97.79" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="38.1" y="97.79" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="37.538" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="38.1" y="97.79" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="37.538" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$560" library="output" package="IO230" value="" x="30.988" y="85.979" smashed="yes" rot="R90"/>
 <element name="H57" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="74.676" y="86.36" smashed="yes">
@@ -12488,15 +12488,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP60" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="72.136" y="96.52" smashed="yes" rot="MR0"/>
 <element name="U$598" library="output" package="QWIIC_DEV0" value="" x="56.261" y="104.394" smashed="yes"/>
 <element name="U$599" library="output" package="QWIIC_DEV0" value="" x="73.152" y="88.646" smashed="yes" rot="MR0"/>
-<element name="R209" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="65.024" y="97.79" smashed="yes" rot="R90">
+<element name="R209" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="65.024" y="97.79" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.462" y="97.79" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="65.024" y="97.79" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="65.586" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="65.024" y="97.79" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="65.586" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R210" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="64.008" y="97.79" smashed="yes" rot="R270">
+<element name="R210" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="64.008" y="97.79" smashed="yes" rot="R270">
 <attribute name="NAME" x="64.57" y="97.79" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="64.008" y="97.79" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="63.446" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="64.008" y="97.79" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="63.446" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$600" library="output" package="IO230" value="" x="56.896" y="85.979" smashed="yes" rot="R90"/>
 <element name="H61" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="100.584" y="86.36" smashed="yes">
@@ -12748,15 +12748,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP64" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="98.044" y="96.52" smashed="yes" rot="MR0"/>
 <element name="U$638" library="output" package="QWIIC_DEV0" value="" x="82.169" y="104.394" smashed="yes"/>
 <element name="U$639" library="output" package="QWIIC_DEV0" value="" x="99.06" y="88.646" smashed="yes" rot="MR0"/>
-<element name="R223" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="90.932" y="97.79" smashed="yes" rot="R90">
+<element name="R223" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="90.932" y="97.79" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.37" y="97.79" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="90.932" y="97.79" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="91.494" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="90.932" y="97.79" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="91.494" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R224" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="89.916" y="97.79" smashed="yes" rot="R270">
+<element name="R224" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="89.916" y="97.79" smashed="yes" rot="R270">
 <attribute name="NAME" x="90.478" y="97.79" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="89.916" y="97.79" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="89.354" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="89.916" y="97.79" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="89.354" y="97.79" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$640" library="output" package="IO230" value="" x="82.804" y="85.979" smashed="yes" rot="R90"/>
 <element name="H65" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="22.86" y="114.3" smashed="yes">
@@ -13008,15 +13008,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP68" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="20.32" y="124.46" smashed="yes" rot="MR0"/>
 <element name="U$678" library="output" package="QWIIC_DEV0" value="" x="4.445" y="132.334" smashed="yes"/>
 <element name="U$679" library="output" package="QWIIC_DEV0" value="" x="21.336" y="116.586" smashed="yes" rot="MR0"/>
-<element name="R237" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="13.208" y="125.73" smashed="yes" rot="R90">
+<element name="R237" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="13.208" y="125.73" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.646" y="125.73" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="13.208" y="125.73" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="13.77" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="13.208" y="125.73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="13.77" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R238" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="12.192" y="125.73" smashed="yes" rot="R270">
+<element name="R238" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="12.192" y="125.73" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.754" y="125.73" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="12.192" y="125.73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="11.63" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="12.192" y="125.73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="11.63" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$680" library="output" package="IO230" value="" x="5.08" y="113.919" smashed="yes" rot="R90"/>
 <element name="H69" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="48.768" y="114.3" smashed="yes">
@@ -13268,15 +13268,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP72" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="46.228" y="124.46" smashed="yes" rot="MR0"/>
 <element name="U$718" library="output" package="QWIIC_DEV0" value="" x="30.353" y="132.334" smashed="yes"/>
 <element name="U$719" library="output" package="QWIIC_DEV0" value="" x="47.244" y="116.586" smashed="yes" rot="MR0"/>
-<element name="R251" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="39.116" y="125.73" smashed="yes" rot="R90">
+<element name="R251" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="39.116" y="125.73" smashed="yes" rot="R90">
 <attribute name="NAME" x="38.554" y="125.73" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="39.116" y="125.73" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="39.678" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="39.116" y="125.73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="39.678" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R252" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="38.1" y="125.73" smashed="yes" rot="R270">
+<element name="R252" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="38.1" y="125.73" smashed="yes" rot="R270">
 <attribute name="NAME" x="38.662" y="125.73" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="38.1" y="125.73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="37.538" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="38.1" y="125.73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="37.538" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$720" library="output" package="IO230" value="" x="30.988" y="113.919" smashed="yes" rot="R90"/>
 <element name="H73" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="74.676" y="114.3" smashed="yes">
@@ -13528,15 +13528,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP76" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="72.136" y="124.46" smashed="yes" rot="MR0"/>
 <element name="U$758" library="output" package="QWIIC_DEV0" value="" x="56.261" y="132.334" smashed="yes"/>
 <element name="U$759" library="output" package="QWIIC_DEV0" value="" x="73.152" y="116.586" smashed="yes" rot="MR0"/>
-<element name="R265" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="65.024" y="125.73" smashed="yes" rot="R90">
+<element name="R265" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="65.024" y="125.73" smashed="yes" rot="R90">
 <attribute name="NAME" x="64.462" y="125.73" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="65.024" y="125.73" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="65.586" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="65.024" y="125.73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="65.586" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R266" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="64.008" y="125.73" smashed="yes" rot="R270">
+<element name="R266" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="64.008" y="125.73" smashed="yes" rot="R270">
 <attribute name="NAME" x="64.57" y="125.73" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="64.008" y="125.73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="63.446" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="64.008" y="125.73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="63.446" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$760" library="output" package="IO230" value="" x="56.896" y="113.919" smashed="yes" rot="R90"/>
 <element name="H77" library="SparkFun-Hardware" package="STAND-OFF" value="STAND-OFF" x="100.584" y="114.3" smashed="yes">
@@ -13788,15 +13788,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="TP80" library="SparkFun-Connectors" package="PAD.03X.03" value="TEST-POINT3" x="98.044" y="124.46" smashed="yes" rot="MR0"/>
 <element name="U$798" library="output" package="QWIIC_DEV0" value="" x="82.169" y="132.334" smashed="yes"/>
 <element name="U$799" library="output" package="QWIIC_DEV0" value="" x="99.06" y="116.586" smashed="yes" rot="MR0"/>
-<element name="R279" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="90.932" y="125.73" smashed="yes" rot="R90">
+<element name="R279" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="90.932" y="125.73" smashed="yes" rot="R90">
 <attribute name="NAME" x="90.37" y="125.73" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="90.932" y="125.73" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="91.494" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="90.932" y="125.73" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="91.494" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R280" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="89.916" y="125.73" smashed="yes" rot="R270">
+<element name="R280" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="89.916" y="125.73" smashed="yes" rot="R270">
 <attribute name="NAME" x="90.478" y="125.73" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="89.916" y="125.73" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="89.354" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="89.916" y="125.73" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="89.354" y="125.73" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$800" library="output" package="IO230" value="" x="82.804" y="113.919" smashed="yes" rot="R90"/>
 <element name="E$1" library="SparkFun-Aesthetics" package="FIDUCIAL-1X2" value="" x="-2.62381875" y="136.525" smashed="yes"/>

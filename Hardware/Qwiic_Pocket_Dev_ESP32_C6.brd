@@ -7998,15 +7998,15 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <element name="U$24" library="SparkFun-Aesthetics" package="ORDERING_INSTRUCTIONS" value="" x="36.83" y="50.8" smashed="yes"/>
 <element name="U$25" library="output" package="QWIIC_DEV0" value="" x="4.445" y="20.574" smashed="yes"/>
 <element name="U$9" library="output" package="QWIIC_DEV0" value="" x="21.336" y="4.826" smashed="yes" rot="MR0"/>
-<element name="R13" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="13.208" y="13.97" smashed="yes" rot="R90">
+<element name="R13" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="13.208" y="13.97" smashed="yes" rot="R90">
 <attribute name="NAME" x="12.646" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R90" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="13.208" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="13.77" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="13.208" y="13.97" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" value="1M" x="13.77" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R90" align="top-center"/>
 </element>
-<element name="R14" library="SparkFun-Resistors" package="0402-TIGHT" value="100k" x="12.192" y="13.97" smashed="yes" rot="R270">
+<element name="R14" library="SparkFun-Resistors" package="0402-TIGHT" value="1M" x="12.192" y="13.97" smashed="yes" rot="R270">
 <attribute name="NAME" x="12.754" y="13.97" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="RES-13495" x="12.192" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="11.63" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
+<attribute name="PROD_ID" value="RES-15185" x="12.192" y="13.97" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="1M" x="11.63" y="13.97" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$28" library="output" package="IO230" value="" x="5.08" y="2.159" smashed="yes" rot="R90"/>
 </elements>
