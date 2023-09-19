@@ -7941,9 +7941,9 @@ These are the free and generally easy to produce 4-layer PCB design rules. You c
 <attribute name="PROD_ID" value="CAP-14993" x="15.24" y="7.62" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="VALUE" x="14.678" y="7.62" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
-<element name="C6" library="SparkFun-Capacitors" package="0402-TIGHT" value="0.1uF" x="10.16" y="7.62" smashed="yes" rot="R270">
+<element name="C6" library="SparkFun-Capacitors" package="0402-TIGHT" value="DNP" x="10.16" y="7.62" smashed="yes" rot="R270">
 <attribute name="NAME" x="10.722" y="7.62" size="0.6096" layer="25" font="vector" ratio="20" rot="R270" align="bottom-center"/>
-<attribute name="PROD_ID" value="CAP-14993" x="10.16" y="7.62" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
+<attribute name="PROD_ID" value="" x="10.16" y="7.62" size="1.778" layer="27" font="vector" ratio="15" rot="R270" display="off"/>
 <attribute name="VALUE" x="9.598" y="7.62" size="0.6096" layer="27" font="vector" ratio="20" rot="R270" align="top-center"/>
 </element>
 <element name="U$30" library="output" package="PWR0" value="" x="20.32" y="2.159" smashed="yes" rot="R90"/>
