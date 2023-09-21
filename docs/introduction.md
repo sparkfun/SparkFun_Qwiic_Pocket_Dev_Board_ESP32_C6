@@ -1,3 +1,7 @@
+---
+icon: material/book-open-page-variant
+---
+
 The [SparkFun Qwiic Pocket Development Board - ESP32-C6](https://www.sparkfun.com/products/22925) features the ESP32-C6 Mini-1 module from espressif<sup>&trade;</sup>. The ESP32-C6 SoC is built around a RISC-V single-core processor with 4 MB flash memory and supports 2.4 GHz WiFi 6, Bluetooth<sup>&reg;</sup> 5 (with Low Energy), Zigbee and Thread 802.15.4 wireless protocols. The module uses an integrated PCB antenna. The ESP32-C6 includes on-chip serial-to-UART conversion which helps reduce the number of components on the development board so we designed this Qwiic Dev Board to cram as much as we could into the Qwiic system's 1"x1" form factor so it does not break out as many GPIO pins as the [Thing Plus](https://www.sparkfun.com/products/22924) variant but it does include a USB-C connector, 2-pin JST connector for a single-cell LiPo battery along with a charging circuit for a connected battery, a Qwiic connector, and it also breaks out eight GPIO pins (including one UART). 
 
 ## Required Materials
@@ -188,6 +192,86 @@ If you prefer a soldered connection or want to modify the solder jumpers on this
     <a href="https://www.sparkfun.com/products/14579">**Chip Quik No-Clean Flux Pen - 10mL**<br>
     CAB-14579
     </a>
+</div>
+
+## Smart Watch Example Materials
+
+This guide also includes a demo using the Qwiic Pocket Development Board - ESP32-C6 with three Qwiic breakouts to create a DIY "smart watch" (sans the wristband) complete with display, pedometer, and motion controls. If you'd like to follow along and build this example, you'll need the following Qwiic breakouts:
+
+<div class="grid cards" markdown align="center">
+-   <a href="https://www.sparkfun.com/products/14532">
+
+    <figure markdown>
+    ![SparkFun Micro OLED Breakout (Qwiic)](https://cdn.sparkfun.com//assets/parts/1/2/6/2/1/14532-SparkFun_Micro_OLED_Breakout__Qwiic_-01.jpg)
+    </figure>
+    </a>
+    ---
+    <a href="https://www.sparkfun.com/products/14532">**SparkFun Micro OLED Breakout (Qwiic)**<br>
+    LCD-14532
+    </a>
+- <a href="https://www.sparkfun.com/products/14558">
+    <figure markdown>
+    ![SparkFun Real Time Clock Module - RV-1805 (Qwiic)](https://cdn.sparkfun.com//assets/parts/1/2/6/9/1/14558-SparkFun_Real_Time_Clock_Module_-_RV-1805__Qwiic_-01.jpg)
+    </figure>
+    </a>
+    ---
+    <a href="https://www.sparkfun.com/products/14558">**SparkFun Real Time Clock Module - RV-1805 (Qwiic)**<br>
+    BOB-14558
+    </a>
+- <a href="https://www.sparkfun.com/products/22397">
+    <figure markdown>
+    ![SparkFun 6DoF IMU Breakout - BMI270 (Qwiic)](https://cdn.sparkfun.com//assets/parts/2/2/4/2/9/22397_1_1.jpg)
+    </figure>
+    </a>
+    ---
+    <a href="https://www.sparkfun.com/products/22397">**SparkFun 6DoF IMU Breakout - BMI270 (Qwiic)**<br>
+    SEN-22397
+    </a>
+</div>
+
+You'll also need three Qwiic cables of your choice of length and a set of standoffs to assemble the smart watch. We recommend either the 50mm or 100mm flexible cables as shown below:
+
+<div class="grid cards" markdown align="center">
+-   <a href="https://www.sparkfun.com/products/17260">
+
+    <figure markdown>
+    ![Flexible Qwiic Cable - 50mm](https://cdn.sparkfun.com//assets/parts/1/6/2/4/7/17260-Flexible_Qwiic_Cable_-_50mm-01.jpg)
+    </figure>
+    </a>
+    ---
+    <a href="https://www.sparkfun.com/products/17260">**Flexible Qwiic Cable - 50mm**<br>
+    PRT-17260
+    </a>
+-   <a href="https://www.sparkfun.com/products/17259">
+
+    <figure markdown>
+    ![Flexible Qwiic Cable - 100mm](https://cdn.sparkfun.com//assets/parts/1/6/2/4/6/17259-Flexible_Qwiic_Cable_-_100mm-01.jpg)
+    </figure>
+    </a>
+    ---
+    <a href="https://www.sparkfun.com/products/17259">**Flexible Qwiic Cable - 100mm**<br>
+    PRT-17259
+    </a>
+-   <a href="https://www.sparkfun.com/products/10463">
+
+    <figure markdown>
+    ![Standoff - Metal Hex (4-40; 3/8"; 10 pack)](https://cdn.sparkfun.com//assets/parts/4/9/5/4/10463-01.jpg)
+    </figure>
+    </a>
+    ---
+    <a href="https://www.sparkfun.com/products/10463">**Standoff - Metal Hex (4-40; 3/8"; 10 pack)**<br>
+    PRT-10463
+    </a>
+-   <a href="https://www.sparkfun.com/products/10453">
+
+    <figure markdown>
+    ![Screw - Phillips Head (1/4", 4-40, 10 pack)](https://cdn.sparkfun.com//assets/parts/4/9/4/7/10453-01.jpg)
+    </figure>
+    </a>
+    ---
+    <a href="https://www.sparkfun.com/products/10453">**Screw - Phillips Head (1/4", 4-40, 10 pack)**<br>
+    PRT-10453
+    </a>   
 </div>
 
 ## Suggested Reading

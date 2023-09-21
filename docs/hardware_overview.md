@@ -1,12 +1,14 @@
+---
+icon: material/cog
+---
+
 Let's take a closer look at the ESP32-C6 module and other hardware on the Qwiic Pocket Development Board.
 
 ## ESP32-C6 Mini-1 Module
 
-The ESP32-C6 Mini-1 module from espressif .
+The ESP32-C6 Mini-1 module from espressif features a 32-bit RISC-V single-core processor with an integrated wireless stack. The wireless stack is compatible with 2.4 GHz WiFi 6, Bluetooth<sup>&reg;</sup> 5.3, Zigbee and Thread (802.15.4) and uses an on-board PCB antenna.
 
-This development board uses the Mini version of the C6 module which has slightly less computing power in exchange for greater power efficiency. This makes this module perfect for battery-powered applications. The ESP32-C6 features a 32-bit RISC-V single-core processor with an integrated wireless stack. The wireless stack is compatible with 2.4 GHz WiFi 6, Bluetooth<sup>&reg;</sup> 5.3, Zigbee and Thread (802.15.4) and uses an on-board PCB antenna. 
-
-The module features a wide range of peripheral options including SPI, UART, LPUART, I<sup>2</sup>C, I<sup>2</sup>S, LED PWM, USB Serial/JTAG controller, ADC and more. Many of these peripherals can be mapped to any GPIO pin though some are tied to specific pins. The Qwiic Pocket Development Board only has eight PTH pins so options are limited. We recommend the [SparkFun Thing Plus - ESP32-C6]() for those looking for more peripherals. 
+This development board uses the Mini version of the C6 module which has slightly less computing power in exchange for greater power efficiency. This makes this module perfect for battery-powered applications. The module features a wide range of peripheral options including SPI, UART, LPUART, I<sup>2</sup>C, I<sup>2</sup>S, LED PWM, USB Serial/JTAG controller, ADC and more. Many of these peripherals can be mapped to any GPIO pin though some are tied to specific pins. The Qwiic Pocket Development Board only has eight PTH pins so options are limited. We recommend the [SparkFun Thing Plus - ESP32-C6]() for those looking for more peripherals. 
 
 The ESP32-C6 has 4 MB Flash memory along with 512 KB SRAM (high power)/ 16 KB SRAM (low power). The module uses pin strapping to configure boot mode parameters. The board defaults to standard mode (GPIO 9 internal pull-up, all other strapping pins floating) but it can be set to other parameters by performing the following pin strapping:
 

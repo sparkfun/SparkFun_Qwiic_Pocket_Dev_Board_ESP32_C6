@@ -1,4 +1,6 @@
-
+---
+icon: material/tools
+---
 
 ## Basic USB Assembly
 
@@ -16,3 +18,13 @@ If you prefer a battery-powered application, plug a single-cell LiPo battery int
 **Photo showing battery connection - Mark L**
 
 For tips on the proper use of a LiPo battery and the 2-pin JST connector, please read through our [Single Cell LiPo Battery Care](https://learn.sparkfun.com/tutorials/single-cell-lipo-battery-care) tutorial.
+
+## Smart Watch Example Assembly
+
+Lastly, building the "smart watch" with the Pocket Development Board and the three Qwiic breakouts requires a bit more assembly using standoffs, screws, and Qwiic cables to build a stack of boards. The order of the boards does not really matter so long as the Qwiic Micro OLED is on top. 
+
+**Photo showing all boards before assembling the stack - Mark L**
+
+With the boards stacked up, connect them all together with Qwiic cables and the final assembly should look something like the photo below:
+
+**Photo showing completed smart watch assembly - Mark L**
