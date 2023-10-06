@@ -4,9 +4,9 @@ icon: simple/arduino
 
 Now that we've installed the espressif boards package in Arduino, it's time to upload our first sketch to make sure everything is working properly.
 
-## Example 1 - Blink & Hello World
+## Example 1 - Blink 
 
-This basic example blinks the blue STAT LED on the board and also prints out "Hello World" over the USB serial connection. Copy the code below into a blank sketch or download the example from the [GitHub Repository]().
+This basic example makes sure the board package installed correctly and the board accepts programming properly to blink the blue STAT LED on the board every second. Open the example in Arduino by navigating to File > Examples > Basics > 01-Blink.
 
 !!! note "USB CDC On Boot Settings"
 
@@ -14,4 +14,4 @@ This basic example blinks the blue STAT LED on the board and also prints out "He
 
     With either setting, <code>Serial1</code> is available and refers to the UART1 bus (default pins are 4 and 5).
 
-Select the board (SparkFun Qwiic Pocket Development Board - ESP32-C6) and Port and click "Upload". After uploading, open the [serial monitor](https://learn.sparkfun.com/tutorials/terminal-basics/arduino-serial-monitor-windows-mac-linux) with the baud set to **115200** and you should see "Hello World" print out along with the STAT LED on the board blinking every two seconds.
+Select the board (SparkFun Qwiic Pocket Development Board - ESP32-C6) and Port and click "Upload". After uploading you should see the STAT LED on the board blinking every second.

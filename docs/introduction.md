@@ -2,7 +2,25 @@
 icon: material/book-open-page-variant
 ---
 
-The [SparkFun Qwiic Pocket Development Board - ESP32-C6](https://www.sparkfun.com/products/22925) features the ESP32-C6 Mini-1 module from espressif<sup>&trade;</sup>. The ESP32-C6 SoC is built around a RISC-V single-core processor with 4 MB flash memory and supports 2.4 GHz WiFi 6, Bluetooth<sup>&reg;</sup> 5 (with Low Energy), Zigbee and Thread 802.15.4 wireless protocols. The module uses an integrated PCB antenna. The ESP32-C6 includes on-chip serial-to-UART conversion which helps reduce the number of components on the development board so we designed this Qwiic Dev Board to cram as much as we could into the Qwiic system's 1"x1" form factor so it does not break out as many GPIO pins as the [Thing Plus](https://www.sparkfun.com/products/22924) variant but it does include a USB-C connector, 2-pin JST connector for a single-cell LiPo battery along with a charging circuit for a connected battery, a Qwiic connector, and it also breaks out eight GPIO pins (including one UART). 
+<div class="grid cards desc" markdown>
+
+<!-- **SparkFun Qwiic Pocket Development Board - ESP32-C6** (DEV-22925)> -->
+-   **SKU:** DEV-22925
+
+    ---
+
+    <figure markdown>
+    [![SparkFun Qwiic Pocket Development Board - ESP32-C6](https://cdn.sparkfun.com//assets/parts/2/3/0/8/6/22925-_DEV_SparkFun_Qwiic_Pocket_Development_Board-_01.jpg)](https://www.sparkfun.com/products/22925)
+    </figure>
+
+-   The [SparkFun Qwiic Pocket Development Board - ESP32-C6](https://www.sparkfun.com/products/22925) features the ESP32-C6 Mini-1 module from espressif<sup>&trade;</sup>. The ESP32-C6 SoC is built around a RISC-V single-core processor with 4 MB flash memory and supports 2.4 GHz WiFi 6, Bluetooth<sup>&reg;</sup> 5 (with Low Energy), Zigbee and Thread 802.15.4 wireless protocols. The module uses an integrated PCB antenna. <br>
+    The ESP32-C6 includes on-chip serial-to-UART conversion which helps reduce the number of components on the development board so we designed this Qwiic Dev Board to cram as much as we could into the Qwiic system's 1"x1" form factor so it does not break out as many GPIO pins as the [Thing Plus](https://www.sparkfun.com/products/22924) variant but it does include a USB-C connector, 2-pin JST connector for a single-cell LiPo battery along with a charging circuit for a connected battery, a Qwiic connector, and it also breaks out eight GPIO pins (including one UART). 
+
+    <center>
+    [Purchase from SparkFun :fontawesome-solid-cart-plus:](https://www.sparkfun.com/products/22925){ .md-button .md-button--primary }
+    </center>
+
+</div>
 
 ## Required Materials
 
@@ -199,8 +217,7 @@ If you prefer a soldered connection or want to modify the solder jumpers on this
 This guide also includes a demo using the Qwiic Pocket Development Board - ESP32-C6 with three Qwiic breakouts to create a DIY "smart watch" (sans the wristband) complete with display, pedometer, and motion controls. If you'd like to follow along and build this example, you'll need the following Qwiic breakouts:
 
 <div class="grid cards" markdown align="center">
--   <a href="https://www.sparkfun.com/products/14532">
-
+-  <a href="https://www.sparkfun.com/products/14532">
     <figure markdown>
     ![SparkFun Micro OLED Breakout (Qwiic)](https://cdn.sparkfun.com//assets/parts/1/2/6/2/1/14532-SparkFun_Micro_OLED_Breakout__Qwiic_-01.jpg)
     </figure>
@@ -233,7 +250,6 @@ You'll also need three Qwiic cables of your choice of length and a set of stando
 
 <div class="grid cards" markdown align="center">
 -   <a href="https://www.sparkfun.com/products/17260">
-
     <figure markdown>
     ![Flexible Qwiic Cable - 50mm](https://cdn.sparkfun.com//assets/parts/1/6/2/4/7/17260-Flexible_Qwiic_Cable_-_50mm-01.jpg)
     </figure>
@@ -243,7 +259,6 @@ You'll also need three Qwiic cables of your choice of length and a set of stando
     PRT-17260
     </a>
 -   <a href="https://www.sparkfun.com/products/17259">
-
     <figure markdown>
     ![Flexible Qwiic Cable - 100mm](https://cdn.sparkfun.com//assets/parts/1/6/2/4/6/17259-Flexible_Qwiic_Cable_-_100mm-01.jpg)
     </figure>
@@ -253,7 +268,6 @@ You'll also need three Qwiic cables of your choice of length and a set of stando
     PRT-17259
     </a>
 -   <a href="https://www.sparkfun.com/products/10463">
-
     <figure markdown>
     ![Standoff - Metal Hex (4-40; 3/8"; 10 pack)](https://cdn.sparkfun.com//assets/parts/4/9/5/4/10463-01.jpg)
     </figure>
@@ -263,13 +277,21 @@ You'll also need three Qwiic cables of your choice of length and a set of stando
     PRT-10463
     </a>
 -   <a href="https://www.sparkfun.com/products/10453">
-
     <figure markdown>
     ![Screw - Phillips Head (1/4", 4-40, 10 pack)](https://cdn.sparkfun.com//assets/parts/4/9/4/7/10453-01.jpg)
     </figure>
     </a>
     ---
     <a href="https://www.sparkfun.com/products/10453">**Screw - Phillips Head (1/4", 4-40, 10 pack)**<br>
+    PRT-10453
+    </a>
+-   <a href="https://www.sparkfun.com/products/10454">
+    <figure markdown>
+    ![Nut - Metal (4-40, 10 pack)](https://cdn.sparkfun.com//assets/parts/4/9/4/6/10454-02b.jpg)
+    </figure>
+    </a>
+    ---
+    <a href="https://www.sparkfun.com/products/10454">**Nut - Metal (4-40, 10 pack)**<br>
     PRT-10453
     </a>   
 </div>

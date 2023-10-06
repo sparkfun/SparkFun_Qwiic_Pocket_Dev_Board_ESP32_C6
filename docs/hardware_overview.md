@@ -116,4 +116,8 @@ There are four solder jumpers on the Qwiic Dev Board labeled <b>CHG</b>, <b>I<su
 
 ## Board Dimensions
 
-The Qwiic Dev Board - ESP32-C6 matches the 1" x 1" (22.6mm x 22.6mm) Qwiic form factor and has two mounting holes that fit a [4-40 screw](). 
+The Qwiic Dev Board - ESP32-C6 matches the 1" x 1" (22.6mm x 22.6mm) Qwiic form factor and has two mounting holes that fit a [4-40 screw](https://www.sparkfun.com/products/10453). 
+
+<figure markdown>
+[![Board Dimensions.](./assets/board_files/Qwiic_Pocket_Dev_ESP32_C6-Dimensions.png){ width="400"}](./assets/board_files/Qwiic_Pocket_Dev_ESP32_C6-Dimensions.png "Click to enlarge")
+</figure>

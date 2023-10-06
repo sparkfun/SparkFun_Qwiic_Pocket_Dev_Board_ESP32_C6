@@ -1,12 +1,12 @@
 
 site_name: SparkFun Qwiic Dev Board ESP32-C6
 site_description: A hookup guide to get started with the SparkFun Qwiic Dev Board - ESP32-C6.
-site_url: https://sparkfun.github.io/SparkFun_Qwiic_Dev_Board_ESP32_C6
+site_url: https://sparkfun.github.io/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
 
 edit_uri: blob/main/docs/
 
-repo_url: https://github.com/sparkfun/SparkFun_Qwiic_Dev_Board_ESP32_C6
-repo_name: sparkfun//SparkFun_Qwiic_Dev_Board_ESP32_C6
+repo_url: https://github.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
+repo_name: sparkfun//SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
 copyright:
   Copyright 2023 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;<br>
   <a href="https://goo.gl/maps/vkstCpQZW6jZMjzYA" target="_blank" rel="noopener">6333 Dry Creek Parkway, Niwot, Colorado 80503</a>
@@ -15,7 +15,7 @@ copyright:
 theme:
   # Theme: https://squidfunk.github.io/mkdocs-material/
   name: material
-  logo: assets/img/sfe_logo_sq.png
+  logo: assets/images/sfe_logo_sq.png
   palette:
     primary: grey
     accent: red
@@ -133,7 +133,7 @@ plugins:
       type: timeago
   # Add git committers at bottom of the page
   - git-committers:
-      repository: sparkfun/SparkFun_Qwiic_Dev_Board_ESP32_C6
+      repository: sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
       branch: main
   # Add git authors at bottom of the page
   - git-authors
@@ -203,7 +203,10 @@ nav:
     - Software Setup: 
       - Arduino Setup: software_setup.md
       - Arduino Example: arduino_example.md
-  - Resources: resources_and_going_further.md
+    - Smart Watch Demo:
+      - Smart Watch Assembly: smart_watch_assembly.md
+      - Smart Watch Example: smart_watch_example.md
+  - Resources: resources.md
   - Support:
     - Troubleshooting: troubleshooting.md
     - Submit Issues: github/file_issue.md
