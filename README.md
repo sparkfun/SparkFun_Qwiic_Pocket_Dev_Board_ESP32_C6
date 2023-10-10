@@ -1,5 +1,3 @@
-# SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
-
 SparkFun Qwiic Pocket Development Board - ESP32-C6
 ========================================
 
