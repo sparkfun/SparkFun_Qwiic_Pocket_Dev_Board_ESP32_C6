@@ -24,5 +24,5 @@ Now stack the RTC Breakout on top of those two with a Qwiic cable between the BM
 With the boards stacked and connected together you can plug the battery in at this point, but can also wait until after programming the Pocket Development Board as well. The final assembly should look like the photo below:
 
 <figure markdown>
-[![Completed smart watch assembly.](./assets/images/Smart_Watch_Assembly-Clock.jpg){ width="400"}](./assets/images/Smart_Watch_Assembly-Clock.jpg "Click to enlarge")
+[![Completed smart watch assembly.](./assets/images/Smart_Watch_Assembly-Complete.jpg){ width="400"}](./assets/images/Smart_Watch_Assembly-Complete.jpg "Click to enlarge")
 </figure>

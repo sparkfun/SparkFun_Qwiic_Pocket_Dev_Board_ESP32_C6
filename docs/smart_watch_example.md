@@ -23,10 +23,10 @@ The smart watch demo requires three Arduino libraries for the three Qwiic breako
 With the Qwiic Pocket Dev Board smart watch assembled, board definitions and libraries installed, we can upload the smart watch code to the Qwiic Pocket Development board. Copy the code below into a blank sketch or you can download it from the [GitHub repository](https://github.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/blob/main/Examples/WatchDemoC6.ino).
 
 ??? "Smart Watch Demo"
-       ```
+    ```
        
-       --8<-- "https://github.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/blob/main/Examples/WatchDemoC6.ino"
-       ```
+    --8<-- "https://raw.githubusercontent.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/main/Examples/WatchDemoC6.ino"
+    ```
 
 Now select the board (SparkFun ESP32-C6 Qwiic Pocket) and the Port and click the "Upload" button. Once the code finishes uploading, you should see a clock display on the Qwiic Micro OLED screen. 
 
