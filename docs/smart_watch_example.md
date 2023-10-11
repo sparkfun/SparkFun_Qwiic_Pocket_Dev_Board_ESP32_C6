@@ -22,9 +22,13 @@ The smart watch demo requires three Arduino libraries for the three Qwiic breako
 
 With the Qwiic Pocket Dev Board smart watch assembled, board definitions and libraries installed, we can upload the smart watch code to the Qwiic Pocket Development board. Copy the code below into a blank sketch or you can download it from the [GitHub repository](https://github.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/blob/main/Examples/WatchDemoC6.ino).
 
+??? "Smart Watch Demo"
+       ```
+       
+       --8<-- "https://github.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/blob/main/Examples/WatchDemoC6.ino"
+       ```
 
-
-Now select the board (SparkFun Qwiic Pocket Development Board - ESP32-C6) and the Port and click the "Upload" button. Once the code finishes uploading, you should see a clock display on the Qwiic Micro OLED screen. 
+Now select the board (SparkFun ESP32-C6 Qwiic Pocket) and the Port and click the "Upload" button. Once the code finishes uploading, you should see a clock display on the Qwiic Micro OLED screen. 
 
 ## Code to Note
 
@@ -32,15 +36,20 @@ The code has a few settings users should take note of to get the most out of the
 
 ### BMA400 Settings
 
-The code sets several thresholds on the BMA400 for tap/double-tap detection, step counting, and tilt-thresholds to fairly generous values to make all of the motion actions easy to trigger but some may find these to be too easily triggered. If that's the case, try adjusting the following settings until you find what works best:
+The code sets several thresholds on the BMA400 for tap/double-tap detection, step counting, and tilt-thresholds to fairly generous values to make all of the motion actions easy to trigger but some may find these to be too easily triggered. The code sets the BMA400's tap detection sensitivity to the max value (7) so if you want to make it less sensitive adjust this line:
 
-
+```c++
+.sensitivity = BMA400_TAP_SENSITIVITY_7,
+```
 
 ### NTP Configuration
 
-Syncing the RTC to a NTP (Network Time Protocol) server requires an internet connection. The code leaves this blank so you'll need to enter your network credentials in the section of code shown below:
+Syncing the RTC to a NTP (Network Time Protocol) server requires an internet connection. The code has placeholders for these values so you'll need to enter your network credentials in the section of code shown below:
 
-
+```c++
+const char* ssid = "your-ssid";
+const char* password = "your-password";
+```
 
 ## Smart Watch Actions
 

@@ -14,4 +14,4 @@ This basic example makes sure the board package installed correctly and the boar
 
     With either setting, <code>Serial1</code> is available and refers to the UART1 bus (default pins are 4 and 5).
 
-Select the board (SparkFun Qwiic Pocket Development Board - ESP32-C6) and Port and click "Upload". After uploading you should see the STAT LED on the board blinking every second.
+Select the board (SparkFun ESP32-C6 Qwiic Pocket) and Port and click "Upload". After uploading you should see the STAT LED on the board blinking every second.

@@ -9,14 +9,20 @@ Building the smart watch with the Pocket Development Board and the three Qwiic b
 
 Start by soldering a short length of wire (roughly one inch) to pin 4 on the Pocket Dev Board and then solder the other end to INT1 on the BMA400 Breakout:
 
-Next, stack the BMA400 Breakout on top of the Qwiic Pocket Dev Board using two standoffs and two nuts to secure them to the Qwiic Pocket Dev Board; then connect the two with a Qwiic cable like the photos below show: 
+<figure markdown>
+[![Smart watch interrupt wire soldered.](./assets/images/Smart_Watch_Assembly-INT.jpg){ width="400"}](./assets/images/Smart_Watch_Assembly-INT.jpg "Click to enlarge")
+</figure>
 
-**Photo showing wire soldered between Pocket Dev & BMA400 (and maybe have a second with them assembled?) - Mark L**
+Next, stack the BMA400 Breakout on top of the Qwiic Pocket Dev Board using two standoffs and two nuts to secure them to the Qwiic Pocket Dev Board; then connect the two with a Qwiic cable like the photo below show: 
 
-Now stack the RTC Breakout on top of those two with a Qwiic cable between the BMA400 and RTC breakouts and finally add the Qwiic OLED on top with a Qwiic cable between this and the RTC breakout. You may want to connect the Qwiic cable to the OLED before securing it into place depending on which connector you opt for as one is a bit of a tough reach once the board is attached. Secure everything in place while being careful not to damage any of the components since the standoffs and other hardware come very close to them. With everything stacked up, your smart watch assembly should look something like the photo below:
+<figure markdown>
+[![BMA400 stacked on top of the Qwiic Pocket Development Board.](./assets/images/Smart_Watch_Assembly-BMA400.jpg){ width="400"}](./assets/images/Smart_Watch_Assembly-BMA400.jpg "Click to enlarge")
+</figure>
 
-**Photo showing all boards before assembling the stack - Mark L**
+Now stack the RTC Breakout on top of those two with a Qwiic cable between the BMA400 and RTC breakouts and finally add the Qwiic OLED on top with a Qwiic cable between this and the RTC breakout. You may want to connect the Qwiic cable to the OLED before securing it into place depending on which connector you opt for as one is a bit of a tough reach once the board is attached. Secure everything in place while being careful not to damage any of the components since the standoffs and other hardware come very close to them. 
 
 With the boards stacked and connected together you can plug the battery in at this point, but can also wait until after programming the Pocket Development Board as well. The final assembly should look like the photo below:
 
-**Photo showing completed smart watch assembly - Mark L**
+<figure markdown>
+[![Completed smart watch assembly.](./assets/images/Smart_Watch_Assembly-Clock.jpg){ width="400"}](./assets/images/Smart_Watch_Assembly-Clock.jpg "Click to enlarge")
+</figure>

@@ -12,14 +12,14 @@ The ESP32-C6 Mini-1 module from espressif features a 32-bit RISC-V single-core p
 [![Highlighting the ESP32-C6 Module.](./assets/images/Pocket_Dev_ESP32-C6_Module.jpg){ width="400"}](./assets/images/Pocket_Dev_ESP32-C6_Module.jpg "Click to enlarge")
 </figure>
 
-This development board uses the Mini version of the C6 module which has slightly less computing power in exchange for greater power efficiency. This makes this module perfect for battery-powered applications. The module features a wide range of peripheral options including SPI, UART, LPUART, I<sup>2</sup>C, I<sup>2</sup>S, LED PWM, USB Serial/JTAG controller, ADC and more. Many of these peripherals can be mapped to any GPIO pin though some are tied to specific pins. The Qwiic Pocket Development Board only has eight PTH pins so options are limited. We recommend the [SparkFun Thing Plus - ESP32-C6]() for those looking for more peripherals. 
+This development board uses the Mini version of the C6 module which has slightly less computing power in exchange for greater power efficiency. This makes this module perfect for battery-powered applications. The module features a wide range of peripheral options including SPI, UART, LPUART, I<sup>2</sup>C, I<sup>2</sup>S, LED PWM, USB Serial/JTAG controller, ADC and more. Many of these peripherals can be mapped to any GPIO pin though some are tied to specific pins. Refer to the [datasheet](./assets/component_documentation/ESP32-C6-MINI-1-Datasheet.pdf) for a complete overview of the ESP32-C6-MINI-1.
 
 The ESP32-C6 has 4 MB Flash memory along with 512 KB SRAM (high power)/ 16 KB SRAM (low power). The module uses pin strapping to configure boot mode parameters. The board defaults to standard mode (GPIO 9 internal pull-up, all other strapping pins floating) but it can be set to other parameters by performing the following pin strapping:
 
-    * SDIO Sampling and Driving Clock Edge - MTMS & MTDI
-    * Chip Boot Mode - GPIO8 & GPIO9
-    * ROM Code Printing to UART - GPIO8
-    * JTAG Signal Source - GPIO15
+- SDIO Sampling and Driving Clock Edge - MTMS & MTDI
+- Chip Boot Mode - GPIO8 & GPIO9
+- ROM Code Printing to UART - GPIO8
+- JTAG Signal Source - GPIO15
 
 ## Power Components
 
@@ -62,7 +62,7 @@ There's a Qwiic connector on the board tied to the ESP32-C6's Low Power I<sup>2<
 There are two buttons on the board labeled <b>RESET</b> and <b>BOOT</b>. The RESET button is tied to the ESP32-C6's Enable (EN) pin and resets the module when pressed. The BOOT button puts the ESP32-C6 into bootloader mode when held down during power on or reset.
 
 <figure markdown>
-[![Highlighting the Boot and Reset buttons.](./assets/images/Pocket_Dev_ESP32-Buttons.jpg){ width="400"}](./assets/images/Pocket_Dev_ESP32-Button.jpg "Click to enlarge")
+[![Highlighting the Boot and Reset buttons.](./assets/images/Pocket_Dev_ESP32-Buttons.jpg){ width="400"}](./assets/images/Pocket_Dev_ESP32-Buttons.jpg "Click to enlarge")
 </figure>
 
 ## LEDs

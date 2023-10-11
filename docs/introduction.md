@@ -14,7 +14,7 @@ icon: material/book-open-page-variant
     </figure>
 
 -   The [SparkFun Qwiic Pocket Development Board - ESP32-C6](https://www.sparkfun.com/products/22925) features the ESP32-C6 Mini-1 module from espressif<sup>&trade;</sup>. The ESP32-C6 SoC is built around a RISC-V single-core processor with 4 MB flash memory and supports 2.4 GHz WiFi 6, Bluetooth<sup>&reg;</sup> 5 (with Low Energy), Zigbee and Thread 802.15.4 wireless protocols. The module uses an integrated PCB antenna. <br>
-    The ESP32-C6 includes on-chip serial-to-UART conversion which helps reduce the number of components on the development board so we designed this Qwiic Dev Board to cram as much as we could into the Qwiic system's 1"x1" form factor so it does not break out as many GPIO pins as the [Thing Plus](https://www.sparkfun.com/products/22924) variant but it does include a USB-C connector, 2-pin JST connector for a single-cell LiPo battery along with a charging circuit for a connected battery, a Qwiic connector, and it also breaks out eight GPIO pins (including one UART). 
+    The ESP32-C6 includes on-chip serial-to-UART conversion which helps reduce the number of components on the development board so we designed this Qwiic Dev Board to cram as much as we could into the Qwiic system's 1"x1" form factor. It also includes a USB-C connector, 2-pin JST connector for a single-cell LiPo battery along with a charging circuit for a connected battery, a Qwiic connector, and it also breaks out eight GPIO pins (including one UART). 
 
     <center>
     [Purchase from SparkFun :fontawesome-solid-cart-plus:](https://www.sparkfun.com/products/22925){ .md-button .md-button--primary }
