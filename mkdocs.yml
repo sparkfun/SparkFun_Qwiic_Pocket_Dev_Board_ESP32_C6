@@ -6,7 +6,7 @@ site_url: https://sparkfun.github.io/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
 edit_uri: blob/main/docs/
 
 repo_url: https://github.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
-repo_name: sparkfun//SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
+repo_name: sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
 copyright:
   Copyright 2023 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;<br>
   <a href="https://goo.gl/maps/vkstCpQZW6jZMjzYA" target="_blank" rel="noopener">6333 Dry Creek Parkway, Niwot, Colorado 80503</a>
