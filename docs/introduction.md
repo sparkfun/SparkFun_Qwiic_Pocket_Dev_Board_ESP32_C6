@@ -4,16 +4,23 @@ icon: material/book-open-page-variant
 
 <div class="grid cards desc" markdown>
 
-<!-- **SparkFun Qwiic Pocket Development Board - ESP32-C6** (DEV-22925)> -->
--   **SKU:** DEV-22925
+-   <a href="https://www.sparkfun.com/products/22925">
+    **SparkFun Qwiic Pocket Development Board - ESP32-C6**<br>
+    **SKU:** DEV-22925
 
     ---
 
     <figure markdown>
-    [![SparkFun Qwiic Pocket Development Board - ESP32-C6](https://cdn.sparkfun.com//assets/parts/2/3/0/8/6/22925-_DEV_SparkFun_Qwiic_Pocket_Development_Board-_01.jpg)](https://www.sparkfun.com/products/22925)
-    </figure>
+    ![SparkFun Qwiic Pocket Development Board - ESP32-C6](https://cdn.sparkfun.com/r/600-600/assets/parts/2/3/0/8/6/22925_QwiicPocket_Feature1.jpg)
+    </figure></a>
 
--   The [SparkFun Qwiic Pocket Development Board - ESP32-C6](https://www.sparkfun.com/products/22925) features the ESP32-C6 Mini-1 module from espressif<sup>&trade;</sup>. The ESP32-C6 SoC is built around a RISC-V single-core processor with 4 MB flash memory and supports 2.4 GHz WiFi 6, Bluetooth<sup>&reg;</sup> 5 (with Low Energy), Zigbee and Thread 802.15.4 wireless protocols. The module uses an integrated PCB antenna. <br>
+    <center>
+    <article class="video_desc">
+    <iframe src="https://www.youtube.com/embed/pOZyr7VtSaI" title="Product Showcase: SparkFun Photoacoustic Spectroscopy CO<sub>2</sub> Sensor - PASCO2V01 (Qwiic)" frameborder="0" allow="accelerometer; autoplay; clipboard-write;encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </article>
+    </center>
+
+-   The SparkFun Qwiic Pocket Development Board - ESP32-C6features the ESP32-C6 Mini-1 module from espressif<sup>&trade;</sup>. The ESP32-C6 SoC is built around a RISC-V single-core processor with 4 MB flash memory and supports 2.4 GHz WiFi 6, Bluetooth<sup>&reg;</sup> 5 (with Low Energy), Zigbee and Thread 802.15.4 wireless protocols. The module uses an integrated PCB antenna. <br>
     The ESP32-C6 includes on-chip serial-to-UART conversion which helps reduce the number of components on the development board so we designed this Qwiic Dev Board to cram as much as we could into the Qwiic system's 1"x1" form factor. It also includes a USB-C connector, 2-pin JST connector for a single-cell LiPo battery along with a charging circuit for a connected battery, a Qwiic connector, and it also breaks out eight GPIO pins (including one UART). 
 
     <center>
