@@ -67,7 +67,7 @@ There are two buttons on the board labeled <b>RESET</b> and <b>BOOT</b>. The RES
 
 ## LEDs
 
-The board has three LEDs labeled <b>PWR</b>, <b>STAT</b>, and <b>CHG</b>. The red Power (PWR) LED indicates whenever the <b>3.3V</b> circuit is powered. The blue Status (STAT) LED is tied to IO20 on the ESP32. The yellow Charge (CHG) LED indicates whenever the MCP73831 is charging a connected LiPo battery.
+The board has three LEDs labeled <b>PWR</b>, <b>STAT</b>, and <b>CHG</b>. The red Power (PWR) LED indicates whenever the <b>3.3V</b> circuit is powered. The blue Status (STAT) LED is tied to IO23 on the ESP32. The yellow Charge (CHG) LED indicates whenever the MCP73831 is charging a connected LiPo battery.
 
 <figure markdown>
 [![Highlighting the ESP32-C6 Module.](./assets/images/Pocket_Dev_ESP32-LEDs.jpg){ width="400"}](./assets/images/Pocket_Dev_ESP32-LEDs.jpg "Click to enlarge")
