@@ -1,7 +1,7 @@
 SparkFun Qwiic Pocket Development Board - ESP32-C6
 ========================================
 
-[![SparkFun Qwiic Pocket Development Board - ESP32-C6](https://cdn.sparkfun.com/r/600-600/assets/parts/2/3/0/8/6/22925-_DEV_SparkFun_Qwiic_Pocket_Development_Board-_01.jpg)](https://www.sparkfun.com/products/22925)
+[![SparkFun Qwiic Pocket Development Board - ESP32-C6](https://cdn.sparkfun.com//assets/parts/2/3/0/8/6/22925_QwiicPocket_Feature1.jpg)](https://www.sparkfun.com/products/22925)
 
 [*SparkFun Qwiic Pocket Development Board - ESP32-C6 (DEV-22925)*](https://www.sparkfun.com/products/22925)
 
