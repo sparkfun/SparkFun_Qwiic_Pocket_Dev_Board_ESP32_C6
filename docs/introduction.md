@@ -50,7 +50,7 @@ To follow along with this guide you will need a USB-C cable to connect the dev b
 -   <a href="https://www.sparkfun.com/products/15424">
     
     <figure markdown>
-    ![Reversible USB A to C Cable - 2m](https://cdn.sparkfun.com//assets/parts/1/7/4/8/7/18158-SparkFun_RedBoard_Plus-01.jpg)
+    ![Reversible USB A to C Cable - 2m](https://cdn.sparkfun.com//assets/parts/1/3/9/8/3/15424-Reversible_USB_A_to_C_Cable_-_2m-01.jpg)
     </figure>
     </a>
     ---
