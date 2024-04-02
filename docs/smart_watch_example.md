@@ -4,7 +4,7 @@ icon: simple/arduino
 
 ## Smart Watch Example Libraries
 
-The smart watch demo requires three Arduino libraries for the three Qwiic breakouts used in it. Install the libraries through Arduino's Library Manager Tool by searching for the following: **"Micro OLED Breakout"**, **"SparkFun Qwiic RTC RV1805"**, and **"SparkFun BMI270"**. Users who prefer to install them manually can download ZIP folders of the libraries by clicking the buttons below:
+The smart watch demo requires three Arduino libraries for the three Qwiic breakouts used in it. Install the libraries through Arduino's Library Manager Tool by searching for the following: **"Micro OLED Breakout"**, **"SparkFun Qwiic RTC RV1805"**, and **"SparkFun BMA400"**. Users who prefer to install them manually can download ZIP folders of the libraries by clicking the buttons below:
 
 <center>
 [SparkFun Micro OLED Arduino Library (ZIP)](https://github.com/sparkfun/SparkFun_Micro_OLED_Arduino_Library/archive/refs/heads/main.zip){ .md-button .md-button--primary }
@@ -15,7 +15,7 @@ The smart watch demo requires three Arduino libraries for the three Qwiic breako
 </center>
 
 <center>
-[SparkFun BMI270 Arduino Library (ZIP)](https://github.com/sparkfun/SparkFun_BMI270_Arduino_Library/archive/refs/heads/main.zip){ .md-button .md-button--primary }
+[SparkFun BMA400 Arduino Library (ZIP)](https://github.com/sparkfun/SparkFun_BMA400_Arduino_Library/archive/refs/heads/main.zip){ .md-button .md-button--primary }
 </center>
 
 ## Upload Demo Code
