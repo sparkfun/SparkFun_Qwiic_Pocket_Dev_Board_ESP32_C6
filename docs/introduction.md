@@ -242,14 +242,14 @@ This guide also includes a demo using the Qwiic Pocket Development Board - ESP32
     <a href="https://www.sparkfun.com/products/14558">**SparkFun Real Time Clock Module - RV-1805 (Qwiic)**<br>
     BOB-14558
     </a>
-- <a href="https://www.sparkfun.com/products/22397">
+- <a href="https://www.sparkfun.com/products/21208">
     <figure markdown>
-    ![SparkFun 6DoF IMU Breakout - BMI270 (Qwiic)](https://cdn.sparkfun.com//assets/parts/2/2/4/2/9/22397_1_1.jpg)
+    ![SparkFun Triple Axis Accelerometer Breakout - BMA400 (Qwiic)](https://cdn.sparkfun.com/assets/parts/2/0/9/7/1/21208_SEN-_01.jpg)
     </figure>
     </a>
     ---
-    <a href="https://www.sparkfun.com/products/22397">**SparkFun 6DoF IMU Breakout - BMI270 (Qwiic)**<br>
-    SEN-22397
+    <a href="https://www.sparkfun.com/products/21208">**SparkFun Triple Axis Accelerometer Breakout - BMA400 (Qwiic)**<br>
+    SEN-21208
     </a>
 </div>
 
