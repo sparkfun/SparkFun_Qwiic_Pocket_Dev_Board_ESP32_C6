@@ -1,0 +1,2629 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A hookup guide to get started with the SparkFun Qwiic Dev Board - ESP32-C6.">
+      
+      
+      
+        <link rel="canonical" href="https://sparkfun.github.io/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/smart_watch_example/">
+      
+      
+        <link rel="prev" href="../smart_watch_assembly/">
+      
+      
+        <link rel="next" href="../resources/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42+insiders-4.53.14">
+    
+    
+      
+        <title>Smart Watch Example - SparkFun Qwiic Dev Board ESP32-C6</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.12320a83.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+    
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1 7.775V2.75C1 1.784 1.784 1 2.75 1h5.025c.464 0 .91.184 1.238.513l6.25 6.25a1.75 1.75 0 0 1 0 2.474l-5.026 5.026a1.75 1.75 0 0 1-2.474 0l-6.25-6.25A1.75 1.75 0 0 1 1 7.775m1.5 0c0 .066.026.13.073.177l6.25 6.25a.25.25 0 0 0 .354 0l5.025-5.025a.25.25 0 0 0 0-.354l-6.25-6.25a.25.25 0 0 0-.177-.073H2.75a.25.25 0 0 0-.25.25ZM6 5a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/></svg>');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.5 1.75v11.5c0 .138.112.25.25.25h3.17a.75.75 0 0 1 0 1.5H2.75A1.75 1.75 0 0 1 1 13.25V1.75C1 .784 1.784 0 2.75 0h8.5C12.216 0 13 .784 13 1.75v7.736a.75.75 0 0 1-1.5 0V1.75a.25.25 0 0 0-.25-.25h-8.5a.25.25 0 0 0-.25.25m13.274 9.537zl-4.557 4.45a.75.75 0 0 1-1.055-.008l-1.943-1.95a.75.75 0 0 1 1.062-1.058l1.419 1.425 4.026-3.932a.75.75 0 1 1 1.048 1.074M4.75 4h4.5a.75.75 0 0 1 0 1.5h-4.5a.75.75 0 0 1 0-1.5M4 7.75A.75.75 0 0 1 4.75 7h2a.75.75 0 0 1 0 1.5h-2A.75.75 0 0 1 4 7.75"/></svg>');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75M8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/></svg>');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16.307 5.476c-.756.134-1.975-.615-2.59-1.362-.755-.922-.66-1.647-.071-2.29.883-.978 2.396-.6 2.396-.6s-2.772-2.432-5.658-.44c-2.571 1.77-1.833 4.183.487 6.288 2.09 1.902.42 3.988-1.686 3.717-1.443-.184-2.034-1.343-1.687-2.054.298-.608 1.335-.982 1.335-.982s-1.19-.484-2.592.044c-1.259.474-2.297 1.515-2.214 4.12V24s1.301-1.604 2.83-3.236c1.714-1.84 2.495-3.084 4.254-2.938 3.328.205 5.735-1.273 7.371-3.645 3.141-4.563.67-9.68-1.43-10.343 0 0 .34 1.438-.745 1.638"/></svg>');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M13.78 4.22a.75.75 0 0 1 0 1.06l-7.25 7.25a.75.75 0 0 1-1.06 0L2.22 9.28a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018L6 10.94l6.72-6.72a.75.75 0 0 1 1.06 0"/></svg>');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M6.92 6.085h.001a.749.749 0 1 1-1.342-.67c.169-.339.436-.701.849-.977C6.845 4.16 7.369 4 8 4a2.76 2.76 0 0 1 1.637.525c.503.377.863.965.863 1.725 0 .448-.115.83-.329 1.15-.205.307-.47.513-.692.662-.109.072-.22.138-.313.195l-.006.004a6 6 0 0 0-.26.16 1 1 0 0 0-.276.245.75.75 0 0 1-1.248-.832c.184-.264.42-.489.692-.661q.154-.1.313-.195l.007-.004c.1-.061.182-.11.258-.161a1 1 0 0 0 .277-.245C8.96 6.514 9 6.427 9 6.25a.61.61 0 0 0-.262-.525A1.27 1.27 0 0 0 8 5.5c-.369 0-.595.09-.74.187a1 1 0 0 0-.34.398M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M6.457 1.047c.659-1.234 2.427-1.234 3.086 0l6.082 11.378A1.75 1.75 0 0 1 14.082 15H1.918a1.75 1.75 0 0 1-1.543-2.575Zm1.763.707a.25.25 0 0 0-.44 0L1.698 13.132a.25.25 0 0 0 .22.368h12.164a.25.25 0 0 0 .22-.368Zm.53 3.996v2.5a.75.75 0 0 1-1.5 0v-2.5a.75.75 0 0 1 1.5 0M9 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0"/></svg>');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M2.344 2.343za8 8 0 0 1 11.314 11.314A8.002 8.002 0 0 1 .234 10.089a8 8 0 0 1 2.11-7.746m1.06 10.253a6.5 6.5 0 1 0 9.108-9.275 6.5 6.5 0 0 0-9.108 9.275M6.03 4.97 8 6.94l1.97-1.97a.749.749 0 0 1 1.275.326.75.75 0 0 1-.215.734L9.06 8l1.97 1.97a.749.749 0 0 1-.326 1.275.75.75 0 0 1-.734-.215L8 9.06l-1.97 1.97a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L6.94 8 4.97 6.03a.75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018"/></svg>');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M9.504.43a1.516 1.516 0 0 1 2.437 1.713L10.415 5.5h2.123c1.57 0 2.346 1.909 1.22 3.004l-7.34 7.142a1.25 1.25 0 0 1-.871.354h-.302a1.25 1.25 0 0 1-1.157-1.723L5.633 10.5H3.462c-1.57 0-2.346-1.909-1.22-3.004zm1.047 1.074L3.286 8.571A.25.25 0 0 0 3.462 9H6.75a.75.75 0 0 1 .694 1.034l-1.713 4.188 6.982-6.793A.25.25 0 0 0 12.538 7H9.25a.75.75 0 0 1-.683-1.06l2.008-4.418.003-.006-.004-.009-.006-.006-.008-.001q-.005 0-.009.004"/></svg>');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M4.72.22a.75.75 0 0 1 1.06 0l1 .999a3.5 3.5 0 0 1 2.441 0l.999-1a.748.748 0 0 1 1.265.332.75.75 0 0 1-.205.729l-.775.776c.616.63.995 1.493.995 2.444v.327q0 .15-.025.292c.408.14.764.392 1.029.722l1.968-.787a.75.75 0 0 1 .556 1.392L13 7.258V9h2.25a.75.75 0 0 1 0 1.5H13v.5q-.002.615-.141 1.186l2.17.868a.75.75 0 0 1-.557 1.392l-2.184-.873A5 5 0 0 1 8 16a5 5 0 0 1-4.288-2.427l-2.183.873a.75.75 0 0 1-.558-1.392l2.17-.868A5 5 0 0 1 3 11v-.5H.75a.75.75 0 0 1 0-1.5H3V7.258L.971 6.446a.75.75 0 0 1 .558-1.392l1.967.787c.265-.33.62-.583 1.03-.722a1.7 1.7 0 0 1-.026-.292V4.5c0-.951.38-1.814.995-2.444L4.72 1.28a.75.75 0 0 1 0-1.06m.53 6.28a.75.75 0 0 0-.75.75V11a3.5 3.5 0 1 0 7 0V7.25a.75.75 0 0 0-.75-.75ZM6.173 5h3.654A.17.17 0 0 0 10 4.827V4.5a2 2 0 1 0-4 0v.327c0 .096.077.173.173.173"/></svg>');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M5 5.782V2.5h-.25a.75.75 0 0 1 0-1.5h6.5a.75.75 0 0 1 0 1.5H11v3.282l3.666 5.76C15.619 13.04 14.543 15 12.767 15H3.233c-1.776 0-2.852-1.96-1.899-3.458Zm-2.4 6.565a.75.75 0 0 0 .633 1.153h9.534a.75.75 0 0 0 .633-1.153L12.225 10.5h-8.45ZM9.5 2.5h-3V6c0 .143-.04.283-.117.403L4.73 9h6.54L9.617 6.403A.75.75 0 0 1 9.5 6Z"/></svg>');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M1.75 2.5h10.5a.75.75 0 0 1 0 1.5H1.75a.75.75 0 0 1 0-1.5m4 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5m0 5h8.5a.75.75 0 0 1 0 1.5h-8.5a.75.75 0 0 1 0-1.5M2.5 7.75v6a.75.75 0 0 1-1.5 0v-6a.75.75 0 0 1 1.5 0"/></svg>');--md-admonition-icon--github:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>');--md-admonition-icon--arduino:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>');--md-admonition-icon--python:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.25.18.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.06H3.17l-.21-.03-.28-.07-.32-.12-.35-.18-.36-.26-.36-.36-.35-.46-.32-.59-.28-.73-.21-.88-.14-1.05-.05-1.23.06-1.22.16-1.04.24-.87.32-.71.36-.57.4-.44.42-.33.42-.24.4-.16.36-.1.32-.05.24-.01h.16l.06.01h8.16v-.83H6.18l-.01-2.75-.02-.37.05-.34.11-.31.17-.28.25-.26.31-.23.38-.2.44-.18.51-.15.58-.12.64-.1.71-.06.77-.04.84-.02 1.27.05zm-6.3 1.98-.23.33-.08.41.08.41.23.34.33.22.41.09.41-.09.33-.22.23-.34.08-.41-.08-.41-.23-.33-.33-.22-.41-.09-.41.09zm13.09 3.95.28.06.32.12.35.18.36.27.36.35.35.47.32.59.28.73.21.88.14 1.04.05 1.23-.06 1.23-.16 1.04-.24.86-.32.71-.36.57-.4.45-.42.33-.42.24-.4.16-.36.09-.32.05-.24.02-.16-.01h-8.22v.82h5.84l.01 2.76.02.36-.05.34-.11.31-.17.29-.25.25-.31.24-.38.2-.44.17-.51.15-.58.13-.64.09-.71.07-.77.04-.84.01-1.27-.04-1.07-.14-.9-.2-.73-.25-.59-.3-.45-.33-.34-.34-.25-.34-.16-.33-.1-.3-.04-.25-.02-.2.01-.13v-5.34l.05-.64.13-.54.21-.46.26-.38.3-.32.33-.24.35-.2.35-.14.33-.1.3-.06.26-.04.21-.02.13-.01h5.84l.69-.05.59-.14.5-.21.41-.28.33-.32.27-.35.2-.36.15-.36.1-.35.07-.32.04-.28.02-.21V6.07h2.09l.14.01zm-6.47 14.25-.23.33-.08.41.08.41.23.33.33.23.41.08.41-.08.33-.23.23-.33.08-.41-.08-.41-.23-.33-.33-.23-.41-.08-.41.08z"/></svg>');--md-admonition-icon--code:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 464c-8.8 0-16-7.2-16-16V64c0-8.8 7.2-16 16-16h160v80c0 17.7 14.3 32 32 32h80v288c0 8.8-7.2 16-16 16zM64 0C28.7 0 0 28.7 0 64v384c0 35.3 28.7 64 64 64h256c35.3 0 64-28.7 64-64V154.5c0-17-6.7-33.3-18.7-45.3l-90.6-90.5C262.7 6.7 246.5 0 229.5 0zm97 289c9.4-9.4 9.4-24.6 0-33.9s-24.6-9.4-33.9 0L79 303c-9.4 9.4-9.4 24.6 0 33.9l48 48c9.4 9.4 24.6 9.4 33.9 0s9.4-24.6 0-33.9l-31-31 31-31zm96-34c-9.4-9.4-24.6-9.4-33.9 0s-9.4 24.6 0 33.9l31 31-31 31c-9.4 9.4-9.4 24.6 0 33.9s24.6 9.4 33.9 0l48-48c9.4-9.4 9.4-24.6 0-33.9l-48-48z"/></svg>');--md-admonition-icon--terminal:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="M0 2.75C0 1.784.784 1 1.75 1h12.5c.966 0 1.75.784 1.75 1.75v10.5A1.75 1.75 0 0 1 14.25 15H1.75A1.75 1.75 0 0 1 0 13.25Zm1.75-.25a.25.25 0 0 0-.25.25v10.5c0 .138.112.25.25.25h12.5a.25.25 0 0 0 .25-.25V2.75a.25.25 0 0 0-.25-.25ZM7.25 8a.75.75 0 0 1-.22.53l-2.25 2.25a.749.749 0 0 1-1.275-.326.75.75 0 0 1 .215-.734L5.44 8 3.72 6.28a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l2.25 2.25c.141.14.22.331.22.53m1.5 1.5h3a.75.75 0 0 1 0 1.5h-3a.75.75 0 0 1 0-1.5"/></svg>');--md-admonition-icon--serial:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M64 0C28.7 0 0 28.7 0 64v288c0 35.3 28.7 64 64 64h176l-10.7 32H160c-17.7 0-32 14.3-32 32s14.3 32 32 32h256c17.7 0 32-14.3 32-32s-14.3-32-32-32h-69.3L336 416h176c35.3 0 64-28.7 64-64V64c0-35.3-28.7-64-64-64zm448 64v288H64V64z"/></svg>');--md-admonition-icon--hot:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.66 11.2c-.23-.3-.51-.56-.77-.82-.67-.6-1.43-1.03-2.07-1.66C11.33 7.26 11 4.85 11.95 3c-.95.23-1.78.75-2.49 1.32-2.59 2.08-3.61 5.75-2.39 8.9.04.1.08.2.08.33 0 .22-.15.42-.35.5-.23.1-.47.04-.66-.12a.6.6 0 0 1-.14-.17c-1.13-1.43-1.31-3.48-.55-5.12C3.78 10 2.87 12.3 3 14.47c.06.5.12 1 .29 1.5.14.6.41 1.2.71 1.73 1.08 1.73 2.95 2.97 4.96 3.22 2.14.27 4.43-.12 6.07-1.6 1.83-1.66 2.47-4.32 1.53-6.6l-.13-.26c-.21-.46-.77-1.26-.77-1.26m-3.16 6.3c-.28.24-.74.5-1.1.6-1.12.4-2.24-.16-2.9-.82 1.19-.28 1.9-1.16 2.11-2.05.17-.8-.15-1.46-.28-2.23-.12-.74-.1-1.37.17-2.06.19.38.39.76.63 1.06.77 1 1.98 1.44 2.24 2.8.04.14.06.28.06.43.03.82-.33 1.72-.93 2.27M21 13h-2V7h2zm0 4h-2v-2h2z"/></svg>');--md-admonition-icon--link:url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .75.75 0 0 1 .018-1.042.75.75 0 0 1 1.042-.018 2 2 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.75.75 0 0 1-1.042-.018.75.75 0 0 1-.018-1.042m-4.69 9.64a2 2 0 0 0 2.83 0l1.25-1.25a.75.75 0 0 1 1.042.018.75.75 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .75.75 0 0 1-.018 1.042.75.75 0 0 1-1.042.018 2 2 0 0 0-2.83 0l-2.5 2.5a2 2 0 0 0 0 2.83"/></svg>');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../css/timeago.css">
+    
+      <link rel="stylesheet" href="../stylesheet/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-7Y7EYCZVC1"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-7Y7EYCZVC1",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-7Y7EYCZVC1",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>if("undefined"!=typeof __md_analytics){var consent=__md_get("__consent");consent&&consent.analytics&&__md_analytics()}</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="grey" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#smart-watch-example-libraries" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+<!-- Determine base classes -->
+
+
+  
+
+
+<!-- Header -->
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="Header"
+  >
+
+    <!-- Link to home -->
+    <!-- <a
+      href="https://www.sparkfun.com"
+      title="SparkFun Qwiic Dev Board ESP32-C6"
+      class="md-header__button md-logo"
+      aria-label="SparkFun Qwiic Dev Board ESP32-C6"
+      data-md-component="logo"
+    >
+      
+  <img src="../assets/images/sfe_logo_sq.png" alt="logo">
+
+    </a> -->
+    <a
+      href="https://www.sparkfun.com"
+      title="Back to SparkFun.com"
+      class="md-header__button md-logo"
+      aria-label="SparkFun Qwiic Dev Board ESP32-C6"
+      data-md-component="logo"
+    >
+      
+  <img src="../assets/images/sfe_logo_sq.png" alt="logo">
+
+    </a>
+
+    <!-- Button to open drawer -->
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+
+    <!-- Header title -->
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            SparkFun Qwiic Dev Board ESP32-C6
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Smart Watch Example
+            
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Color palette -->
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          <input
+            class="md-option"
+            data-md-color-media="(prefers-color-scheme)"
+            data-md-color-scheme="default"
+            data-md-color-primary="grey"
+            data-md-color-accent="red"
+            
+              aria-label="Switch to dark mode"
+            
+            type="radio"
+            name="__palette"
+            id="__palette_1"
+          />
+          
+            <label
+              class="md-header__button md-icon"
+              title="Switch to dark mode"
+              for="__palette_3"
+              hidden
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+            </label>
+          
+        
+          
+          <input
+            class="md-option"
+            data-md-color-media="(prefers-color-scheme: light)"
+            data-md-color-scheme="default"
+            data-md-color-primary="grey"
+            data-md-color-accent="red"
+            
+              aria-label="Switch to system preference"
+            
+            type="radio"
+            name="__palette"
+            id="__palette_2"
+          />
+          
+            <label
+              class="md-header__button md-icon"
+              title="Switch to system preference"
+              for="__palette_1"
+              hidden
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+            </label>
+          
+        
+          
+          <input
+            class="md-option"
+            data-md-color-media="(prefers-color-scheme: dark)"
+            data-md-color-scheme="slate"
+            data-md-color-primary="grey"
+            data-md-color-accent="red"
+            
+              aria-label="Switch to light mode"
+            
+            type="radio"
+            name="__palette"
+            id="__palette_3"
+          />
+          
+            <label
+              class="md-header__button md-icon"
+              title="Switch to light mode"
+              for="__palette_2"
+              hidden
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+            </label>
+          
+        
+      </form>
+    
+
+    <!-- Site language selector -->
+    
+
+    <!-- Button to open search modal -->
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+
+      <!-- Search interface -->
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    <!-- Repository information -->
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
+  </div>
+</a>
+      </div>
+    
+  </nav>
+
+  <!-- Navigation tabs (sticky) -->
+  
+    
+      <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Navigation tabs -->
+<nav
+  class="md-tabs"
+  aria-label="Tabs"
+  data-md-component="tabs"
+>
+  <div class="md-tabs__inner md-grid">
+
+    <!-- Adds tab on right side of header -->
+    
+    <ul class="md-tabs__list" style="float: right;">
+      <li class="md-tabs__item">
+        <a href="/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/hard_copy/" class="md-tabs__link">
+          Hard Copies 🖨️
+        </a>
+      </li>
+    </ul>
+    
+
+    <!-- Original tabbed sections -->
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../introduction/" class="md-tabs__link">
+          
+  
+  Hookup Guide
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../resources/" class="md-tabs__link">
+        
+  
+    
+  
+  Resources
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../troubleshooting/" class="md-tabs__link">
+          
+  
+  Support
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+
+
+
+<!-- Determine base classes -->
+
+
+  
+
+
+
+<!-- Navigation -->
+<nav
+  class="md-nav md-nav--primary md-nav--lifted"
+  aria-label="Navigation"
+  data-md-level="0"
+>
+
+  <!-- Site title -->
+  <!-- title="SparkFun Qwiic Dev Board ESP32-C6" -->
+  <label class="md-nav__title" for="__drawer">
+    <a
+      href="https://www.sparkfun.com"
+      title="SparkFun Product Page"
+      class="md-nav__button md-logo"
+      aria-label="SparkFun Qwiic Dev Board ESP32-C6"
+      data-md-component="logo"
+    >
+      
+  <img src="../assets/images/sfe_logo_sq.png" alt="logo">
+
+    </a>
+    SparkFun Qwiic Dev Board ESP32-C6
+  </label>
+
+  <!-- Repository information -->
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6
+  </div>
+</a>
+    </div>
+  
+
+  <!-- Navigation list -->
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Hookup Guide
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hookup Guide
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware_overview/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 15.5A3.5 3.5 0 0 1 8.5 12 3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5 3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardware_assembly/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Hardware Assembly
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_1_4" id="__nav_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Software Setup
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Software Setup
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software_setup/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Arduino Setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../arduino_example/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Arduino Example
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_5" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_1_5" id="__nav_1_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Watch Demo
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Smart Watch Demo
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../smart_watch_assembly/" class="md-nav__link">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m21.71 20.29-1.42 1.42a1 1 0 0 1-1.41 0L7 9.85A3.8 3.8 0 0 1 6 10a4 4 0 0 1-3.78-5.3l2.54 2.54.53-.53 1.42-1.42.53-.53L4.7 2.22A4 4 0 0 1 10 6a3.8 3.8 0 0 1-.15 1l11.86 11.88a1 1 0 0 1 0 1.41M2.29 18.88a1 1 0 0 0 0 1.41l1.42 1.42a1 1 0 0 0 1.41 0l5.47-5.46-2.83-2.83M20 2l-4 2v2l-2.17 2.17 2 2L18 8h2l2-4Z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Watch Assembly
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Watch Example
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.087 6.146c-.3 0-.607.017-.907.069-2.532.367-4.23 2.239-5.18 3.674-.95-1.435-2.648-3.307-5.18-3.674a6.5 6.5 0 0 0-.907-.069C2.648 6.146 0 8.77 0 12s2.656 5.854 5.913 5.854c.3 0 .607-.017.916-.069 2.531-.376 4.23-2.247 5.18-3.683.949 1.436 2.647 3.307 5.18 3.683.299.043.607.069.915.069C21.344 17.854 24 15.23 24 12s-2.656-5.854-5.913-5.854M6.53 15.734a4 4 0 0 1-.625.043c-2.148 0-3.889-1.7-3.889-3.777 0-2.085 1.749-3.777 3.898-3.777q.312.002.624.043c2.39.35 3.847 2.768 4.347 3.734-.508.974-1.974 3.384-4.355 3.734m11.558.043c-.208 0-.416-.017-.624-.043-2.39-.35-3.856-2.768-4.347-3.734.491-.966 1.957-3.384 4.347-3.734q.312-.041.624-.043c2.149 0 3.89 1.7 3.89 3.777 0 2.085-1.75 3.777-3.89 3.777m1.65-4.404v1.134h-1.205v1.182h-1.156v-1.182H16.17v-1.134h1.206V10.19h1.156v1.183zM4.246 12.498H7.82v-1.125H4.245v1.125z"/></svg>
+  
+  <span class="md-ellipsis">
+    
+  
+    Smart Watch Example
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#smart-watch-example-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Smart Watch Example Libraries<a class="headerlink" href="#smart-watch-example-libraries" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-demo-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Upload Demo Code<a class="headerlink" href="#upload-demo-code" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-to-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Code to Note<a class="headerlink" href="#code-to-note" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code to Note">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bma400-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          BMA400 Settings<a class="headerlink" href="#bma400-settings" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ntp-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          NTP Configuration<a class="headerlink" href="#ntp-configuration" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smart-watch-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Smart Watch Actions<a class="headerlink" href="#smart-watch-actions" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Smart Watch Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deep-sleep-wake-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Deep Sleep Wake &amp; Return<a class="headerlink" href="#deep-sleep-wake-return" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tilt-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Tilt Functions<a class="headerlink" href="#tilt-functions" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tap-menu-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Tap Menu Options<a class="headerlink" href="#tap-menu-options" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tap Menu Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analog-clock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Analog Clock<a class="headerlink" href="#analog-clock" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Step Counter<a class="headerlink" href="#step-counter" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-voltage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Battery Voltage<a class="headerlink" href="#battery-voltage" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sync-with-ntp-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Sync with NTP Server<a class="headerlink" href="#sync-with-ntp-server" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Resources
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    
+  
+    Support
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Support
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../troubleshooting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Troubleshooting
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github/file_issue/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Submit Issues
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../github/contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    
+  
+    Become a Contributor
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+
+    <!-- Add Hard Copies to NAV menu -->
+    <li class="md-nav__item">
+      <a href="/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/hard_copy/" class="md-nav__link">
+      <span class="md-ellipsis">
+          Hard Copies&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 21.5c-1.35-.85-3.8-1.5-5.5-1.5-1.65 0-3.35.3-4.75 1.05-.1.05-.15.05-.25.05-.25 0-.5-.25-.5-.5V6c.6-.45 1.25-.75 2-1 1.11-.35 2.33-.5 3.5-.5 1.95 0 4.05.4 5.5 1.5 1.45-1.1 3.55-1.5 5.5-1.5 1.17 0 2.39.15 3.5.5.75.25 1.4.55 2 1v14.6c0 .25-.25.5-.5.5-.1 0-.15 0-.25-.05-1.4-.75-3.1-1.05-4.75-1.05-1.7 0-4.15.65-5.5 1.5M12 8v11.5c1.35-.85 3.8-1.5 5.5-1.5 1.2 0 2.4.15 3.5.5V7c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5m1 3.5c1.11-.68 2.6-1 4.5-1 .91 0 1.76.09 2.5.28V9.23c-.87-.15-1.71-.23-2.5-.23q-2.655 0-4.5.84zm4.5.17c-1.71 0-3.21.26-4.5.79v1.69c1.11-.65 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24v-1.5c-.87-.16-1.71-.23-2.5-.23m2.5 2.9c-.87-.16-1.71-.24-2.5-.24-1.83 0-3.33.27-4.5.8v1.69c1.11-.66 2.6-.99 4.5-.99 1.04 0 1.88.08 2.5.24z"/></svg>
+      </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#smart-watch-example-libraries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Smart Watch Example Libraries<a class="headerlink" href="#smart-watch-example-libraries" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#upload-demo-code" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Upload Demo Code<a class="headerlink" href="#upload-demo-code" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#code-to-note" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Code to Note<a class="headerlink" href="#code-to-note" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Code to Note">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bma400-settings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          BMA400 Settings<a class="headerlink" href="#bma400-settings" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ntp-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          NTP Configuration<a class="headerlink" href="#ntp-configuration" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#smart-watch-actions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Smart Watch Actions<a class="headerlink" href="#smart-watch-actions" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Smart Watch Actions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#deep-sleep-wake-return" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Deep Sleep Wake &amp; Return<a class="headerlink" href="#deep-sleep-wake-return" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tilt-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Tilt Functions<a class="headerlink" href="#tilt-functions" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tap-menu-options" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Tap Menu Options<a class="headerlink" href="#tap-menu-options" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tap Menu Options">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analog-clock" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Analog Clock<a class="headerlink" href="#analog-clock" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-counter" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Step Counter<a class="headerlink" href="#step-counter" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#battery-voltage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Battery Voltage<a class="headerlink" href="#battery-voltage" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sync-with-ntp-server" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        <span class="md-typeset">
+          Sync with NTP Server<a class="headerlink" href="#sync-with-ntp-server" title="Permanent link"></a>
+        </span>
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+
+  <nav class="md-path" aria-label="Navigation" >
+    <ol class="md-path__list">
+      
+      
+        
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../introduction/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Hookup Guide
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+    
+    
+      <li class="md-path__item">
+        <a href="../smart_watch_assembly/" class="md-path__link">
+          
+  <span class="md-ellipsis">
+    Smart Watch Demo
+  </span>
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ol>
+  </nav>
+
+              
+              <article class="md-content__inner md-typeset">
+                
+
+<!-- Adds file-eye icon to view hookup guide as a single page -->
+
+    <a href="/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/single_page" title="View Guide as Single-Page" class="md-content__button md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.2 8.2 0 0 1-1.23-2"/></svg>
+        <!-- .icons/fontawesome/solid/scroll.svg -->
+    </a>
+
+
+
+
+                  
+
+
+  
+    <a href="https://github.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/blob/main/docs/smart_watch_example.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
+    </a>
+  
+  
+
+
+  <h1>Smart Watch Example</h1>
+
+<h2 id="smart-watch-example-libraries">Smart Watch Example Libraries<a class="headerlink" href="#smart-watch-example-libraries" title="Permanent link"></a></h2>
+<p>The smart watch demo requires three Arduino libraries for the three Qwiic breakouts used in it. Install the libraries through Arduino's Library Manager Tool by searching for the following: <strong>"Micro OLED Breakout"</strong>, <strong>"SparkFun Qwiic RTC RV1805"</strong>, and <strong>"SparkFun BMA400"</strong>. Users who prefer to install them manually can download ZIP folders of the libraries by clicking the buttons below:</p>
+<p><center>
+<a class="md-button md-button--primary" href="https://github.com/sparkfun/SparkFun_Micro_OLED_Arduino_Library/archive/refs/heads/main.zip">SparkFun Micro OLED Arduino Library (ZIP)</a>
+</center></p>
+<p><center>
+<a class="md-button md-button--primary" href="https://github.com/sparkfun/SparkFun_RV-1805_Arduino_Library/archive/refs/heads/master.zip">SparkFun RV-1805 Arduino Library (ZIP)</a>
+</center></p>
+<p><center>
+<a class="md-button md-button--primary" href="https://github.com/sparkfun/SparkFun_BMA400_Arduino_Library/archive/refs/heads/main.zip">SparkFun BMA400 Arduino Library (ZIP)</a>
+</center></p>
+<h2 id="upload-demo-code">Upload Demo Code<a class="headerlink" href="#upload-demo-code" title="Permanent link"></a></h2>
+<p>With the Qwiic Pocket Dev Board smart watch assembled, board definitions and libraries installed, we can upload the smart watch code to the Qwiic Pocket Development board. Copy the code below into a blank sketch or you can download it from the <a href="https://github.com/sparkfun/SparkFun_Qwiic_Pocket_Dev_Board_ESP32_C6/blob/main/Examples/WatchDemoC6.ino">GitHub repository</a>.</p>
+<details>
+<summary>Smart Watch Demo</summary>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>// Inlcude libraries needed
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>#include &lt;Wire.h&gt;
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>#include &quot;SparkFun_BMA400_Arduino_Library.h&quot;
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>#include &lt;SparkFun_Qwiic_OLED.h&gt;
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>#include &lt;SparkFun_RV1805.h&gt;
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>#include &lt;WiFi.h&gt;
+<a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>#include &quot;time.h&quot;
+<a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+<a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>// WiFi SSID and password, change these for your WiFi network!
+<a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>const char* ssid = &quot;your-ssid&quot;;
+<a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>const char* password = &quot;your-password&quot;;
+<a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
+<a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>// Create RTC object
+<a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>RV1805 rtc;
+<a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
+<a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>// Create OLED object
+<a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>QwiicMicroOLED oled;
+<a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
+<a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>// Create sensor object
+<a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>BMA400 accelerometer;
+<a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
+<a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>// Pin used for button input
+<a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>int buttonPin = 9;
+<a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
+<a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>// Pin used for measuring battery voltage
+<a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>int batteryPin = 1;
+<a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>
+<a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>// Pin used for interrupt detection
+<a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>int interruptPin = 4;
+<a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
+<a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>// Flag to know when interrupts occur
+<a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>volatile bool interruptOccurred = false;
+<a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>
+<a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>// Flag to know when user input is requested
+<a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>bool userInput = true;
+<a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>
+<a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>// Screen index
+<a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>uint8_t screenIndex = 0;
+<a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>
+<a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>// Enum to define various screen indices
+<a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>typedef enum
+<a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>{
+<a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>    SCREEN_CLOCK,
+<a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>    SCREEN_STEP_COUNTER,
+<a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>    SCREEN_BATTERY_VOLTAGE,
+<a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>    SCREEN_SYNC_RTC,
+<a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>    SCREEN_MAX
+<a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>} screen_index_t;
+<a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>
+<a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>// Screen size properties
+<a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>uint8_t midX = 0;
+<a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>uint8_t midY = 0;
+<a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>uint8_t clockRadius = 0;
+<a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>uint8_t rowHeight = 0;
+<a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>
+<a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>// Screen display flags
+<a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>volatile bool updateScreen = true;
+<a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>volatile bool screenOn = true;
+<a id="__codelineno-0-59" name="__codelineno-0-59" href="#__codelineno-0-59"></a>
+<a id="__codelineno-0-60" name="__codelineno-0-60" href="#__codelineno-0-60"></a>// Screen update timer
+<a id="__codelineno-0-61" name="__codelineno-0-61" href="#__codelineno-0-61"></a>uint32_t lastUpdateTime = 0;
+<a id="__codelineno-0-62" name="__codelineno-0-62" href="#__codelineno-0-62"></a>uint32_t updateInterval = 1000/25;
+<a id="__codelineno-0-63" name="__codelineno-0-63" href="#__codelineno-0-63"></a>
+<a id="__codelineno-0-64" name="__codelineno-0-64" href="#__codelineno-0-64"></a>// Sleep timer to automatically enter deep sleep after inactivity
+<a id="__codelineno-0-65" name="__codelineno-0-65" href="#__codelineno-0-65"></a>uint32_t sleepTimerStart = 0;
+<a id="__codelineno-0-66" name="__codelineno-0-66" href="#__codelineno-0-66"></a>uint32_t sleepTimerPeriod = 60000;
+<a id="__codelineno-0-67" name="__codelineno-0-67" href="#__codelineno-0-67"></a>
+<a id="__codelineno-0-68" name="__codelineno-0-68" href="#__codelineno-0-68"></a>// Standard time zone relative to GMT (not daylight savings!)
+<a id="__codelineno-0-69" name="__codelineno-0-69" href="#__codelineno-0-69"></a>int8_t timeZone = -7;
+<a id="__codelineno-0-70" name="__codelineno-0-70" href="#__codelineno-0-70"></a>
+<a id="__codelineno-0-71" name="__codelineno-0-71" href="#__codelineno-0-71"></a>void setup()
+<a id="__codelineno-0-72" name="__codelineno-0-72" href="#__codelineno-0-72"></a>{
+<a id="__codelineno-0-73" name="__codelineno-0-73" href="#__codelineno-0-73"></a>    // Start serial
+<a id="__codelineno-0-74" name="__codelineno-0-74" href="#__codelineno-0-74"></a>    Serial.begin(115200);
+<a id="__codelineno-0-75" name="__codelineno-0-75" href="#__codelineno-0-75"></a>    Serial.println(&quot;Watch demo begin!&quot;);
+<a id="__codelineno-0-76" name="__codelineno-0-76" href="#__codelineno-0-76"></a>
+<a id="__codelineno-0-77" name="__codelineno-0-77" href="#__codelineno-0-77"></a>    // Configure button pin as input with pullup
+<a id="__codelineno-0-78" name="__codelineno-0-78" href="#__codelineno-0-78"></a>    pinMode(buttonPin, INPUT_PULLUP);
+<a id="__codelineno-0-79" name="__codelineno-0-79" href="#__codelineno-0-79"></a>
+<a id="__codelineno-0-80" name="__codelineno-0-80" href="#__codelineno-0-80"></a>    // Configure battery pin as input
+<a id="__codelineno-0-81" name="__codelineno-0-81" href="#__codelineno-0-81"></a>    pinMode(batteryPin, INPUT);
+<a id="__codelineno-0-82" name="__codelineno-0-82" href="#__codelineno-0-82"></a>
+<a id="__codelineno-0-83" name="__codelineno-0-83" href="#__codelineno-0-83"></a>    // The ESP32-C6 has an attenuator on the ADC, which defaults to 11dB. This causes the resolution to be reduced
+<a id="__codelineno-0-84" name="__codelineno-0-84" href="#__codelineno-0-84"></a>    analogSetAttenuation(ADC_0db);
+<a id="__codelineno-0-85" name="__codelineno-0-85" href="#__codelineno-0-85"></a>
+<a id="__codelineno-0-86" name="__codelineno-0-86" href="#__codelineno-0-86"></a>    // Begin I2C driver
+<a id="__codelineno-0-87" name="__codelineno-0-87" href="#__codelineno-0-87"></a>    Wire.begin(6, 7);
+<a id="__codelineno-0-88" name="__codelineno-0-88" href="#__codelineno-0-88"></a>
+<a id="__codelineno-0-89" name="__codelineno-0-89" href="#__codelineno-0-89"></a>    // Begin RTC
+<a id="__codelineno-0-90" name="__codelineno-0-90" href="#__codelineno-0-90"></a>    while(!rtc.begin())
+<a id="__codelineno-0-91" name="__codelineno-0-91" href="#__codelineno-0-91"></a>    {
+<a id="__codelineno-0-92" name="__codelineno-0-92" href="#__codelineno-0-92"></a>        Serial.println(&quot;Error: RTC not connected, check wiring and I2C address!&quot;);
+<a id="__codelineno-0-93" name="__codelineno-0-93" href="#__codelineno-0-93"></a>        delay(1000);
+<a id="__codelineno-0-94" name="__codelineno-0-94" href="#__codelineno-0-94"></a>    }
+<a id="__codelineno-0-95" name="__codelineno-0-95" href="#__codelineno-0-95"></a>    Serial.println(&quot;RTC connected!&quot;);
+<a id="__codelineno-0-96" name="__codelineno-0-96" href="#__codelineno-0-96"></a>
+<a id="__codelineno-0-97" name="__codelineno-0-97" href="#__codelineno-0-97"></a>    // Manually set time (uncomment if needed, set current time and upload, then comment out and upload again)
+<a id="__codelineno-0-98" name="__codelineno-0-98" href="#__codelineno-0-98"></a>    // rtc.setTime(0,second,minute,hour,day,month,year,weekday);
+<a id="__codelineno-0-99" name="__codelineno-0-99" href="#__codelineno-0-99"></a>
+<a id="__codelineno-0-100" name="__codelineno-0-100" href="#__codelineno-0-100"></a>    // Begin OLED
+<a id="__codelineno-0-101" name="__codelineno-0-101" href="#__codelineno-0-101"></a>    while(!oled.begin())
+<a id="__codelineno-0-102" name="__codelineno-0-102" href="#__codelineno-0-102"></a>    {
+<a id="__codelineno-0-103" name="__codelineno-0-103" href="#__codelineno-0-103"></a>        Serial.println(&quot;Error: OLED not connected, check wiring and I2C address!&quot;);
+<a id="__codelineno-0-104" name="__codelineno-0-104" href="#__codelineno-0-104"></a>        delay(1000);
+<a id="__codelineno-0-105" name="__codelineno-0-105" href="#__codelineno-0-105"></a>    }
+<a id="__codelineno-0-106" name="__codelineno-0-106" href="#__codelineno-0-106"></a>    Serial.println(&quot;OLED connected!&quot;);
+<a id="__codelineno-0-107" name="__codelineno-0-107" href="#__codelineno-0-107"></a>
+<a id="__codelineno-0-108" name="__codelineno-0-108" href="#__codelineno-0-108"></a>    // Set screen size parameters
+<a id="__codelineno-0-109" name="__codelineno-0-109" href="#__codelineno-0-109"></a>    midX = oled.getWidth() / 2;
+<a id="__codelineno-0-110" name="__codelineno-0-110" href="#__codelineno-0-110"></a>    midY = oled.getHeight() / 2;
+<a id="__codelineno-0-111" name="__codelineno-0-111" href="#__codelineno-0-111"></a>    clockRadius = min(midX, midY) - 2;
+<a id="__codelineno-0-112" name="__codelineno-0-112" href="#__codelineno-0-112"></a>    rowHeight = oled.getHeight() / 3;
+<a id="__codelineno-0-113" name="__codelineno-0-113" href="#__codelineno-0-113"></a>
+<a id="__codelineno-0-114" name="__codelineno-0-114" href="#__codelineno-0-114"></a>    // Begin accelerometer
+<a id="__codelineno-0-115" name="__codelineno-0-115" href="#__codelineno-0-115"></a>    while(accelerometer.beginI2C() != BMA400_OK)
+<a id="__codelineno-0-116" name="__codelineno-0-116" href="#__codelineno-0-116"></a>    {
+<a id="__codelineno-0-117" name="__codelineno-0-117" href="#__codelineno-0-117"></a>        Serial.println(&quot;Error: BMA400 not connected, check wiring and I2C address!&quot;);
+<a id="__codelineno-0-118" name="__codelineno-0-118" href="#__codelineno-0-118"></a>        delay(1000);
+<a id="__codelineno-0-119" name="__codelineno-0-119" href="#__codelineno-0-119"></a>    }
+<a id="__codelineno-0-120" name="__codelineno-0-120" href="#__codelineno-0-120"></a>    Serial.println(&quot;BMA400 connected!&quot;);
+<a id="__codelineno-0-121" name="__codelineno-0-121" href="#__codelineno-0-121"></a>
+<a id="__codelineno-0-122" name="__codelineno-0-122" href="#__codelineno-0-122"></a>    // Set up tap detection
+<a id="__codelineno-0-123" name="__codelineno-0-123" href="#__codelineno-0-123"></a>    bma400_tap_conf tapConfig =
+<a id="__codelineno-0-124" name="__codelineno-0-124" href="#__codelineno-0-124"></a>    {
+<a id="__codelineno-0-125" name="__codelineno-0-125" href="#__codelineno-0-125"></a>        .axes_sel = BMA400_TAP_Z_AXIS_EN, // Which axes to evaluate for interrupts (X/Y/Z in any combination)
+<a id="__codelineno-0-126" name="__codelineno-0-126" href="#__codelineno-0-126"></a>        .sensitivity = BMA400_TAP_SENSITIVITY_7, // Sensitivity threshold, up to 7 (lower is more sensitive)
+<a id="__codelineno-0-127" name="__codelineno-0-127" href="#__codelineno-0-127"></a>        .tics_th = BMA400_TICS_TH_6_DATA_SAMPLES, // Max time between top/bottom peaks of a single tap
+<a id="__codelineno-0-128" name="__codelineno-0-128" href="#__codelineno-0-128"></a>        .quiet = BMA400_QUIET_60_DATA_SAMPLES, // Minimum time between taps to trigger interrupt
+<a id="__codelineno-0-129" name="__codelineno-0-129" href="#__codelineno-0-129"></a>        .quiet_dt = BMA400_QUIET_DT_4_DATA_SAMPLES, // Minimum time between 2 taps to trigger double tap interrupt
+<a id="__codelineno-0-130" name="__codelineno-0-130" href="#__codelineno-0-130"></a>        .int_chan = BMA400_INT_CHANNEL_1 // Which pin to use for interrupts
+<a id="__codelineno-0-131" name="__codelineno-0-131" href="#__codelineno-0-131"></a>    };
+<a id="__codelineno-0-132" name="__codelineno-0-132" href="#__codelineno-0-132"></a>    accelerometer.setTapInterrupt(&amp;tapConfig);
+<a id="__codelineno-0-133" name="__codelineno-0-133" href="#__codelineno-0-133"></a>
+<a id="__codelineno-0-134" name="__codelineno-0-134" href="#__codelineno-0-134"></a>    // Set up generic 1 interrupt, used to detect when device is rotated away from user
+<a id="__codelineno-0-135" name="__codelineno-0-135" href="#__codelineno-0-135"></a>    bma400_gen_int_conf genConfig =
+<a id="__codelineno-0-136" name="__codelineno-0-136" href="#__codelineno-0-136"></a>    {
+<a id="__codelineno-0-137" name="__codelineno-0-137" href="#__codelineno-0-137"></a>        .gen_int_thres = 125, // 8mg resolution (eg. gen_int_thres=5 results in 40mg)
+<a id="__codelineno-0-138" name="__codelineno-0-138" href="#__codelineno-0-138"></a>        .gen_int_dur = 100, // 10ms resolution (eg. gen_int_dur=5 results in 50ms)
+<a id="__codelineno-0-139" name="__codelineno-0-139" href="#__codelineno-0-139"></a>        .axes_sel = BMA400_AXIS_XYZ_EN, // Which axes to evaluate for interrupts (X/Y/Z in any combination)
+<a id="__codelineno-0-140" name="__codelineno-0-140" href="#__codelineno-0-140"></a>        .data_src = BMA400_DATA_SRC_ACCEL_FILT_LP, // Which filter to use (must be 100Hz, datasheet recommends filter 2)
+<a id="__codelineno-0-141" name="__codelineno-0-141" href="#__codelineno-0-141"></a>        .criterion_sel = BMA400_ACTIVITY_INT, // Trigger interrupts when active or inactive
+<a id="__codelineno-0-142" name="__codelineno-0-142" href="#__codelineno-0-142"></a>        .evaluate_axes = BMA400_ANY_AXES_INT, // Logical combining of axes for interrupt condition (OR/AND)
+<a id="__codelineno-0-143" name="__codelineno-0-143" href="#__codelineno-0-143"></a>        .ref_update = BMA400_UPDATE_MANUAL, // Whether to automatically update reference values
+<a id="__codelineno-0-144" name="__codelineno-0-144" href="#__codelineno-0-144"></a>        .hysteresis = BMA400_HYST_96_MG, // Hysteresis acceleration for noise rejection
+<a id="__codelineno-0-145" name="__codelineno-0-145" href="#__codelineno-0-145"></a>        .int_thres_ref_x = (uint16_t) -360, // Raw 12-bit acceleration value
+<a id="__codelineno-0-146" name="__codelineno-0-146" href="#__codelineno-0-146"></a>        .int_thres_ref_y = 0, // Raw 12-bit acceleration value
+<a id="__codelineno-0-147" name="__codelineno-0-147" href="#__codelineno-0-147"></a>        .int_thres_ref_z = 360, // Raw 12-bit acceleration value (at 4g range (default), 512 = 1g)
+<a id="__codelineno-0-148" name="__codelineno-0-148" href="#__codelineno-0-148"></a>        .int_chan = BMA400_INT_CHANNEL_1 // Which pin to use for interrupts
+<a id="__codelineno-0-149" name="__codelineno-0-149" href="#__codelineno-0-149"></a>    };
+<a id="__codelineno-0-150" name="__codelineno-0-150" href="#__codelineno-0-150"></a>    accelerometer.setGeneric1Interrupt(&amp;genConfig);
+<a id="__codelineno-0-151" name="__codelineno-0-151" href="#__codelineno-0-151"></a>
+<a id="__codelineno-0-152" name="__codelineno-0-152" href="#__codelineno-0-152"></a>    // Set up generic 2 interrupt, used to detect when device is rotated towards user
+<a id="__codelineno-0-153" name="__codelineno-0-153" href="#__codelineno-0-153"></a>    genConfig.gen_int_thres = 50;
+<a id="__codelineno-0-154" name="__codelineno-0-154" href="#__codelineno-0-154"></a>    genConfig.gen_int_dur = 50;
+<a id="__codelineno-0-155" name="__codelineno-0-155" href="#__codelineno-0-155"></a>    genConfig.criterion_sel = BMA400_INACTIVITY_INT;
+<a id="__codelineno-0-156" name="__codelineno-0-156" href="#__codelineno-0-156"></a>    genConfig.evaluate_axes = BMA400_ALL_AXES_INT;
+<a id="__codelineno-0-157" name="__codelineno-0-157" href="#__codelineno-0-157"></a>    accelerometer.setGeneric2Interrupt(&amp;genConfig);
+<a id="__codelineno-0-158" name="__codelineno-0-158" href="#__codelineno-0-158"></a>
+<a id="__codelineno-0-159" name="__codelineno-0-159" href="#__codelineno-0-159"></a>    // Enable step counting
+<a id="__codelineno-0-160" name="__codelineno-0-160" href="#__codelineno-0-160"></a>    bma400_step_int_conf stepConfig = {.int_chan = BMA400_INT_CHANNEL_1};
+<a id="__codelineno-0-161" name="__codelineno-0-161" href="#__codelineno-0-161"></a>    accelerometer.setStepCounterInterrupt(&amp;stepConfig);
+<a id="__codelineno-0-162" name="__codelineno-0-162" href="#__codelineno-0-162"></a>
+<a id="__codelineno-0-163" name="__codelineno-0-163" href="#__codelineno-0-163"></a>    // Set INT 1 pin as push pull active high
+<a id="__codelineno-0-164" name="__codelineno-0-164" href="#__codelineno-0-164"></a>    accelerometer.setInterruptPinMode(BMA400_INT_CHANNEL_1, BMA400_INT_PUSH_PULL_ACTIVE_1);
+<a id="__codelineno-0-165" name="__codelineno-0-165" href="#__codelineno-0-165"></a>
+<a id="__codelineno-0-166" name="__codelineno-0-166" href="#__codelineno-0-166"></a>    // Enable interrupts from accelerometer
+<a id="__codelineno-0-167" name="__codelineno-0-167" href="#__codelineno-0-167"></a>    accelerometer.enableInterrupt(BMA400_STEP_COUNTER_INT_EN, true);
+<a id="__codelineno-0-168" name="__codelineno-0-168" href="#__codelineno-0-168"></a>    accelerometer.enableInterrupt(BMA400_SINGLE_TAP_INT_EN, true);
+<a id="__codelineno-0-169" name="__codelineno-0-169" href="#__codelineno-0-169"></a>    accelerometer.enableInterrupt(BMA400_DOUBLE_TAP_INT_EN, true);
+<a id="__codelineno-0-170" name="__codelineno-0-170" href="#__codelineno-0-170"></a>    accelerometer.enableInterrupt(BMA400_GEN1_INT_EN, true);
+<a id="__codelineno-0-171" name="__codelineno-0-171" href="#__codelineno-0-171"></a>    accelerometer.enableInterrupt(BMA400_GEN2_INT_EN, true);
+<a id="__codelineno-0-172" name="__codelineno-0-172" href="#__codelineno-0-172"></a>    accelerometer.enableInterrupt(BMA400_LATCH_INT_EN, true);
+<a id="__codelineno-0-173" name="__codelineno-0-173" href="#__codelineno-0-173"></a>
+<a id="__codelineno-0-174" name="__codelineno-0-174" href="#__codelineno-0-174"></a>    // Attach interrupt handler
+<a id="__codelineno-0-175" name="__codelineno-0-175" href="#__codelineno-0-175"></a>    pinMode(interruptPin, INPUT);
+<a id="__codelineno-0-176" name="__codelineno-0-176" href="#__codelineno-0-176"></a>    attachInterrupt(digitalPinToInterrupt(interruptPin), bma400InterruptHandler, RISING);
+<a id="__codelineno-0-177" name="__codelineno-0-177" href="#__codelineno-0-177"></a>
+<a id="__codelineno-0-178" name="__codelineno-0-178" href="#__codelineno-0-178"></a>    // Reset sleep timer
+<a id="__codelineno-0-179" name="__codelineno-0-179" href="#__codelineno-0-179"></a>    sleepTimerStart = millis();
+<a id="__codelineno-0-180" name="__codelineno-0-180" href="#__codelineno-0-180"></a>}
+<a id="__codelineno-0-181" name="__codelineno-0-181" href="#__codelineno-0-181"></a>
+<a id="__codelineno-0-182" name="__codelineno-0-182" href="#__codelineno-0-182"></a>void loop()
+<a id="__codelineno-0-183" name="__codelineno-0-183" href="#__codelineno-0-183"></a>{
+<a id="__codelineno-0-184" name="__codelineno-0-184" href="#__codelineno-0-184"></a>    // Check if we need to enter deep sleep
+<a id="__codelineno-0-185" name="__codelineno-0-185" href="#__codelineno-0-185"></a>    if((digitalRead(buttonPin) == LOW) || (millis() &gt; (sleepTimerStart + sleepTimerPeriod)))
+<a id="__codelineno-0-186" name="__codelineno-0-186" href="#__codelineno-0-186"></a>    {
+<a id="__codelineno-0-187" name="__codelineno-0-187" href="#__codelineno-0-187"></a>        enterDeepSleep();
+<a id="__codelineno-0-188" name="__codelineno-0-188" href="#__codelineno-0-188"></a>    }
+<a id="__codelineno-0-189" name="__codelineno-0-189" href="#__codelineno-0-189"></a>
+<a id="__codelineno-0-190" name="__codelineno-0-190" href="#__codelineno-0-190"></a>    // Check whether interrupt triggered from accelerometer
+<a id="__codelineno-0-191" name="__codelineno-0-191" href="#__codelineno-0-191"></a>    if(interruptOccurred)
+<a id="__codelineno-0-192" name="__codelineno-0-192" href="#__codelineno-0-192"></a>    {
+<a id="__codelineno-0-193" name="__codelineno-0-193" href="#__codelineno-0-193"></a>        // Reset interrupt flag
+<a id="__codelineno-0-194" name="__codelineno-0-194" href="#__codelineno-0-194"></a>        interruptOccurred = false;
+<a id="__codelineno-0-195" name="__codelineno-0-195" href="#__codelineno-0-195"></a>
+<a id="__codelineno-0-196" name="__codelineno-0-196" href="#__codelineno-0-196"></a>        // Reset sleep timer
+<a id="__codelineno-0-197" name="__codelineno-0-197" href="#__codelineno-0-197"></a>        sleepTimerStart = millis();
+<a id="__codelineno-0-198" name="__codelineno-0-198" href="#__codelineno-0-198"></a>
+<a id="__codelineno-0-199" name="__codelineno-0-199" href="#__codelineno-0-199"></a>        Serial.print(&quot;Interrupt occured: &quot;);
+<a id="__codelineno-0-200" name="__codelineno-0-200" href="#__codelineno-0-200"></a>
+<a id="__codelineno-0-201" name="__codelineno-0-201" href="#__codelineno-0-201"></a>        // Check what the interrupt source was
+<a id="__codelineno-0-202" name="__codelineno-0-202" href="#__codelineno-0-202"></a>        uint16_t interruptStatus = 0;
+<a id="__codelineno-0-203" name="__codelineno-0-203" href="#__codelineno-0-203"></a>        accelerometer.getInterruptStatus(&amp;interruptStatus);
+<a id="__codelineno-0-204" name="__codelineno-0-204" href="#__codelineno-0-204"></a>        if(interruptStatus &amp; BMA400_ASSERTED_S_TAP_INT)
+<a id="__codelineno-0-205" name="__codelineno-0-205" href="#__codelineno-0-205"></a>        {
+<a id="__codelineno-0-206" name="__codelineno-0-206" href="#__codelineno-0-206"></a>            // Single tap, increment screen index if screen is on
+<a id="__codelineno-0-207" name="__codelineno-0-207" href="#__codelineno-0-207"></a>            if(screenOn)
+<a id="__codelineno-0-208" name="__codelineno-0-208" href="#__codelineno-0-208"></a>            {
+<a id="__codelineno-0-209" name="__codelineno-0-209" href="#__codelineno-0-209"></a>                Serial.println(&quot;Single tap&quot;);
+<a id="__codelineno-0-210" name="__codelineno-0-210" href="#__codelineno-0-210"></a>                screenIndex++;
+<a id="__codelineno-0-211" name="__codelineno-0-211" href="#__codelineno-0-211"></a>                updateScreen = true;
+<a id="__codelineno-0-212" name="__codelineno-0-212" href="#__codelineno-0-212"></a>            }
+<a id="__codelineno-0-213" name="__codelineno-0-213" href="#__codelineno-0-213"></a>        }
+<a id="__codelineno-0-214" name="__codelineno-0-214" href="#__codelineno-0-214"></a>        else if(interruptStatus &amp; BMA400_ASSERTED_D_TAP_INT)
+<a id="__codelineno-0-215" name="__codelineno-0-215" href="#__codelineno-0-215"></a>        {
+<a id="__codelineno-0-216" name="__codelineno-0-216" href="#__codelineno-0-216"></a>            // Double tap used for input within a screen index, if applicable.
+<a id="__codelineno-0-217" name="__codelineno-0-217" href="#__codelineno-0-217"></a>            // This always follows a single tap, so decrement screen index and
+<a id="__codelineno-0-218" name="__codelineno-0-218" href="#__codelineno-0-218"></a>            // set input flag, if screen is on
+<a id="__codelineno-0-219" name="__codelineno-0-219" href="#__codelineno-0-219"></a>            if(screenOn)
+<a id="__codelineno-0-220" name="__codelineno-0-220" href="#__codelineno-0-220"></a>            {
+<a id="__codelineno-0-221" name="__codelineno-0-221" href="#__codelineno-0-221"></a>                Serial.println(&quot;Double tap&quot;);
+<a id="__codelineno-0-222" name="__codelineno-0-222" href="#__codelineno-0-222"></a>                screenIndex--;
+<a id="__codelineno-0-223" name="__codelineno-0-223" href="#__codelineno-0-223"></a>                updateScreen = true;
+<a id="__codelineno-0-224" name="__codelineno-0-224" href="#__codelineno-0-224"></a>                userInput = true;
+<a id="__codelineno-0-225" name="__codelineno-0-225" href="#__codelineno-0-225"></a>            }
+<a id="__codelineno-0-226" name="__codelineno-0-226" href="#__codelineno-0-226"></a>        }
+<a id="__codelineno-0-227" name="__codelineno-0-227" href="#__codelineno-0-227"></a>        else if(interruptStatus &amp; BMA400_ASSERTED_GEN1_INT)
+<a id="__codelineno-0-228" name="__codelineno-0-228" href="#__codelineno-0-228"></a>        {
+<a id="__codelineno-0-229" name="__codelineno-0-229" href="#__codelineno-0-229"></a>            // Generic 1 indicates the device was rotated away from the user, in
+<a id="__codelineno-0-230" name="__codelineno-0-230" href="#__codelineno-0-230"></a>            // which case we&#39;ll turn the screen off
+<a id="__codelineno-0-231" name="__codelineno-0-231" href="#__codelineno-0-231"></a>            Serial.println(&quot;Generic 1&quot;);
+<a id="__codelineno-0-232" name="__codelineno-0-232" href="#__codelineno-0-232"></a>            screenOn = false;
+<a id="__codelineno-0-233" name="__codelineno-0-233" href="#__codelineno-0-233"></a>            oled.erase();
+<a id="__codelineno-0-234" name="__codelineno-0-234" href="#__codelineno-0-234"></a>            oled.display();
+<a id="__codelineno-0-235" name="__codelineno-0-235" href="#__codelineno-0-235"></a>
+<a id="__codelineno-0-236" name="__codelineno-0-236" href="#__codelineno-0-236"></a>            // The generic interrupts trigger constantly. Disable generic 1, and
+<a id="__codelineno-0-237" name="__codelineno-0-237" href="#__codelineno-0-237"></a>            // enable generic 2
+<a id="__codelineno-0-238" name="__codelineno-0-238" href="#__codelineno-0-238"></a>            accelerometer.enableInterrupt(BMA400_GEN1_INT_EN, false);
+<a id="__codelineno-0-239" name="__codelineno-0-239" href="#__codelineno-0-239"></a>            accelerometer.enableInterrupt(BMA400_GEN2_INT_EN, true);
+<a id="__codelineno-0-240" name="__codelineno-0-240" href="#__codelineno-0-240"></a>        }
+<a id="__codelineno-0-241" name="__codelineno-0-241" href="#__codelineno-0-241"></a>        else if(interruptStatus &amp; BMA400_ASSERTED_GEN2_INT)
+<a id="__codelineno-0-242" name="__codelineno-0-242" href="#__codelineno-0-242"></a>        {
+<a id="__codelineno-0-243" name="__codelineno-0-243" href="#__codelineno-0-243"></a>            // Generic 2 indicates the device was rotated towards the user, in
+<a id="__codelineno-0-244" name="__codelineno-0-244" href="#__codelineno-0-244"></a>            // which case we&#39;ll turn the screen on
+<a id="__codelineno-0-245" name="__codelineno-0-245" href="#__codelineno-0-245"></a>            Serial.println(&quot;Generic 2&quot;);
+<a id="__codelineno-0-246" name="__codelineno-0-246" href="#__codelineno-0-246"></a>            screenOn = true;
+<a id="__codelineno-0-247" name="__codelineno-0-247" href="#__codelineno-0-247"></a>            updateScreen = true;
+<a id="__codelineno-0-248" name="__codelineno-0-248" href="#__codelineno-0-248"></a>
+<a id="__codelineno-0-249" name="__codelineno-0-249" href="#__codelineno-0-249"></a>            // The generic interrupts trigger constantly. Disable generic 2, and
+<a id="__codelineno-0-250" name="__codelineno-0-250" href="#__codelineno-0-250"></a>            // enable generic 1
+<a id="__codelineno-0-251" name="__codelineno-0-251" href="#__codelineno-0-251"></a>            accelerometer.enableInterrupt(BMA400_GEN1_INT_EN, true);
+<a id="__codelineno-0-252" name="__codelineno-0-252" href="#__codelineno-0-252"></a>            accelerometer.enableInterrupt(BMA400_GEN2_INT_EN, false);
+<a id="__codelineno-0-253" name="__codelineno-0-253" href="#__codelineno-0-253"></a>        }
+<a id="__codelineno-0-254" name="__codelineno-0-254" href="#__codelineno-0-254"></a>        else if(interruptStatus &amp; BMA400_ASSERTED_STEP_INT)
+<a id="__codelineno-0-255" name="__codelineno-0-255" href="#__codelineno-0-255"></a>        {
+<a id="__codelineno-0-256" name="__codelineno-0-256" href="#__codelineno-0-256"></a>            // Step counter incremented, update the screen to give live count
+<a id="__codelineno-0-257" name="__codelineno-0-257" href="#__codelineno-0-257"></a>            Serial.println(&quot;Step&quot;);
+<a id="__codelineno-0-258" name="__codelineno-0-258" href="#__codelineno-0-258"></a>            updateScreen = true;
+<a id="__codelineno-0-259" name="__codelineno-0-259" href="#__codelineno-0-259"></a>        }
+<a id="__codelineno-0-260" name="__codelineno-0-260" href="#__codelineno-0-260"></a>        else
+<a id="__codelineno-0-261" name="__codelineno-0-261" href="#__codelineno-0-261"></a>        {
+<a id="__codelineno-0-262" name="__codelineno-0-262" href="#__codelineno-0-262"></a>            // Unknown source, just print and ignore it
+<a id="__codelineno-0-263" name="__codelineno-0-263" href="#__codelineno-0-263"></a>            Serial.println(&quot;Unknown interrupt&quot;);
+<a id="__codelineno-0-264" name="__codelineno-0-264" href="#__codelineno-0-264"></a>            Serial.println(interruptStatus, HEX);
+<a id="__codelineno-0-265" name="__codelineno-0-265" href="#__codelineno-0-265"></a>        }
+<a id="__codelineno-0-266" name="__codelineno-0-266" href="#__codelineno-0-266"></a>    }
+<a id="__codelineno-0-267" name="__codelineno-0-267" href="#__codelineno-0-267"></a>
+<a id="__codelineno-0-268" name="__codelineno-0-268" href="#__codelineno-0-268"></a>    // Figure out what to display on the screen, if anything
+<a id="__codelineno-0-269" name="__codelineno-0-269" href="#__codelineno-0-269"></a>    if(screenOn)
+<a id="__codelineno-0-270" name="__codelineno-0-270" href="#__codelineno-0-270"></a>    {
+<a id="__codelineno-0-271" name="__codelineno-0-271" href="#__codelineno-0-271"></a>        screenIndex %= SCREEN_MAX;
+<a id="__codelineno-0-272" name="__codelineno-0-272" href="#__codelineno-0-272"></a>        switch(screenIndex)
+<a id="__codelineno-0-273" name="__codelineno-0-273" href="#__codelineno-0-273"></a>        {
+<a id="__codelineno-0-274" name="__codelineno-0-274" href="#__codelineno-0-274"></a>            case SCREEN_CLOCK:
+<a id="__codelineno-0-275" name="__codelineno-0-275" href="#__codelineno-0-275"></a>                displayClock();
+<a id="__codelineno-0-276" name="__codelineno-0-276" href="#__codelineno-0-276"></a>                break;
+<a id="__codelineno-0-277" name="__codelineno-0-277" href="#__codelineno-0-277"></a>            case SCREEN_STEP_COUNTER:
+<a id="__codelineno-0-278" name="__codelineno-0-278" href="#__codelineno-0-278"></a>                displayStepCounter();
+<a id="__codelineno-0-279" name="__codelineno-0-279" href="#__codelineno-0-279"></a>                break;
+<a id="__codelineno-0-280" name="__codelineno-0-280" href="#__codelineno-0-280"></a>            case SCREEN_BATTERY_VOLTAGE:
+<a id="__codelineno-0-281" name="__codelineno-0-281" href="#__codelineno-0-281"></a>                displayBatteryVoltage();
+<a id="__codelineno-0-282" name="__codelineno-0-282" href="#__codelineno-0-282"></a>                break;
+<a id="__codelineno-0-283" name="__codelineno-0-283" href="#__codelineno-0-283"></a>            case SCREEN_SYNC_RTC:
+<a id="__codelineno-0-284" name="__codelineno-0-284" href="#__codelineno-0-284"></a>                displaySyncRTC();
+<a id="__codelineno-0-285" name="__codelineno-0-285" href="#__codelineno-0-285"></a>                break;
+<a id="__codelineno-0-286" name="__codelineno-0-286" href="#__codelineno-0-286"></a>            default:
+<a id="__codelineno-0-287" name="__codelineno-0-287" href="#__codelineno-0-287"></a>                // Shouldn&#39;t get here, but just in case
+<a id="__codelineno-0-288" name="__codelineno-0-288" href="#__codelineno-0-288"></a>                screenIndex = 0;
+<a id="__codelineno-0-289" name="__codelineno-0-289" href="#__codelineno-0-289"></a>                break;
+<a id="__codelineno-0-290" name="__codelineno-0-290" href="#__codelineno-0-290"></a>        }
+<a id="__codelineno-0-291" name="__codelineno-0-291" href="#__codelineno-0-291"></a>    }
+<a id="__codelineno-0-292" name="__codelineno-0-292" href="#__codelineno-0-292"></a>
+<a id="__codelineno-0-293" name="__codelineno-0-293" href="#__codelineno-0-293"></a>    // Reset flags
+<a id="__codelineno-0-294" name="__codelineno-0-294" href="#__codelineno-0-294"></a>    userInput = false;
+<a id="__codelineno-0-295" name="__codelineno-0-295" href="#__codelineno-0-295"></a>}
+<a id="__codelineno-0-296" name="__codelineno-0-296" href="#__codelineno-0-296"></a>
+<a id="__codelineno-0-297" name="__codelineno-0-297" href="#__codelineno-0-297"></a>// Displays time an analog clock style
+<a id="__codelineno-0-298" name="__codelineno-0-298" href="#__codelineno-0-298"></a>void displayClock()
+<a id="__codelineno-0-299" name="__codelineno-0-299" href="#__codelineno-0-299"></a>{
+<a id="__codelineno-0-300" name="__codelineno-0-300" href="#__codelineno-0-300"></a>    // Check if we need to update the screen. Uses a timer to limit refresh rate
+<a id="__codelineno-0-301" name="__codelineno-0-301" href="#__codelineno-0-301"></a>    if(!updateScreen)
+<a id="__codelineno-0-302" name="__codelineno-0-302" href="#__codelineno-0-302"></a>    {
+<a id="__codelineno-0-303" name="__codelineno-0-303" href="#__codelineno-0-303"></a>        if(millis() &gt;= (lastUpdateTime + updateInterval))
+<a id="__codelineno-0-304" name="__codelineno-0-304" href="#__codelineno-0-304"></a>        {
+<a id="__codelineno-0-305" name="__codelineno-0-305" href="#__codelineno-0-305"></a>            lastUpdateTime += updateInterval;
+<a id="__codelineno-0-306" name="__codelineno-0-306" href="#__codelineno-0-306"></a>        }
+<a id="__codelineno-0-307" name="__codelineno-0-307" href="#__codelineno-0-307"></a>        else
+<a id="__codelineno-0-308" name="__codelineno-0-308" href="#__codelineno-0-308"></a>        {
+<a id="__codelineno-0-309" name="__codelineno-0-309" href="#__codelineno-0-309"></a>            return;
+<a id="__codelineno-0-310" name="__codelineno-0-310" href="#__codelineno-0-310"></a>        }
+<a id="__codelineno-0-311" name="__codelineno-0-311" href="#__codelineno-0-311"></a>    }
+<a id="__codelineno-0-312" name="__codelineno-0-312" href="#__codelineno-0-312"></a>    updateScreen = false;
+<a id="__codelineno-0-313" name="__codelineno-0-313" href="#__codelineno-0-313"></a>
+<a id="__codelineno-0-314" name="__codelineno-0-314" href="#__codelineno-0-314"></a>    // Get current time from RTC
+<a id="__codelineno-0-315" name="__codelineno-0-315" href="#__codelineno-0-315"></a>    rtc.updateTime();
+<a id="__codelineno-0-316" name="__codelineno-0-316" href="#__codelineno-0-316"></a>    int timeMilli = millis() % 1000;
+<a id="__codelineno-0-317" name="__codelineno-0-317" href="#__codelineno-0-317"></a>    int timeSecs = rtc.getSeconds();
+<a id="__codelineno-0-318" name="__codelineno-0-318" href="#__codelineno-0-318"></a>    int timeMins = rtc.getMinutes();
+<a id="__codelineno-0-319" name="__codelineno-0-319" href="#__codelineno-0-319"></a>    int timeHours = rtc.getHours() % 12;
+<a id="__codelineno-0-320" name="__codelineno-0-320" href="#__codelineno-0-320"></a>
+<a id="__codelineno-0-321" name="__codelineno-0-321" href="#__codelineno-0-321"></a>    // Clear OLED
+<a id="__codelineno-0-322" name="__codelineno-0-322" href="#__codelineno-0-322"></a>    oled.erase();
+<a id="__codelineno-0-323" name="__codelineno-0-323" href="#__codelineno-0-323"></a>
+<a id="__codelineno-0-324" name="__codelineno-0-324" href="#__codelineno-0-324"></a>    // Draw circle to define clock face
+<a id="__codelineno-0-325" name="__codelineno-0-325" href="#__codelineno-0-325"></a>    oled.circle(midX, midY, clockRadius);
+<a id="__codelineno-0-326" name="__codelineno-0-326" href="#__codelineno-0-326"></a>
+<a id="__codelineno-0-327" name="__codelineno-0-327" href="#__codelineno-0-327"></a>    // Draw a solid circle to indicate 1 second intervals
+<a id="__codelineno-0-328" name="__codelineno-0-328" href="#__codelineno-0-328"></a>    int x = (clockRadius+1) * sin(timeMilli * 2*PI/1000);
+<a id="__codelineno-0-329" name="__codelineno-0-329" href="#__codelineno-0-329"></a>    int y = (clockRadius+1) *-cos(timeMilli * 2*PI/1000);
+<a id="__codelineno-0-330" name="__codelineno-0-330" href="#__codelineno-0-330"></a>    oled.circleFill(midX + x, midY + y, 2);
+<a id="__codelineno-0-331" name="__codelineno-0-331" href="#__codelineno-0-331"></a>
+<a id="__codelineno-0-332" name="__codelineno-0-332" href="#__codelineno-0-332"></a>    // Draw second hand
+<a id="__codelineno-0-333" name="__codelineno-0-333" href="#__codelineno-0-333"></a>    x = clockRadius * sin(timeSecs * 2*PI/60);
+<a id="__codelineno-0-334" name="__codelineno-0-334" href="#__codelineno-0-334"></a>    y = clockRadius *-cos(timeSecs * 2*PI/60);
+<a id="__codelineno-0-335" name="__codelineno-0-335" href="#__codelineno-0-335"></a>    oled.line(midX, midY, midX + x, midY + y);
+<a id="__codelineno-0-336" name="__codelineno-0-336" href="#__codelineno-0-336"></a>
+<a id="__codelineno-0-337" name="__codelineno-0-337" href="#__codelineno-0-337"></a>    // Draw minute hand
+<a id="__codelineno-0-338" name="__codelineno-0-338" href="#__codelineno-0-338"></a>    x = clockRadius*.75 * sin(timeMins * 2*PI/60);
+<a id="__codelineno-0-339" name="__codelineno-0-339" href="#__codelineno-0-339"></a>    y = clockRadius*.75 *-cos(timeMins * 2*PI/60);
+<a id="__codelineno-0-340" name="__codelineno-0-340" href="#__codelineno-0-340"></a>    oled.line(midX, midY, midX + x, midY + y);
+<a id="__codelineno-0-341" name="__codelineno-0-341" href="#__codelineno-0-341"></a>
+<a id="__codelineno-0-342" name="__codelineno-0-342" href="#__codelineno-0-342"></a>    // Draw hour hand
+<a id="__codelineno-0-343" name="__codelineno-0-343" href="#__codelineno-0-343"></a>    x = clockRadius*.5 * sin(timeHours * 2*PI/12);
+<a id="__codelineno-0-344" name="__codelineno-0-344" href="#__codelineno-0-344"></a>    y = clockRadius*.5 *-cos(timeHours * 2*PI/12);
+<a id="__codelineno-0-345" name="__codelineno-0-345" href="#__codelineno-0-345"></a>    oled.line(midX, midY, midX + x, midY + y);
+<a id="__codelineno-0-346" name="__codelineno-0-346" href="#__codelineno-0-346"></a>
+<a id="__codelineno-0-347" name="__codelineno-0-347" href="#__codelineno-0-347"></a>    // Display on the OLED
+<a id="__codelineno-0-348" name="__codelineno-0-348" href="#__codelineno-0-348"></a>    oled.display();
+<a id="__codelineno-0-349" name="__codelineno-0-349" href="#__codelineno-0-349"></a>}
+<a id="__codelineno-0-350" name="__codelineno-0-350" href="#__codelineno-0-350"></a>
+<a id="__codelineno-0-351" name="__codelineno-0-351" href="#__codelineno-0-351"></a>// Displays step count
+<a id="__codelineno-0-352" name="__codelineno-0-352" href="#__codelineno-0-352"></a>void displayStepCounter()
+<a id="__codelineno-0-353" name="__codelineno-0-353" href="#__codelineno-0-353"></a>{
+<a id="__codelineno-0-354" name="__codelineno-0-354" href="#__codelineno-0-354"></a>    // Check if screen needs to be updated
+<a id="__codelineno-0-355" name="__codelineno-0-355" href="#__codelineno-0-355"></a>    if(!updateScreen)
+<a id="__codelineno-0-356" name="__codelineno-0-356" href="#__codelineno-0-356"></a>        return;
+<a id="__codelineno-0-357" name="__codelineno-0-357" href="#__codelineno-0-357"></a>    updateScreen = false;
+<a id="__codelineno-0-358" name="__codelineno-0-358" href="#__codelineno-0-358"></a>
+<a id="__codelineno-0-359" name="__codelineno-0-359" href="#__codelineno-0-359"></a>    // Create text buffer
+<a id="__codelineno-0-360" name="__codelineno-0-360" href="#__codelineno-0-360"></a>    char displayStr[10] = {0};
+<a id="__codelineno-0-361" name="__codelineno-0-361" href="#__codelineno-0-361"></a>    uint8_t numChars = 0;
+<a id="__codelineno-0-362" name="__codelineno-0-362" href="#__codelineno-0-362"></a>
+<a id="__codelineno-0-363" name="__codelineno-0-363" href="#__codelineno-0-363"></a>    // Get step count and activity type from accelerometer
+<a id="__codelineno-0-364" name="__codelineno-0-364" href="#__codelineno-0-364"></a>    uint32_t stepCount = 0;
+<a id="__codelineno-0-365" name="__codelineno-0-365" href="#__codelineno-0-365"></a>    uint8_t activityType = 0;
+<a id="__codelineno-0-366" name="__codelineno-0-366" href="#__codelineno-0-366"></a>    accelerometer.getStepCount(&amp;stepCount, &amp;activityType);
+<a id="__codelineno-0-367" name="__codelineno-0-367" href="#__codelineno-0-367"></a>
+<a id="__codelineno-0-368" name="__codelineno-0-368" href="#__codelineno-0-368"></a>    // Clear screen
+<a id="__codelineno-0-369" name="__codelineno-0-369" href="#__codelineno-0-369"></a>    oled.erase();
+<a id="__codelineno-0-370" name="__codelineno-0-370" href="#__codelineno-0-370"></a>
+<a id="__codelineno-0-371" name="__codelineno-0-371" href="#__codelineno-0-371"></a>    // Print header
+<a id="__codelineno-0-372" name="__codelineno-0-372" href="#__codelineno-0-372"></a>    numChars = sprintf(displayStr, &quot;Steps&quot;);
+<a id="__codelineno-0-373" name="__codelineno-0-373" href="#__codelineno-0-373"></a>    printRow(0, displayStr, numChars);
+<a id="__codelineno-0-374" name="__codelineno-0-374" href="#__codelineno-0-374"></a>
+<a id="__codelineno-0-375" name="__codelineno-0-375" href="#__codelineno-0-375"></a>    // Print number of steps
+<a id="__codelineno-0-376" name="__codelineno-0-376" href="#__codelineno-0-376"></a>    numChars = sprintf(displayStr, &quot;%li&quot;, stepCount);
+<a id="__codelineno-0-377" name="__codelineno-0-377" href="#__codelineno-0-377"></a>    printRow(1, displayStr, numChars);
+<a id="__codelineno-0-378" name="__codelineno-0-378" href="#__codelineno-0-378"></a>
+<a id="__codelineno-0-379" name="__codelineno-0-379" href="#__codelineno-0-379"></a>    // Print activity type
+<a id="__codelineno-0-380" name="__codelineno-0-380" href="#__codelineno-0-380"></a>    switch(activityType)
+<a id="__codelineno-0-381" name="__codelineno-0-381" href="#__codelineno-0-381"></a>    {
+<a id="__codelineno-0-382" name="__codelineno-0-382" href="#__codelineno-0-382"></a>        case BMA400_RUN_ACT:
+<a id="__codelineno-0-383" name="__codelineno-0-383" href="#__codelineno-0-383"></a>            numChars = sprintf(displayStr, &quot;Running&quot;);
+<a id="__codelineno-0-384" name="__codelineno-0-384" href="#__codelineno-0-384"></a>            break;
+<a id="__codelineno-0-385" name="__codelineno-0-385" href="#__codelineno-0-385"></a>        case BMA400_WALK_ACT:
+<a id="__codelineno-0-386" name="__codelineno-0-386" href="#__codelineno-0-386"></a>            numChars = sprintf(displayStr, &quot;Walking&quot;);
+<a id="__codelineno-0-387" name="__codelineno-0-387" href="#__codelineno-0-387"></a>            break;
+<a id="__codelineno-0-388" name="__codelineno-0-388" href="#__codelineno-0-388"></a>        case BMA400_STILL_ACT:
+<a id="__codelineno-0-389" name="__codelineno-0-389" href="#__codelineno-0-389"></a>            numChars = sprintf(displayStr, &quot;Standing&quot;);
+<a id="__codelineno-0-390" name="__codelineno-0-390" href="#__codelineno-0-390"></a>            break;
+<a id="__codelineno-0-391" name="__codelineno-0-391" href="#__codelineno-0-391"></a>        default:
+<a id="__codelineno-0-392" name="__codelineno-0-392" href="#__codelineno-0-392"></a>            numChars = sprintf(displayStr, &quot;Unknown&quot;);
+<a id="__codelineno-0-393" name="__codelineno-0-393" href="#__codelineno-0-393"></a>            break;
+<a id="__codelineno-0-394" name="__codelineno-0-394" href="#__codelineno-0-394"></a>    }
+<a id="__codelineno-0-395" name="__codelineno-0-395" href="#__codelineno-0-395"></a>    printRow(2, displayStr, numChars);
+<a id="__codelineno-0-396" name="__codelineno-0-396" href="#__codelineno-0-396"></a>
+<a id="__codelineno-0-397" name="__codelineno-0-397" href="#__codelineno-0-397"></a>    // Display on OLED
+<a id="__codelineno-0-398" name="__codelineno-0-398" href="#__codelineno-0-398"></a>    oled.display();
+<a id="__codelineno-0-399" name="__codelineno-0-399" href="#__codelineno-0-399"></a>}
+<a id="__codelineno-0-400" name="__codelineno-0-400" href="#__codelineno-0-400"></a>
+<a id="__codelineno-0-401" name="__codelineno-0-401" href="#__codelineno-0-401"></a>// Displays battery voltage
+<a id="__codelineno-0-402" name="__codelineno-0-402" href="#__codelineno-0-402"></a>void displayBatteryVoltage()
+<a id="__codelineno-0-403" name="__codelineno-0-403" href="#__codelineno-0-403"></a>{
+<a id="__codelineno-0-404" name="__codelineno-0-404" href="#__codelineno-0-404"></a>    // Check if screen needs to be updated
+<a id="__codelineno-0-405" name="__codelineno-0-405" href="#__codelineno-0-405"></a>    if(!updateScreen)
+<a id="__codelineno-0-406" name="__codelineno-0-406" href="#__codelineno-0-406"></a>        return;
+<a id="__codelineno-0-407" name="__codelineno-0-407" href="#__codelineno-0-407"></a>    updateScreen = false;
+<a id="__codelineno-0-408" name="__codelineno-0-408" href="#__codelineno-0-408"></a>
+<a id="__codelineno-0-409" name="__codelineno-0-409" href="#__codelineno-0-409"></a>    // Create text buffer
+<a id="__codelineno-0-410" name="__codelineno-0-410" href="#__codelineno-0-410"></a>    char displayStr[10] = {0};
+<a id="__codelineno-0-411" name="__codelineno-0-411" href="#__codelineno-0-411"></a>    uint8_t numChars = 0;
+<a id="__codelineno-0-412" name="__codelineno-0-412" href="#__codelineno-0-412"></a>
+<a id="__codelineno-0-413" name="__codelineno-0-413" href="#__codelineno-0-413"></a>    // Clear screen
+<a id="__codelineno-0-414" name="__codelineno-0-414" href="#__codelineno-0-414"></a>    oled.erase();
+<a id="__codelineno-0-415" name="__codelineno-0-415" href="#__codelineno-0-415"></a>
+<a id="__codelineno-0-416" name="__codelineno-0-416" href="#__codelineno-0-416"></a>    // Print header
+<a id="__codelineno-0-417" name="__codelineno-0-417" href="#__codelineno-0-417"></a>    numChars = sprintf(displayStr, &quot;Battery&quot;);
+<a id="__codelineno-0-418" name="__codelineno-0-418" href="#__codelineno-0-418"></a>    printRow(0, displayStr, numChars);
+<a id="__codelineno-0-419" name="__codelineno-0-419" href="#__codelineno-0-419"></a>    numChars = sprintf(displayStr, &quot;Voltage&quot;);
+<a id="__codelineno-0-420" name="__codelineno-0-420" href="#__codelineno-0-420"></a>    printRow(1, displayStr, numChars);
+<a id="__codelineno-0-421" name="__codelineno-0-421" href="#__codelineno-0-421"></a>
+<a id="__codelineno-0-422" name="__codelineno-0-422" href="#__codelineno-0-422"></a>    // Measure battery voltage, averaged over several samples
+<a id="__codelineno-0-423" name="__codelineno-0-423" href="#__codelineno-0-423"></a>    uint8_t numSamples = 100;
+<a id="__codelineno-0-424" name="__codelineno-0-424" href="#__codelineno-0-424"></a>    uint32_t batteryRaw = 0;
+<a id="__codelineno-0-425" name="__codelineno-0-425" href="#__codelineno-0-425"></a>    for(uint8_t i = 0; i &lt; numSamples; i++)
+<a id="__codelineno-0-426" name="__codelineno-0-426" href="#__codelineno-0-426"></a>    {
+<a id="__codelineno-0-427" name="__codelineno-0-427" href="#__codelineno-0-427"></a>        batteryRaw += analogRead(batteryPin);
+<a id="__codelineno-0-428" name="__codelineno-0-428" href="#__codelineno-0-428"></a>    }
+<a id="__codelineno-0-429" name="__codelineno-0-429" href="#__codelineno-0-429"></a>    float voltage = 3.3 / 4095 * batteryRaw / numSamples;
+<a id="__codelineno-0-430" name="__codelineno-0-430" href="#__codelineno-0-430"></a>
+<a id="__codelineno-0-431" name="__codelineno-0-431" href="#__codelineno-0-431"></a>    // Measured voltage is less than true battery voltage, partly because of the
+<a id="__codelineno-0-432" name="__codelineno-0-432" href="#__codelineno-0-432"></a>    // voltage divider circuit, and partly because the ADC has a non-zero input
+<a id="__codelineno-0-433" name="__codelineno-0-433" href="#__codelineno-0-433"></a>    // current. This scaler was experimentally found to correct these effects,
+<a id="__codelineno-0-434" name="__codelineno-0-434" href="#__codelineno-0-434"></a>    // though the nominal value may differ between boards
+<a id="__codelineno-0-435" name="__codelineno-0-435" href="#__codelineno-0-435"></a>    voltage *= 1.688;
+<a id="__codelineno-0-436" name="__codelineno-0-436" href="#__codelineno-0-436"></a>
+<a id="__codelineno-0-437" name="__codelineno-0-437" href="#__codelineno-0-437"></a>    // Print battery voltage
+<a id="__codelineno-0-438" name="__codelineno-0-438" href="#__codelineno-0-438"></a>    numChars = sprintf(displayStr, &quot;%.3fV&quot;, voltage);
+<a id="__codelineno-0-439" name="__codelineno-0-439" href="#__codelineno-0-439"></a>    printRow(2, displayStr, numChars);
+<a id="__codelineno-0-440" name="__codelineno-0-440" href="#__codelineno-0-440"></a>
+<a id="__codelineno-0-441" name="__codelineno-0-441" href="#__codelineno-0-441"></a>    // Display on OLED
+<a id="__codelineno-0-442" name="__codelineno-0-442" href="#__codelineno-0-442"></a>    oled.display();
+<a id="__codelineno-0-443" name="__codelineno-0-443" href="#__codelineno-0-443"></a>}
+<a id="__codelineno-0-444" name="__codelineno-0-444" href="#__codelineno-0-444"></a>
+<a id="__codelineno-0-445" name="__codelineno-0-445" href="#__codelineno-0-445"></a>void displaySyncRTC()
+<a id="__codelineno-0-446" name="__codelineno-0-446" href="#__codelineno-0-446"></a>{
+<a id="__codelineno-0-447" name="__codelineno-0-447" href="#__codelineno-0-447"></a>    // Check if screen needs to be updated
+<a id="__codelineno-0-448" name="__codelineno-0-448" href="#__codelineno-0-448"></a>    if(!updateScreen)
+<a id="__codelineno-0-449" name="__codelineno-0-449" href="#__codelineno-0-449"></a>        return;
+<a id="__codelineno-0-450" name="__codelineno-0-450" href="#__codelineno-0-450"></a>    updateScreen = false;
+<a id="__codelineno-0-451" name="__codelineno-0-451" href="#__codelineno-0-451"></a>
+<a id="__codelineno-0-452" name="__codelineno-0-452" href="#__codelineno-0-452"></a>    // Create text buffer
+<a id="__codelineno-0-453" name="__codelineno-0-453" href="#__codelineno-0-453"></a>    char displayStr[10] = {0};
+<a id="__codelineno-0-454" name="__codelineno-0-454" href="#__codelineno-0-454"></a>    uint8_t numChars = 0;
+<a id="__codelineno-0-455" name="__codelineno-0-455" href="#__codelineno-0-455"></a>
+<a id="__codelineno-0-456" name="__codelineno-0-456" href="#__codelineno-0-456"></a>    // Clear screen
+<a id="__codelineno-0-457" name="__codelineno-0-457" href="#__codelineno-0-457"></a>    oled.erase();
+<a id="__codelineno-0-458" name="__codelineno-0-458" href="#__codelineno-0-458"></a>
+<a id="__codelineno-0-459" name="__codelineno-0-459" href="#__codelineno-0-459"></a>    // Print RTC sync message
+<a id="__codelineno-0-460" name="__codelineno-0-460" href="#__codelineno-0-460"></a>    numChars = sprintf(displayStr, &quot;Sync RTC&quot;);
+<a id="__codelineno-0-461" name="__codelineno-0-461" href="#__codelineno-0-461"></a>    printRow(0, displayStr, numChars);
+<a id="__codelineno-0-462" name="__codelineno-0-462" href="#__codelineno-0-462"></a>    numChars = sprintf(displayStr, &quot;with NTP?&quot;);
+<a id="__codelineno-0-463" name="__codelineno-0-463" href="#__codelineno-0-463"></a>    printRow(1, displayStr, numChars);
+<a id="__codelineno-0-464" name="__codelineno-0-464" href="#__codelineno-0-464"></a>
+<a id="__codelineno-0-465" name="__codelineno-0-465" href="#__codelineno-0-465"></a>    // Display on OLED
+<a id="__codelineno-0-466" name="__codelineno-0-466" href="#__codelineno-0-466"></a>    oled.display();
+<a id="__codelineno-0-467" name="__codelineno-0-467" href="#__codelineno-0-467"></a>
+<a id="__codelineno-0-468" name="__codelineno-0-468" href="#__codelineno-0-468"></a>    // Check if user requested to synchronize RTC
+<a id="__codelineno-0-469" name="__codelineno-0-469" href="#__codelineno-0-469"></a>    if(userInput)
+<a id="__codelineno-0-470" name="__codelineno-0-470" href="#__codelineno-0-470"></a>    {
+<a id="__codelineno-0-471" name="__codelineno-0-471" href="#__codelineno-0-471"></a>        // Clear screen
+<a id="__codelineno-0-472" name="__codelineno-0-472" href="#__codelineno-0-472"></a>        oled.erase();
+<a id="__codelineno-0-473" name="__codelineno-0-473" href="#__codelineno-0-473"></a>
+<a id="__codelineno-0-474" name="__codelineno-0-474" href="#__codelineno-0-474"></a>        // Print RTC sync message
+<a id="__codelineno-0-475" name="__codelineno-0-475" href="#__codelineno-0-475"></a>        numChars = sprintf(displayStr, &quot;Syncing&quot;);
+<a id="__codelineno-0-476" name="__codelineno-0-476" href="#__codelineno-0-476"></a>        printRow(0, displayStr, numChars);
+<a id="__codelineno-0-477" name="__codelineno-0-477" href="#__codelineno-0-477"></a>        numChars = sprintf(displayStr, &quot;RTC...&quot;);
+<a id="__codelineno-0-478" name="__codelineno-0-478" href="#__codelineno-0-478"></a>        printRow(1, displayStr, numChars);
+<a id="__codelineno-0-479" name="__codelineno-0-479" href="#__codelineno-0-479"></a>
+<a id="__codelineno-0-480" name="__codelineno-0-480" href="#__codelineno-0-480"></a>        // Display on OLED
+<a id="__codelineno-0-481" name="__codelineno-0-481" href="#__codelineno-0-481"></a>        oled.display();
+<a id="__codelineno-0-482" name="__codelineno-0-482" href="#__codelineno-0-482"></a>
+<a id="__codelineno-0-483" name="__codelineno-0-483" href="#__codelineno-0-483"></a>        // Start connecting to WiFi network
+<a id="__codelineno-0-484" name="__codelineno-0-484" href="#__codelineno-0-484"></a>        WiFi.begin(ssid, password);
+<a id="__codelineno-0-485" name="__codelineno-0-485" href="#__codelineno-0-485"></a>        while(WiFi.status() != WL_CONNECTED)
+<a id="__codelineno-0-486" name="__codelineno-0-486" href="#__codelineno-0-486"></a>        {
+<a id="__codelineno-0-487" name="__codelineno-0-487" href="#__codelineno-0-487"></a>            Serial.println(&quot;Connecting to WiFi...&quot;);
+<a id="__codelineno-0-488" name="__codelineno-0-488" href="#__codelineno-0-488"></a>            delay(1000);
+<a id="__codelineno-0-489" name="__codelineno-0-489" href="#__codelineno-0-489"></a>        }
+<a id="__codelineno-0-490" name="__codelineno-0-490" href="#__codelineno-0-490"></a>
+<a id="__codelineno-0-491" name="__codelineno-0-491" href="#__codelineno-0-491"></a>        // Sync with an NTP server
+<a id="__codelineno-0-492" name="__codelineno-0-492" href="#__codelineno-0-492"></a>        configTime(timeZone * 3600, 3600, &quot;pool.ntp.org&quot;);
+<a id="__codelineno-0-493" name="__codelineno-0-493" href="#__codelineno-0-493"></a>
+<a id="__codelineno-0-494" name="__codelineno-0-494" href="#__codelineno-0-494"></a>        // Disconnect WiFi
+<a id="__codelineno-0-495" name="__codelineno-0-495" href="#__codelineno-0-495"></a>        WiFi.disconnect(true);
+<a id="__codelineno-0-496" name="__codelineno-0-496" href="#__codelineno-0-496"></a>        WiFi.mode(WIFI_OFF);
+<a id="__codelineno-0-497" name="__codelineno-0-497" href="#__codelineno-0-497"></a>
+<a id="__codelineno-0-498" name="__codelineno-0-498" href="#__codelineno-0-498"></a>        // Get updated time
+<a id="__codelineno-0-499" name="__codelineno-0-499" href="#__codelineno-0-499"></a>        struct tm timeinfo;
+<a id="__codelineno-0-500" name="__codelineno-0-500" href="#__codelineno-0-500"></a>        getLocalTime(&amp;timeinfo);
+<a id="__codelineno-0-501" name="__codelineno-0-501" href="#__codelineno-0-501"></a>
+<a id="__codelineno-0-502" name="__codelineno-0-502" href="#__codelineno-0-502"></a>        // Set RTC to current time
+<a id="__codelineno-0-503" name="__codelineno-0-503" href="#__codelineno-0-503"></a>        uint8_t time[TIME_ARRAY_LENGTH];
+<a id="__codelineno-0-504" name="__codelineno-0-504" href="#__codelineno-0-504"></a>        time[TIME_HUNDREDTHS] = rtc.DECtoBCD(millis());
+<a id="__codelineno-0-505" name="__codelineno-0-505" href="#__codelineno-0-505"></a>        time[TIME_SECONDS] = rtc.DECtoBCD(timeinfo.tm_sec);
+<a id="__codelineno-0-506" name="__codelineno-0-506" href="#__codelineno-0-506"></a>        time[TIME_MINUTES] = rtc.DECtoBCD(timeinfo.tm_min);
+<a id="__codelineno-0-507" name="__codelineno-0-507" href="#__codelineno-0-507"></a>        time[TIME_HOURS] = rtc.DECtoBCD(timeinfo.tm_hour);
+<a id="__codelineno-0-508" name="__codelineno-0-508" href="#__codelineno-0-508"></a>        time[TIME_DATE] = rtc.DECtoBCD(timeinfo.tm_mday);
+<a id="__codelineno-0-509" name="__codelineno-0-509" href="#__codelineno-0-509"></a>        time[TIME_MONTH] = rtc.DECtoBCD(timeinfo.tm_mon);
+<a id="__codelineno-0-510" name="__codelineno-0-510" href="#__codelineno-0-510"></a>        time[TIME_YEAR] = rtc.DECtoBCD(timeinfo.tm_year);
+<a id="__codelineno-0-511" name="__codelineno-0-511" href="#__codelineno-0-511"></a>        time[TIME_DAY] = rtc.DECtoBCD(timeinfo.tm_wday);
+<a id="__codelineno-0-512" name="__codelineno-0-512" href="#__codelineno-0-512"></a>        rtc.setTime(time, TIME_ARRAY_LENGTH);
+<a id="__codelineno-0-513" name="__codelineno-0-513" href="#__codelineno-0-513"></a>
+<a id="__codelineno-0-514" name="__codelineno-0-514" href="#__codelineno-0-514"></a>        // Clear screen
+<a id="__codelineno-0-515" name="__codelineno-0-515" href="#__codelineno-0-515"></a>        oled.erase();
+<a id="__codelineno-0-516" name="__codelineno-0-516" href="#__codelineno-0-516"></a>
+<a id="__codelineno-0-517" name="__codelineno-0-517" href="#__codelineno-0-517"></a>        // Print RTC sync message
+<a id="__codelineno-0-518" name="__codelineno-0-518" href="#__codelineno-0-518"></a>        numChars = sprintf(displayStr, &quot;RTC&quot;);
+<a id="__codelineno-0-519" name="__codelineno-0-519" href="#__codelineno-0-519"></a>        printRow(0, displayStr, numChars);
+<a id="__codelineno-0-520" name="__codelineno-0-520" href="#__codelineno-0-520"></a>        numChars = sprintf(displayStr, &quot;Synced!&quot;);
+<a id="__codelineno-0-521" name="__codelineno-0-521" href="#__codelineno-0-521"></a>        printRow(1, displayStr, numChars);
+<a id="__codelineno-0-522" name="__codelineno-0-522" href="#__codelineno-0-522"></a>
+<a id="__codelineno-0-523" name="__codelineno-0-523" href="#__codelineno-0-523"></a>        // Display on OLED
+<a id="__codelineno-0-524" name="__codelineno-0-524" href="#__codelineno-0-524"></a>        oled.display();
+<a id="__codelineno-0-525" name="__codelineno-0-525" href="#__codelineno-0-525"></a>    }
+<a id="__codelineno-0-526" name="__codelineno-0-526" href="#__codelineno-0-526"></a>}
+<a id="__codelineno-0-527" name="__codelineno-0-527" href="#__codelineno-0-527"></a>
+<a id="__codelineno-0-528" name="__codelineno-0-528" href="#__codelineno-0-528"></a>// Helper function to display text on rows 0-2
+<a id="__codelineno-0-529" name="__codelineno-0-529" href="#__codelineno-0-529"></a>void printRow(uint8_t row, char* text, uint8_t numChars)
+<a id="__codelineno-0-530" name="__codelineno-0-530" href="#__codelineno-0-530"></a>{
+<a id="__codelineno-0-531" name="__codelineno-0-531" href="#__codelineno-0-531"></a>    // Set cursor location so text is centered
+<a id="__codelineno-0-532" name="__codelineno-0-532" href="#__codelineno-0-532"></a>    oled.setCursor(midX - 5 * numChars / 2, rowHeight * row);
+<a id="__codelineno-0-533" name="__codelineno-0-533" href="#__codelineno-0-533"></a>
+<a id="__codelineno-0-534" name="__codelineno-0-534" href="#__codelineno-0-534"></a>    // Print text at cursor location
+<a id="__codelineno-0-535" name="__codelineno-0-535" href="#__codelineno-0-535"></a>    oled.print(text);
+<a id="__codelineno-0-536" name="__codelineno-0-536" href="#__codelineno-0-536"></a>}
+<a id="__codelineno-0-537" name="__codelineno-0-537" href="#__codelineno-0-537"></a>
+<a id="__codelineno-0-538" name="__codelineno-0-538" href="#__codelineno-0-538"></a>// Helper function to minimuze total current consumption and enter deep sleep
+<a id="__codelineno-0-539" name="__codelineno-0-539" href="#__codelineno-0-539"></a>void enterDeepSleep()
+<a id="__codelineno-0-540" name="__codelineno-0-540" href="#__codelineno-0-540"></a>{
+<a id="__codelineno-0-541" name="__codelineno-0-541" href="#__codelineno-0-541"></a>    // Turn off display
+<a id="__codelineno-0-542" name="__codelineno-0-542" href="#__codelineno-0-542"></a>    oled.erase();
+<a id="__codelineno-0-543" name="__codelineno-0-543" href="#__codelineno-0-543"></a>    oled.display();
+<a id="__codelineno-0-544" name="__codelineno-0-544" href="#__codelineno-0-544"></a>    oled.displayPower(false);
+<a id="__codelineno-0-545" name="__codelineno-0-545" href="#__codelineno-0-545"></a>
+<a id="__codelineno-0-546" name="__codelineno-0-546" href="#__codelineno-0-546"></a>    // Minimize current consumption of RTC
+<a id="__codelineno-0-547" name="__codelineno-0-547" href="#__codelineno-0-547"></a>    rtc.enableLowPower();
+<a id="__codelineno-0-548" name="__codelineno-0-548" href="#__codelineno-0-548"></a>    rtc.enableSleep();
+<a id="__codelineno-0-549" name="__codelineno-0-549" href="#__codelineno-0-549"></a>    rtc.writeRegister(RV1805_CTRL1, 0x77);
+<a id="__codelineno-0-550" name="__codelineno-0-550" href="#__codelineno-0-550"></a>
+<a id="__codelineno-0-551" name="__codelineno-0-551" href="#__codelineno-0-551"></a>    // Disable accelerometer interrupts, except double tap
+<a id="__codelineno-0-552" name="__codelineno-0-552" href="#__codelineno-0-552"></a>    accelerometer.enableInterrupt(BMA400_STEP_COUNTER_INT_EN, false);
+<a id="__codelineno-0-553" name="__codelineno-0-553" href="#__codelineno-0-553"></a>    accelerometer.enableInterrupt(BMA400_SINGLE_TAP_INT_EN, false);
+<a id="__codelineno-0-554" name="__codelineno-0-554" href="#__codelineno-0-554"></a>    // accelerometer.enableInterrupt(BMA400_DOUBLE_TAP_INT_EN, false);
+<a id="__codelineno-0-555" name="__codelineno-0-555" href="#__codelineno-0-555"></a>    accelerometer.enableInterrupt(BMA400_GEN1_INT_EN, false);
+<a id="__codelineno-0-556" name="__codelineno-0-556" href="#__codelineno-0-556"></a>    accelerometer.enableInterrupt(BMA400_GEN2_INT_EN, false);
+<a id="__codelineno-0-557" name="__codelineno-0-557" href="#__codelineno-0-557"></a>
+<a id="__codelineno-0-558" name="__codelineno-0-558" href="#__codelineno-0-558"></a>    // Could have had a new interrupt fire, read status to clear old interrupts
+<a id="__codelineno-0-559" name="__codelineno-0-559" href="#__codelineno-0-559"></a>    uint16_t interruptStatus = 0;
+<a id="__codelineno-0-560" name="__codelineno-0-560" href="#__codelineno-0-560"></a>    accelerometer.getInterruptStatus(&amp;interruptStatus);
+<a id="__codelineno-0-561" name="__codelineno-0-561" href="#__codelineno-0-561"></a>
+<a id="__codelineno-0-562" name="__codelineno-0-562" href="#__codelineno-0-562"></a>    // Set interrupt pin as wakeup source
+<a id="__codelineno-0-563" name="__codelineno-0-563" href="#__codelineno-0-563"></a>    esp_deep_sleep_enable_gpio_wakeup(BIT(interruptPin), ESP_GPIO_WAKEUP_GPIO_HIGH);
+<a id="__codelineno-0-564" name="__codelineno-0-564" href="#__codelineno-0-564"></a>
+<a id="__codelineno-0-565" name="__codelineno-0-565" href="#__codelineno-0-565"></a>    // Enter deep sleep. This never returns, instead the code restarts entirely
+<a id="__codelineno-0-566" name="__codelineno-0-566" href="#__codelineno-0-566"></a>    esp_deep_sleep_start();
+<a id="__codelineno-0-567" name="__codelineno-0-567" href="#__codelineno-0-567"></a>}
+<a id="__codelineno-0-568" name="__codelineno-0-568" href="#__codelineno-0-568"></a>
+<a id="__codelineno-0-569" name="__codelineno-0-569" href="#__codelineno-0-569"></a>// ISR for accelerometer interrupts
+<a id="__codelineno-0-570" name="__codelineno-0-570" href="#__codelineno-0-570"></a>void bma400InterruptHandler()
+<a id="__codelineno-0-571" name="__codelineno-0-571" href="#__codelineno-0-571"></a>{
+<a id="__codelineno-0-572" name="__codelineno-0-572" href="#__codelineno-0-572"></a>    // Set flag to be evaluated later
+<a id="__codelineno-0-573" name="__codelineno-0-573" href="#__codelineno-0-573"></a>    interruptOccurred = true;
+<a id="__codelineno-0-574" name="__codelineno-0-574" href="#__codelineno-0-574"></a>}
+</code></pre></div>
+</details>
+<p>Now select the board (SparkFun ESP32-C6 Qwiic Pocket) and the Port and click the "Upload" button. Once the code finishes uploading, you should see a clock display on the Qwiic Micro OLED screen. </p>
+<h2 id="code-to-note">Code to Note<a class="headerlink" href="#code-to-note" title="Permanent link"></a></h2>
+<p>The code has a few settings users should take note of to get the most out of the smart watch demo. Let's take a closer look.</p>
+<h3 id="bma400-settings">BMA400 Settings<a class="headerlink" href="#bma400-settings" title="Permanent link"></a></h3>
+<p>The code sets several thresholds on the BMA400 for tap/double-tap detection, step counting, and tilt-thresholds to fairly generous values to make all of the motion actions easy to trigger but some may find these to be too easily triggered. The code sets the BMA400's tap detection sensitivity to the max value (7) so if you want to make it less sensitive adjust this line:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">.</span><span class="n">sensitivity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">BMA400_TAP_SENSITIVITY_7</span><span class="p">,</span>
+</code></pre></div>
+<h3 id="ntp-configuration">NTP Configuration<a class="headerlink" href="#ntp-configuration" title="Permanent link"></a></h3>
+<p>Syncing the RTC to a NTP (Network Time Protocol) server requires an internet connection. The code has placeholders for these values so you'll need to enter your network credentials in the section of code shown below:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">ssid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;your-ssid&quot;</span><span class="p">;</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">password</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;your-password&quot;</span><span class="p">;</span>
+</code></pre></div>
+<h2 id="smart-watch-actions">Smart Watch Actions<a class="headerlink" href="#smart-watch-actions" title="Permanent link"></a></h2>
+<p>The smart watch code includes a bunch of motion-triggered actions to change the OLED display so let's take a closer look at them to make sure we get the most out of our smart watch.</p>
+<h3 id="deep-sleep-wake-return">Deep Sleep Wake &amp; Return<a class="headerlink" href="#deep-sleep-wake-return" title="Permanent link"></a></h3>
+<p>The code tells the circuit to enter deep sleep on two conditions: 60 seconds of inactivity or pressing the BOOT button on the bottom of the Qwiic Development Board. Double-tapping the watch wakes it from deep sleep and turns on the OLED to display the last screen viewed (default after upload is the analog clock).</p>
+<h3 id="tilt-functions">Tilt Functions<a class="headerlink" href="#tilt-functions" title="Permanent link"></a></h3>
+<p>The OLED display is off by default to help conserve battery power. It enables the display when you're "checking your watch" so try tilting it in "towards" you with the OLED screen upright (ribbon cable on the bottom) and the display should turn on like the photo below:</p>
+<figure>
+<p><a href="../assets/images/Smart_Watch_Assembly-Clock.jpg" title="Click to enlarge"><img alt="Smart Watch Clock display." src="../assets/images/Smart_Watch_Assembly-Clock.jpg" width="400" /></a></p>
+</figure>
+<p>Tilt the screen "away" to turn the screen back off. Otherwise, screen should return to deep sleep after 60 seconds of inactivity (ie. no tilts or taps).</p>
+<h3 id="tap-menu-options">Tap Menu Options<a class="headerlink" href="#tap-menu-options" title="Permanent link"></a></h3>
+<p>When the OLED is active you can tap on the screen (or just trigger a tap action for the BMA400 like setting the watch down or a similar action) to cycle through the four display options: Clock, Step Counter, Battery Voltage, and Sync with NTP Server.</p>
+<h4 id="analog-clock">Analog Clock<a class="headerlink" href="#analog-clock" title="Permanent link"></a></h4>
+<p>This display is a simple analog clock interface without hour markings. It also features a nifty second counter signified by a dot travelling around the clock face.</p>
+<figure>
+<p><a href="../assets/images/Smart_Watch_Assembly-Clock.jpg" title="Click to enlarge"><img alt="Smart Watch Clock display." src="../assets/images/Smart_Watch_Assembly-Clock.jpg" width="400" /></a></p>
+</figure>
+<h4 id="step-counter">Step Counter<a class="headerlink" href="#step-counter" title="Permanent link"></a></h4>
+<p>The smart watch code also takes advantage of the BMA400's built-in step counting feature. It displays steps counted as well as the current action: Standing, Walking, and Running.</p>
+<figure>
+<p><a href="../assets/images/Smart_Watch_Assembly-Pedometer.jpg" title="Click to enlarge"><img alt="Smart Watch Pedometer display." src="../assets/images/Smart_Watch_Assembly-Pedometer.jpg" width="400" /></a></p>
+</figure>
+<h4 id="battery-voltage">Battery Voltage<a class="headerlink" href="#battery-voltage" title="Permanent link"></a></h4>
+<p>The third screen option shows the remaining battery voltage of a connected battery voltage to keep track of remaining charge on of an attached battery.</p>
+<figure>
+<p><a href="../assets/images/Smart_Watch_Assembly-Battery.jpg" title="Click to enlarge"><img alt="Smart Watch Battery voltage display." src="../assets/images/Smart_Watch_Assembly-Battery.jpg" width="400" /></a></p>
+</figure>
+<h4 id="sync-with-ntp-server">Sync with NTP Server<a class="headerlink" href="#sync-with-ntp-server" title="Permanent link"></a></h4>
+<p>The last display option lets you remotely sync the RTC with an NTP (assuming it has a WiFi connection) by double-tapping the display when "Sync with NTP Server" is displayed.</p>
+<figure>
+<p><a href="../assets/images/Smart_Watch_Assembly-NTP_Sync.jpg" title="Click to enlarge"><img alt="Smart Watch NTP Sync display." src="../assets/images/Smart_Watch_Assembly-NTP_Sync.jpg" width="400" /></a></p>
+</figure>
+
+
+
+
+
+
+
+  
+    
+  
+  
+    
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-10-25T21:48:09+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-25</span>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Created">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14.47 15.08 11 13V7h1.5v5.25l3.08 1.83c-.41.28-.79.62-1.11 1m-1.39 4.84c-.36.05-.71.08-1.08.08-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8c0 .37-.03.72-.08 1.08.69.1 1.33.32 1.92.64.1-.56.16-1.13.16-1.72 0-5.5-4.5-10-10-10S2 6.5 2 12s4.47 10 10 10c.59 0 1.16-.06 1.72-.16-.32-.59-.54-1.23-.64-1.92M18 15v3h-3v2h3v3h2v-3h3v-2h-3v-3z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-timeago"><span class="timeago" datetime="2024-10-25T21:48:09+00:00" locale="en"></span></span><span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-iso_date">2024-10-25</span>
+  </span>
+
+    
+    
+      
+  
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Contributors">
+      
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 4a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg>
+      
+    </span>
+    <nav>
+      
+        <a href="mailto:mark.lindemer@sparkfun.com">SFEMark</a>
+    </nav>
+  </span>
+
+    
+    
+      
+  <span class="md-source-file__fact">
+    
+      
+  <span class="md-icon" title="Contributors">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33s1.71.11 2.5.33c1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"/></svg>
+  </span>
+  <span>GitHub</span>
+
+    
+    <nav>
+      
+        <a href="https://github.com/SFEMark" class="md-author" title="@SFEMark">
+          
+          <img src="https://avatars.githubusercontent.com/u/25388968?v=4&size=72" alt="SFEMark">
+        </a>
+      
+        <a href="https://github.com/web-flow" class="md-author" title="@web-flow">
+          
+          <img src="https://avatars.githubusercontent.com/u/19864447?v=4&size=72" alt="web-flow">
+        </a>
+      
+      
+      
+    </nav>
+  </span>
+
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../smart_watch_assembly/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Smart Watch Assembly">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Smart Watch Assembly
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../resources/" class="md-footer__link md-footer__link--next" aria-label="Next: Resources">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Resources
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright 2023 - <a href="https://www.sparkfun.com/" target="_blank" rel="noopener">SparkFun Electronics&#174;<br> <a href="https://goo.gl/maps/vkstCpQZW6jZMjzYA" target="_blank" rel="noopener">6333 Dry Creek Parkway, Niwot, Colorado 80503</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs Insiders
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.youtube.com/sparkfun" target="_blank" rel="noopener" title="www.youtube.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305m-317.51 213.508V175.185l142.739 81.205z"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.instagram.com/sparkfun" target="_blank" rel="noopener" title="www.instagram.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141m0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7m146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8m76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8M398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.github.com/sparkfun" target="_blank" rel="noopener" title="www.github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://www.facebook.com/SparkFun" target="_blank" rel="noopener" title="www.facebook.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256c0 120 82.7 220.8 194.2 248.5V334.2h-52.8V256h52.8v-33.7c0-87.1 39.4-127.5 125-127.5 16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287v175.9C413.8 494.8 512 386.9 512 256"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/sparkfun" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="/#__consent" target="_blank" rel="noopener" title="Change cookie settings" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M257.5 27.6c-.8-5.4-4.9-9.8-10.3-10.6-22.1-3.1-44.6.9-64.4 11.4l-74 39.5c-19.7 10.5-35.6 27-45.4 47.1l-36.7 75.6c-9.8 20.1-13 42.9-9.1 64.9l14.5 82.8c3.9 22.1 14.6 42.3 30.7 57.9l60.3 58.4c16.1 15.6 36.6 25.6 58.7 28.7l83 11.7c22.1 3.1 44.6-.9 64.4-11.4l74-39.5c19.7-10.5 35.6-27 45.4-47.2l36.7-75.5c9.8-20.1 13-42.9 9.1-64.9-.9-5.3-5.3-9.3-10.6-10.1-51.5-8.2-92.8-47.1-104.5-97.4-1.8-7.6-8-13.4-15.7-14.6-54.6-8.7-97.7-52-106.2-106.8zM208 144a32 32 0 1 1 0 64 32 32 0 1 1 0-64m-64 192a32 32 0 1 1 64 0 32 32 0 1 1-64 0m224-64a32 32 0 1 1 0 64 32 32 0 1 1 0-64"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+      <div class="md-consent" data-md-component="consent" id="__consent" hidden>
+        <div class="md-consent__overlay"></div>
+        <aside class="md-consent__inner">
+          <form class="md-consent__form md-grid md-typeset" name="consent">
+            
+
+  
+
+
+  
+
+
+
+
+<h4>Cookie consent</h4>
+<p>We use cookies to recognize your repeated visits and preferences, as well as to measure the effectiveness of our documentation and whether users find what they're searching for. With your consent, you're helping us to make our documentation better.</p>
+<input class="md-toggle" type="checkbox" id="__settings" >
+<div class="md-consent__settings">
+  <ul class="task-list">
+    
+      
+      
+        
+        
+          
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="analytics" checked>
+          <span class="task-list-indicator"></span>
+          Google Analytics
+        </label>
+      </li>
+    
+      
+      
+        
+        
+      
+      <li class="task-list-item">
+        <label class="task-list-control">
+          <input type="checkbox" name="github" checked>
+          <span class="task-list-indicator"></span>
+          GitHub
+        </label>
+      </li>
+    
+  </ul>
+</div>
+<div class="md-consent__controls">
+  
+    
+      <button class="md-button md-button--primary">Accept</button>
+    
+    
+    
+  
+    
+    
+    
+      <label class="md-button" for="__settings">Manage settings</label>
+    
+  
+    
+    
+      <button type="reset" class="md-button md-button--primary">Reject</button>
+    
+    
+  
+</div>
+          </form>
+        </aside>
+      </div>
+      <script>var consent=__md_get("__consent");if(consent)for(var input of document.forms.consent.elements)input.name&&(input.checked=consent[input.name]||!1);else"file:"!==location.protocol&&setTimeout((function(){document.querySelector("[data-md-component=consent]").hidden=!1}),250);var form=document.forms.consent;for(var action of["submit","reset"])form.addEventListener(action,(function(e){if(e.preventDefault(),"reset"===e.type)for(var n of document.forms.consent.elements)n.name&&(n.checked=!1);__md_set("__consent",Object.fromEntries(Array.from(new FormData(form).keys()).map((function(e){return[e,!0]})))),location.hash="",location.reload()}))</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.code.copy", "content.code.annotate", "content.action.edit", "navigation.footer", "navigation.tracking", "navigation.tabs.sticky", "navigation.tabs", "navigation.tabs.sticky", "navigation.top", "navigation.path"], "search": "../assets/javascripts/workers/search.c7c1ca2c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.203fd0bc.min.js"></script>
+      
+        <script src="../js/timeago.min.js"></script>
+      
+        <script src="../js/timeago_mkdocs_material.js"></script>
+      
+    
+  </body>
+</html>
